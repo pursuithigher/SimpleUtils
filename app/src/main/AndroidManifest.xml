@@ -8,13 +8,29 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name="com.qzzhu.keepalive.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <service android:name="com.qzzhu.keepalive.AliveService" />
+
+        <activity android:name="com.qzzhu.keepalive.KeepAliveActivity"
+            android:screenOrientation="portrait"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:theme="@style/keepAliveStyle"
+            android:process=":alive"/>
+
+        <!--<activity android:name="com.qzzhu.keepalive.MainActivity"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"
+            />-->
     </application>
 
 </manifest>
