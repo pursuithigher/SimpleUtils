@@ -2,11 +2,17 @@ package com.utils;
 
 import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
+import android.app.Application;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.os.Build;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
+import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.ContextThemeWrapper;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 
@@ -106,14 +112,35 @@ public class SimpleUtils {
 
 	/** 7
 	 * 是否拥有某权限
-	 * @param context
-	 * @param permissionName
+	 * @param application application
+	 * @param permissionName permission
 	 * @return
 	 */
-	public static boolean CheckPermission(Context context,String permissionName){
-		PackageManager imanager=context.getPackageManager();
-		return PackageManager.PERMISSION_GRANTED == imanager.checkPermission(
-				permissionName, context.getPackageName());
+	public static boolean CheckPermissionOnActivity(Application application, String permissionName){
+		return PackageManager.PERMISSION_GRANTED == ActivityCompat.checkSelfPermission(application,permissionName);
+	}
+
+	/**
+	 * if return true
+	 * the activity must implements OnRequestPermissionsResultCallback.class
+	 * and override onRequestPermissionsResult
+	 * @param activity callback to override
+	 * @param permissionName permissionName
+	 * @param requestCode requestCode
+     */
+	public static void RequestPermissionOnActivity(AppCompatActivity activity, String[] permissionName, int requestCode){
+		ActivityCompat.requestPermissions(activity,permissionName,requestCode);
+	}
+
+	/**
+	 * if return true
+	 * the fragment must override onRequestPermissionsResult
+	 * @param fragment callback to override -> onRequestPermissionsResult
+	 * @param permissionName permissionName
+	 * @param requestCode requestCode
+     */
+	public static void RequestPermissionOnFragment(Fragment fragment,String[] permissionName, int requestCode){
+		fragment.requestPermissions(permissionName,requestCode);
 	}
 
 	/** 8
