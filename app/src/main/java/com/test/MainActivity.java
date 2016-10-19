@@ -1,7 +1,9 @@
-package com.qzzhu.simpleutils;
+package com.test;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.views.simpleutils.R;
 
 public class MainActivity extends AppCompatActivity {
 

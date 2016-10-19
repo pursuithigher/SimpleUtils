@@ -4,7 +4,7 @@
  * @author	LuRuihui
  * @version	0.1
  */
-package com.qzzhu.ui.slidbar;
+package com.views.ui.customview.slidbar;
 
 import net.sourceforge.pinyin4j.PinyinHelper;
 import net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat;

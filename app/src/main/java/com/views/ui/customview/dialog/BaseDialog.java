@@ -1,11 +1,14 @@
-package com.utils.ui;
+package com.views.ui.customview.dialog;
 
 import android.app.Dialog;
 import android.content.Context;
 import android.view.ContextThemeWrapper;
+import android.view.Gravity;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
-import com.qzzhu.simpleutils.R;
+import com.views.simpleutils.R;
 
 /**
  * 创建一个Dialog位于中间位置
@@ -38,6 +41,24 @@ public class BaseDialog extends Dialog{
         }
         dialog.setContentView(contentView);
         dialog.setCanceledOnTouchOutside(outsidecancel);
+
+
         return dialog;
+    }
+
+
+    /**
+     * 设置Dialog对话框的位置和大小
+     * @param dialog
+     */
+    private static void setPosition(BaseDialog dialog){
+        Window dialogWindow = dialog.getWindow();
+        WindowManager.LayoutParams lp = dialogWindow.getAttributes();
+        dialogWindow.setGravity(Gravity.LEFT | Gravity.TOP);
+        lp.x = 100; // 新位置X坐标
+        lp.y = 100; // 新位置Y坐标
+        lp.width = 300; // 宽度
+        lp.height = 300; // 高度
+        lp.alpha = 0.7f; // 透明度
     }
 }

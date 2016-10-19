@@ -1,12 +1,8 @@
-package com.qzzhu.ui.slidbartest;
+package com.views.ui.customview.slidbar;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
-
-import com.qzzhu.ui.slidbar.CharacterParser;
-import com.qzzhu.ui.slidbar.PinyinComparator;
-import com.qzzhu.ui.slidbar.SortModel;
 
 import java.util.ArrayList;
 import java.util.Collections;

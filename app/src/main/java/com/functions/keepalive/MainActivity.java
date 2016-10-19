@@ -1,4 +1,4 @@
-package com.qzzhu.keepalive;
+package com.functions.keepalive;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -11,7 +11,7 @@ import android.os.RemoteException;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
-import com.qzzhu.simpleutils.R;
+import com.views.simpleutils.R;
 
 /**
  * Created by qzzhu on 16-9-7.

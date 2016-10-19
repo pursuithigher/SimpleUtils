@@ -1,4 +1,4 @@
-package com.qzzhu.ui.slidbar;
+package com.views.ui.customview.slidbar;
 
 import android.content.Context;
 import android.graphics.Canvas;

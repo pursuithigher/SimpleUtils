@@ -1,4 +1,4 @@
-package com.qzzhu.keepalive;
+package com.functions.keepalive;
 
 import android.app.NotificationManager;
 import android.app.PendingIntent;
@@ -12,7 +12,7 @@ import android.os.Messenger;
 import android.support.annotation.Nullable;
 import android.support.v4.app.NotificationCompat;
 
-import com.qzzhu.simpleutils.R;
+import com.views.simpleutils.R;
 
 /**
  * Created by qzzhu on 16-9-6.
