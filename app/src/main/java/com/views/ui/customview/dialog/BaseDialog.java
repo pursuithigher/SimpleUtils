@@ -61,4 +61,14 @@ public class BaseDialog extends Dialog{
         lp.height = 300; // 高度
         lp.alpha = 0.7f; // 透明度
     }
+
+    /**
+     * 设置Dialog对话框进出动画
+     * @param dialog
+     * @return
+     */
+    public static BaseDialog setAnimation(BaseDialog dialog){
+        dialog.getWindow().setWindowAnimations(R.style.dialog_anim);
+        return dialog;
+    }
 }
