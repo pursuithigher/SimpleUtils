@@ -41,6 +41,10 @@
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
             />-->
+
+        <provider
+            android:authorities="com.views.simpleutils.authority"
+            android:name="com.db.provider.MyContentProvider"/>
     </application>
 
 </manifest>

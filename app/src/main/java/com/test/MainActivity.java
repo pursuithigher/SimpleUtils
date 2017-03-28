@@ -1,22 +1,29 @@
 package com.test;
 
+import android.database.Cursor;
 import android.graphics.Color;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.db.provider.AccountBean;
 import com.views.simpleutils.R;
 import com.views.ui.customviewgroup.SwipeLayout;
+
+import static com.db.provider.AccountBean.URI_TABEL1;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        swpieLayoutTest();
+//        swpieLayoutTest();
+        testProvider();
     }
 
     private void swpieLayoutTest(){
@@ -40,4 +47,37 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this,value,Toast.LENGTH_SHORT).show();
         }
     };
+
+    private void testProvider(){
+        setContentView(R.layout.mycontent_providertest);
+        final TextView textView = (TextView) findViewById(R.id.provider_test_text);
+        View.OnClickListener clickListener = new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                switch(v.getId())
+                {
+                    case R.id.provider_test_save:
+                        textView.setText(saveDB(String.valueOf(System.currentTimeMillis())));
+                        break;
+                    case R.id.provider_test_get:
+                        textView.setText(getDB());
+                        break;
+                }
+            }
+        };
+        findViewById(R.id.provider_test_save).setOnClickListener(clickListener);
+        findViewById(R.id.provider_test_get).setOnClickListener(clickListener);
+    }
+
+    private String saveDB(String text){
+        Uri uri = getContentResolver().insert(AccountBean.URI_BASE,
+                new AccountBean(text,text,"impu","offline","belong","A","false").getContentValues());
+        return uri.toString();
+    }
+
+    private String getDB(){
+        Cursor cursor = getContentResolver().query(URI_TABEL1,null,null,null,null);
+        int count = cursor.getCount();
+        return String.valueOf(count);
+    }
 }
