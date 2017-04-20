@@ -7,6 +7,8 @@ import android.content.ComponentName;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
@@ -226,5 +228,10 @@ public class SimpleUtils {
         }
         return false;
     }
-	
+
+	public static boolean netWorkAvailable(Context t){
+		ConnectivityManager cm=(ConnectivityManager) t.getSystemService(Context.CONNECTIVITY_SERVICE);
+		NetworkInfo networkInfo = cm.getActiveNetworkInfo();
+		return networkInfo != null;
+	}
 }

@@ -1,7 +1,18 @@
 apply plugin: 'com.android.application'
 android {
-    compileSdkVersion 23
-    buildToolsVersion '23.0.0'
+    compileSdkVersion COMPILE_SDK_VERSION as int
+    buildToolsVersion BUILD_TOOLS_VERSION
+    signingConfigs { //gradle assembleRelease
+        myConfig {
+            storeFile file(SOURCE_FILE)
+            //storePassword System.console().readLine("\nKeystore password: ")
+            //keyAlias "yxapp"
+            //keyPassword System.console().readLine("\nKey password: ")
+            storePassword STORE_PASSWORD
+            keyAlias KEYALIAS
+            keyPassword KEYPASSWORD
+        }
+    }
     defaultConfig {
         applicationId "com.qzzhu.simpleutils"
         minSdkVersion 15
@@ -12,6 +23,22 @@ android {
     dataBinding{
         enabled true
     }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.myConfig
+            buildConfigField "long", "VERSION_TIME", System.currentTimeMillis()+"L"
+            buildConfigField "Boolean", "HTTP_B64", "false"
+            buildConfigField "String", "AppNameDir", "\"simpleutils\""
+        }
+        debug {
+            //applicationIdSuffix ".debug"
+            signingConfig signingConfigs.myConfig
+            buildConfigField "long", "VERSION_TIME", System.currentTimeMillis()+"L"
+            buildConfigField "Boolean", "HTTP_B64", "true"
+            buildConfigField "String", "AppNameDir", "\"simpleutils\""
+        }
+    }
 }
 
 dependencies {
@@ -19,4 +46,8 @@ dependencies {
     compile 'com.android.support:design:24.1.1'
     compile 'com.android.support:appcompat-v7:24.1.1'
     compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha5'
+
+    compile 'com.squareup.okhttp3:okhttp:3.4.1'
+    compile 'io.reactivex:rxjava:1.0.17'
+    compile 'io.reactivex:rxandroid:0.23.0'
 }
