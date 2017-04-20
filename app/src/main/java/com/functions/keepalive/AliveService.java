@@ -16,8 +16,8 @@ import com.views.simpleutils.R;
 
 /**
  * Created by qzzhu on 16-9-6.
+ * 绑定的前台服务
  */
-
 public class AliveService extends Service {
     public final static int NODIFY = 1;
     public final static int CANCEL = 2;

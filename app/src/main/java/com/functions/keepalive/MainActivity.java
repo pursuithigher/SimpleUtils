@@ -1,7 +1,9 @@
 package com.functions.keepalive;
 
+import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.IBinder;
@@ -36,16 +38,20 @@ public class MainActivity extends AppCompatActivity {
         }
     };
 
+    private BroadcastReceiver receiver = new ScreenLockReceiver();
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        registerReceiver(receiver,new IntentFilter(ScreenLockReceiver.ACTION));
         keepAlive();
     }
 
     @Override
     protected void onDestroy() {
         killService();
+        unregisterReceiver(receiver);
         super.onDestroy();
     }
 
