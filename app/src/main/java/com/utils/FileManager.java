@@ -264,35 +264,6 @@ public class FileManager {
         }
     }
 
-//    public void saveFileToPrivate(final File f1,String file2,final boolean isprivate ,final BaseInterface<String> interf){
-//        if(file2 == null)
-//            return ;
-//        if(file2.lastIndexOf(".")==-1)
-//        {
-//            file2+=".png";
-//        }
-//        Context context = com.helixnt.Application.getInstance();
-//        final File f2 = new File(isprivate ? getPrivateHeadFileDir(context) : getBeautyFileDir(context),file2);
-//        Observable.create(new Observable.OnSubscribe<String>() {
-//            @Override
-//            public void call(Subscriber<? super String> subscriber) {
-//                boolean issucceed = FileCopyToPrivate(f1,f2);
-//                if(issucceed)
-//                    subscriber.onNext(f2.getAbsolutePath());
-//                else
-//                    subscriber.onNext(null);
-//                subscriber.onCompleted();
-//            }
-//        }).subscribeOn(Schedulers.io())
-//                .observeOn(AndroidSchedulers.mainThread())
-//                .subscribe(new Action1<String>() {
-//                    @Override
-//                    public void call(String filepath) {
-//                        interf.onComplete(filepath);
-//                    }
-//                });
-//    }
-
     private static boolean FileCopyToPrivate(File from, File to){
         FileInputStream fi = null;
         FileOutputStream fo = null;
