@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/animatorset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静态Animator属性动画"
+        />
+    <Button
+        android:id="@+id/animatorset1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="静态Animation动画"
+        android:background="@drawable/ripple_feedback"
+        />
+    <Button
+        android:id="@+id/animatorset2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="颜色状态变化"
+        android:background="@drawable/state_list"
+        />
+    <Button
+        android:id="@+id/animatorset3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="activity transition"
+        android:transitionName="button1"
+        />
+    <Button
+        android:id="@+id/animatorset4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View状态改变动画"
+        android:stateListAnimator="@drawable/animator_state_change"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/images"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/notify"
+        android:layout_centerInParent="true"
+        android:transitionName="robot"
+        />
+    </RelativeLayout>
+</LinearLayout>

@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>-->
 
-        <activity android:name="com.views.ui.customview.RecyclerviewDecorAndDrag.MainActivity"
+        <activity android:name="com.animtions.ObjectAnimActivity"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -41,6 +41,11 @@
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
             />-->
+
+        <activity android:name="com.animtions.RevealActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"
+            />
 
         <provider
             android:authorities="com.views.simpleutils.authority"

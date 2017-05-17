@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--docs : Android/sdk/docs/guide/topics/resources/animation-resource.html-->
+
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+    android:ordering="together"
+    >
+    <set
+        android:interpolator="@android:anim/accelerate_decelerate_interpolator"
+        >
+        <objectAnimator
+            android:propertyName="x"
+            android:duration="1500"
+            android:valueFrom="0"
+            android:valueTo="300"
+            />
+        <objectAnimator
+            android:propertyName="y"
+            android:duration="1500"
+            android:valueFrom="0"
+            android:valueTo="300"
+            />
+    </set>
+
+    <objectAnimator
+        android:propertyName="alpha"
+        android:duration="1500"
+        android:valueFrom="0.5"
+        android:valueTo="1"/>
+
+</set>
+
+
+<!--
+<set
+android:ordering=["together" | "sequentially"]>
+
+<objectAnimator
+android:propertyName="string"
+android:duration="int"
+android:valueFrom="float | int | color"
+android:valueTo="float | int | color"
+android:startOffset="int"
+android:repeatCount="int"
+android:repeatMode=["restart" | "reverse"]
+    android:valueType=["intType" | "floatType"]/>
+
+<animator
+android:duration="int"
+android:valueFrom="float | int | color"
+android:valueTo="float | int | color"
+android:startOffset="int"
+android:repeatCount="int"
+android:repeatMode=["restart" | "reverse"]
+    android:valueType=["intType" | "floatType"]/>
+</set>-->
+
+
+<!--
+AccelerateDecelerateInterpolator 	@android:anim/accelerate_decelerate_interpolator
+AccelerateInterpolator 	@android:anim/accelerate_interpolator
+AnticipateInterpolator 	@android:anim/anticipate_interpolator
+AnticipateOvershootInterpolator 	@android:anim/anticipate_overshoot_interpolator
+BounceInterpolator 	@android:anim/bounce_interpolator
+CycleInterpolator 	@android:anim/cycle_interpolator
+DecelerateInterpolator 	@android:anim/decelerate_interpolator
+LinearInterpolator 	@android:anim/linear_interpolator
+OvershootInterpolator 	@android:anim/overshoot_interpolator
+-->

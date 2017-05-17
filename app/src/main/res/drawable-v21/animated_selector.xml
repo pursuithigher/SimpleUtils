@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/drawable/myanimstatedrawable.xml -->
+<animated-selector
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- provide a different drawable for each state-->
+    <item android:id="@+id/pressed" android:drawable="@drawable/p"
+        android:state_pressed="true"/>
+    <!--<item android:id="@+id/focused"
+        android:drawable="@drawable/f"
+        android:state_focused="true"/>-->
+    <item android:id="@+id/default1"
+        android:state_pressed="false"
+        android:drawable="@drawable/d"/>
+
+    <!-- specify a transition -->
+    <transition android:fromId="@+id/default1" android:toId="@+id/pressed">
+        <animation-list>
+            <item android:duration="1000" android:drawable="@drawable/f"/>
+            <item android:duration="15" android:drawable="@drawable/p"/>
+        </animation-list>
+    </transition>
+</animated-selector>
+

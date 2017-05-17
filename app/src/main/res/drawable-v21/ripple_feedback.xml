@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="#00ff00">
+
+    <!--default color-->
+
+    <!--A touch feedback drawable may contain multiple child layers,
+    including a special mask layer that is not drawn to the screen.
+    A single layer may be set as the mask from XML by specifying its android:id value as mask-->
+
+
+    <!--android:id="@android:id/mask"表示去除其他层的layer效果,比如去掉按钮按下Z方向动画，
+    不建议使用android:id="@android:id/mask"属性
+    如果没有item，那么属于无界的波纹，波纹范围取决于父ViewGroup
+    -->
+
+    <item
+        android:drawable="@color/colorAccent"
+        >
+    </item>
+</ripple>
