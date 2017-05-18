@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customTitle" format="string"/>
+    <attr name="customBackIcon" format="reference"/>
+    <attr name="customSubTitle" format="string"/>
+    <attr name="customBackGround" format="color"/>
+
+    <declare-styleable name="customView">
+        <attr name="customTitle"/>
+        <attr name="customBackIcon"/>
+        <attr name="customSubTitle"/>
+        <attr name="customBackGround"/>
+    </declare-styleable>
+</resources>

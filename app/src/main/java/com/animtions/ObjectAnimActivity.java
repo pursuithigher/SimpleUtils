@@ -37,6 +37,11 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
 //        // set an exit transition
 //        getWindow().setExitTransition(new Explode());
 
+        setContentView(R.layout.activity_main);
+//        setAnimtionTest();
+    }
+
+    private void setAnimtionTest(){
         setContentView(R.layout.activity_objectanim);
         findViewById(R.id.animatorset).setOnClickListener(this);
         findViewById(R.id.animatorset1).setOnClickListener(this);
