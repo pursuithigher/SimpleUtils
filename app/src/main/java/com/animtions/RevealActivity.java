@@ -42,9 +42,8 @@ public class RevealActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void show(View view,long duration){
+    private static void show(View myView,long duration){
     // previously invisible view
-        View myView = view;
 
     // get the center for the clipping circle
         int cx = myView.getWidth() / 2;
@@ -65,7 +64,7 @@ public class RevealActivity extends AppCompatActivity {
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
-    private void hide(View view, long duration){
+    private static void hide(View view, long duration){
         // previously visible view
         final View myView = view;
 
