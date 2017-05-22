@@ -1,7 +1,6 @@
 package com.utils;
 
 import android.text.TextUtils;
-import android.util.Log;
 
 public class Base64Util
 {
@@ -21,7 +20,6 @@ public class Base64Util
 	/**
 	 * Translates the specified byte array into Base64 string.
 	 *
-	 * @param s the byte array (not null)
 	 * @return the translated Base64 string (not null)
 	 */
 	public static String encode(String s)
@@ -101,7 +99,5 @@ public class Base64Util
 	public static void main(String[] args)
 	{
 		String a = Base64Util.encode("1460");
-		Log.i("TAG", a);
-		Log.i("TAG", Base64Util.decode(a));
 	}
 }

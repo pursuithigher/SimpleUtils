@@ -13,8 +13,9 @@ import android.view.WindowManager;
 
 /**
  * Created by qzzhu on 16-9-6.
+ *
+ * <uses-permission Android:name="android.permission.SYSTEM_ALERT_WINDOW"
  */
-
 public class KeepAliveActivity extends AppCompatActivity {
 
     @Override
@@ -30,6 +31,10 @@ public class KeepAliveActivity extends AppCompatActivity {
         layoutparams.y = 0;
         layoutparams.width =1;
         layoutparams.height = 1;
+
+        //flag not disable back window
+        layoutparams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
+                | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
         window.setAttributes(layoutparams);
 
         registerReceiver(receiver,new IntentFilter(Action));

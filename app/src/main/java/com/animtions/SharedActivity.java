@@ -16,9 +16,9 @@ import com.views.simpleutils.R;
 
 /**
  * Created by qzzhu on 17-5-17.
+ *
  */
-
-public class RevealActivity extends AppCompatActivity {
+public class SharedActivity extends AppCompatActivity {
 
     ImageView image2;
     boolean show = true;

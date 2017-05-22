@@ -2,6 +2,7 @@ package com.network;
 
 import android.util.Pair;
 
+import com.utils.Base64Util;
 import com.views.simpleutils.BuildConfig;
 
 import java.io.File;

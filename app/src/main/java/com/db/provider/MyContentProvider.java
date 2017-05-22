@@ -12,8 +12,12 @@ import android.support.annotation.Nullable;
 
 /**
  * Created by qzzhu on 17-3-28.
+ * 1. manifest set provider tag,
+ *    'authorities' = TABLE_AUTHORITY,
+ *    'name' = className
+ * 2. UriMather.addUri and initial match
+ * 3. extends SQLiteOpenHelper and create table
  */
-
 public class MyContentProvider extends ContentProvider {
 
     private MySqlHelper sqlHelper;

@@ -107,7 +107,7 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
     }
 
     private void loadRevealActivity(){
-        Intent i = new Intent(this,RevealActivity.class);
+        Intent i = new Intent(this,SharedActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(i);
     }
@@ -140,7 +140,7 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
      Use the ActivityOptions.makeSceneTransitionAnimation() method.
      */
     private void loadRevealActivityTransition(View sharedElements){
-        Intent i = new Intent(this,RevealActivity.class);
+        Intent i = new Intent(this,SharedActivity.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ActivityOptions options = //ActivityOptions.makeSceneTransitionAnimation(this).toBundle()
