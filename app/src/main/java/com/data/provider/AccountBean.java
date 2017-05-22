@@ -1,4 +1,4 @@
-package com.db.provider;
+package com.data.provider;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
