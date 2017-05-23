@@ -18,7 +18,7 @@
             </intent-filter>
         </activity>-->
 
-        <activity android:name="com.animtions.ObjectAnimActivity"
+        <activity android:name="com.views.ui.coordinate.CoordinateActivity"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -51,7 +51,7 @@
 
         <provider
             android:authorities="com.views.simpleutils.authority"
-            android:name="com.db.provider.MyContentProvider"/>
+            android:name="com.data.provider.MyContentProvider"/>
     </application>
 
 </manifest>

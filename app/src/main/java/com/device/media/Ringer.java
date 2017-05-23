@@ -10,7 +10,6 @@ import android.provider.Settings;
 import android.util.Log;
 
 
-import com.db.provider.PreferencesUtil;
 import com.views.simpleutils.R;
 
 import java.util.Calendar;
@@ -305,44 +304,44 @@ public class Ringer
 	/*****************************  特定时间点免打扰，存于Preference中 ***************************************/
 	private MediaPlayer iplayer;
 	public void msgSoundOnce(boolean iscoming){
-		boolean isdisturb = false;
-		int from = PreferencesUtil.getIntance(context).getMsgDisturbFrom();
-		if(from != -1) {
-			int to = PreferencesUtil.getIntance(context).getMsgDisturbTo();
-			Calendar  calendar = Calendar.getInstance();
-			calendar.setTime(new Date(System.currentTimeMillis()));
-			int hour = calendar.get(Calendar.HOUR_OF_DAY);
-			if(hour>=from && hour<=to)
-				isdisturb = true;
-		}
-		if(iscoming)
-		{
-			if(isdisturb)
-				return ;
-			boolean hasSound = PreferencesUtil.getIntance(context).getMsgSound();
-			if(hasSound) {
-				if(iplayer!= null && iplayer.isPlaying())
-				{
-					// media has playing
-				}else {
-					iplayer = MediaPlayer.create(context, R.raw.msg_coming);
-					iplayer.setOnCompletionListener(completionListener);
-					play(iplayer);
-				}
-			}
-			boolean hasShake = PreferencesUtil.getIntance(context).getMsgShake();
-			if(shakeThread == null) {
-				if (hasShake) {
-					shakeThread = new ShakeThread();
-					shakeThread.start();
-				}
-			}
-		}
-		else
-		{
-			MediaPlayer iplayer=MediaPlayer.create(context, R.raw.msg_send);
-			play(iplayer);
-		}
+//		boolean isdisturb = false;
+//		int from = PreferencesUtil.getIntance(context).getMsgDisturbFrom();
+//		if(from != -1) {
+//			int to = PreferencesUtil.getIntance(context).getMsgDisturbTo();
+//			Calendar  calendar = Calendar.getInstance();
+//			calendar.setTime(new Date(System.currentTimeMillis()));
+//			int hour = calendar.get(Calendar.HOUR_OF_DAY);
+//			if(hour>=from && hour<=to)
+//				isdisturb = true;
+//		}
+//		if(iscoming)
+//		{
+//			if(isdisturb)
+//				return ;
+//			boolean hasSound = PreferencesUtil.getIntance(context).getMsgSound();
+//			if(hasSound) {
+//				if(iplayer!= null && iplayer.isPlaying())
+//				{
+//					// media has playing
+//				}else {
+//					iplayer = MediaPlayer.create(context, R.raw.msg_coming);
+//					iplayer.setOnCompletionListener(completionListener);
+//					play(iplayer);
+//				}
+//			}
+//			boolean hasShake = PreferencesUtil.getIntance(context).getMsgShake();
+//			if(shakeThread == null) {
+//				if (hasShake) {
+//					shakeThread = new ShakeThread();
+//					shakeThread.start();
+//				}
+//			}
+//		}
+//		else
+//		{
+//			MediaPlayer iplayer=MediaPlayer.create(context, R.raw.msg_send);
+//			play(iplayer);
+//		}
 	}
 
 	private MediaPlayer.OnCompletionListener completionListener = new MediaPlayer.OnCompletionListener() {

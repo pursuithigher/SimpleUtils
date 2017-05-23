@@ -3,19 +3,20 @@ package com.test;
 import android.database.Cursor;
 import android.graphics.Color;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.db.provider.AccountBean;
+import com.data.provider.AccountBean;
 import com.views.simpleutils.R;
 import com.views.ui.customviewgroup.SwipeLayout;
 
-import static com.db.provider.AccountBean.URI_TABEL1;
+import static com.data.provider.AccountBean.URI_TABEL1;
+
 
 public class MainActivity extends AppCompatActivity {
 

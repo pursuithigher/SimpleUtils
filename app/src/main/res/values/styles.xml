@@ -6,6 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
     </style>
 
     <style name="dialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
@@ -38,5 +40,16 @@
     <style name="dialog_anim">
         <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
         <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+
+    <style name="ToolbarPopupTheme" parent="@style/ThemeOverlay.AppCompat.Dark">
+        <item name="android:colorBackground">@color/colorPrimary</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item> <!--新增一个item，用于控制menu-->
+    </style>
+
+    <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+        <item name="overlapAnchor">false</item>  <!--把该属性改为false即可使menu位置位于toolbar之下-->
     </style>
 </resources>
