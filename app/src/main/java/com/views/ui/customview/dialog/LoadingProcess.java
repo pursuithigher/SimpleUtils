@@ -12,8 +12,8 @@ import android.graphics.RectF;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.DecelerateInterpolator;
 
 import com.interf.MeasureSpaceCallBack;
@@ -23,12 +23,22 @@ import com.interf.MeasureSpaceCallBack;
  */
 public class LoadingProcess extends View {
     private int circleWidth = 10;
-    private int mcurrentEndValue = 90;
+    private final int swipeValue = 130;
+    private int startValue = -90;
+    private final static int circleRadius = 300;
+
     private int mswipeAngel = 60;
     private int mcurrentStartValue = -90;
-    private final static int circleRadius = 360;
+    private final static int duration = 1000;
     private RectF rect = null;
     private Paint mPaint;
+
+    /**
+     * Flag to stop animator running
+     */
+    private boolean isLoading = false;
+
+    private int[] COLORS = new int[]{Color.RED,Color.BLACK,Color.BLUE,Color.GREEN};
 
     public LoadingProcess(Context context) {
         this(context,null);
@@ -92,28 +102,19 @@ public class LoadingProcess extends View {
         if(rect == null)
         {
             int center = getMeasuredWidth()/2; //获取圆心的x坐标
-            int radius = (int) (center-circleWidth/2); //圆环的半径
+            int radius = (center-circleWidth/2); //圆环的半径
             rect= new RectF(center - radius, center - radius, center + radius, center + radius);
         }
     }
 
     @Override
     protected void onDraw(Canvas canvas) {
-        if(rect != null)
+        if(rect != null && mswipeAngel != 0)
             canvas.drawArc(rect, mcurrentStartValue, mswipeAngel, false, mPaint);
-//        //宽度使用-,高度使用+,向下为正数
-//        canvas.drawText(customTitle,(getWidth()-textBounds.width())/2,(getHeight()+textBounds.height())/2,mPaint);
     }
 
-    public void setProgress(int value,boolean add){
-        if(add)
-        {
-            mswipeAngel=value;
-        }else{
-            mcurrentStartValue=-90+value;
-            mswipeAngel=circleRadius-value;
-            Log.i("setProcess","value = "+mcurrentStartValue+" angel ="+mswipeAngel);
-        }
+    public void setProgress(int value){
+        mswipeAngel=value;
         invalidate();
     }
 
@@ -126,10 +127,11 @@ public class LoadingProcess extends View {
     }
 
     public void startAccAnim(){
-        ValueAnimator valueAnimator = ValueAnimator.ofInt(mcurrentStartValue,mcurrentStartValue+circleRadius);
+        initial();
+        ValueAnimator valueAnimator = ValueAnimator.ofInt(0,swipeValue);
         valueAnimator.setInterpolator(new DecelerateInterpolator());
         valueAnimator.setEvaluator(addEvaluator);
-        valueAnimator.setDuration(3000);
+        valueAnimator.setDuration(duration);
         valueAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
@@ -137,29 +139,38 @@ public class LoadingProcess extends View {
                 super.onAnimationEnd(animation);
             }
         });
-        valueAnimator.start();
+        this.setTag(valueAnimator);
+        if(isLoading) {
+            valueAnimator.start();
+        }
     }
 
     private void startDecAnim(){
-        ValueAnimator valueAnimator = ValueAnimator.ofInt(-90,270);
-        valueAnimator.setInterpolator(new DecelerateInterpolator());
+        ValueAnimator valueAnimator = ValueAnimator.ofInt(swipeValue,0);
+        valueAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
         valueAnimator.setEvaluator(reduceEvaluator);
-        valueAnimator.setDuration(3000);
+        valueAnimator.setDuration(duration);
         valueAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
             public void onAnimationEnd(Animator animation) {
-                startAccAnim();
+                setOnce(mcurrentStartValue);
+                if(isLoading) {
+                    startAccAnim();
+                }
                 super.onAnimationEnd(animation);
             }
         });
-        valueAnimator.start();
+        this.setTag(valueAnimator);
+        if(isLoading) {
+            valueAnimator.start();
+        }
     }
 
     private TypeEvaluator addEvaluator = new TypeEvaluator<Integer>() {
         @Override
         public Integer evaluate(float fraction, Integer startValue, Integer endValue) {
-            int currentValue = (int)(360*fraction);
-            setProgress(currentValue,true);
+            int currentValue = (int) ((endValue-startValue)*fraction);
+            setProgress(currentValue);
             return currentValue;
         }
     };
@@ -167,9 +178,43 @@ public class LoadingProcess extends View {
     private TypeEvaluator reduceEvaluator = new TypeEvaluator<Integer>() {
         @Override
         public Integer evaluate(float fraction, Integer startValue, Integer endValue) {
-            int currentValue = (int)(360*fraction);
-            setProgress(currentValue,false);
+            int currentValue = (int) ((startValue-endValue)*(1-fraction));
+            mcurrentStartValue = (int) (fraction * circleRadius) + LoadingProcess.this.startValue;
+            setProgress(currentValue);
             return currentValue;
         }
     };
+
+    private void setOnce(int mcurrentStartValue){
+        startValue = mcurrentStartValue;
+        mPaint.setColor(COLORS[(int)(Math.random()*4)]);
+    }
+
+    private void initial(){
+        isLoading = true;
+        mcurrentStartValue =startValue;
+    }
+
+    /**
+     * stop animator running
+     */
+    public void pause(){
+        try {
+            isLoading = false;
+            ValueAnimator animator = (ValueAnimator) getTag();
+            if(animator != null && animator.isStarted())
+            {
+                animator.cancel();
+            }
+        }catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    @Override
+    protected void onDetachedFromWindow() {
+        pause();
+        super.onDetachedFromWindow();
+    }
 }
