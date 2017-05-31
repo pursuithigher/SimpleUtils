@@ -18,14 +18,22 @@ import android.view.animation.DecelerateInterpolator;
 
 import com.interf.MeasureSpaceCallBack;
 
+
 /**
  * Created by Administrator on 2017/5/24 0024.
  */
 public class LoadingProcess extends View {
     private int circleWidth = 10;
-    private final int swipeValue = 130;
+
+    /**
+     * 增长长度
+     */
+    private final int swipeValue = 160;
+    /**
+     * 总长度
+     */
+    private final static int circleRadius = 320;
     private int startValue = -90;
-    private final static int circleRadius = 300;
 
     private int mswipeAngel = 60;
     private int mcurrentStartValue = -90;

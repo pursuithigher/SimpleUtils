@@ -5,6 +5,8 @@ import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
@@ -13,6 +15,9 @@ import android.widget.Toast;
 
 import com.data.provider.AccountBean;
 import com.views.simpleutils.R;
+import com.views.ui.customview.RecyclerviewDecorAndDrag.TestAdapter;
+import com.views.ui.customview.dialog.LoadingProcess;
+import com.views.ui.customviewgroup.LoadLayout;
 import com.views.ui.customviewgroup.SwipeLayout;
 
 import static com.data.provider.AccountBean.URI_TABEL1;
@@ -24,7 +29,43 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        swpieLayoutTest();
-        testProvider();
+//        testProvider();
+        setTestLoading();
+    }
+
+    LoadLayout process;
+    private void setTestLoading(){
+        setContentView(R.layout.activity_loadcover);
+        process = (LoadLayout) findViewById(R.id.item_loader);
+        RecyclerView recycler =process.getRecycleView();
+        recycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
+        TestAdapter adapter = new TestAdapter(this);
+        recycler.setAdapter(adapter);
+        process.setPrecessChangeListener(new LoadLayout.onPrecessChangeListener() {
+            @Override
+            public void onLoadProcessChange(View footer, int process) {
+
+            }
+
+            @Override
+            public void onRefreshProcessChange(View header, int process) {
+
+            }
+
+            @Override
+            public void onLoad(View footer) {
+                LoadingProcess process = ((LoadingProcess)footer);
+                process.pause();
+                process.startAccAnim();
+            }
+
+            @Override
+            public void onRefresh(View header) {
+                LoadingProcess process = ((LoadingProcess)header);
+                process.pause();
+                process.startAccAnim();
+            }
+        });
     }
 
     private void swpieLayoutTest(){
