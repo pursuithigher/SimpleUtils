@@ -8,6 +8,12 @@
         android:layout_height="wrap_content"
         android:text="静态Animator属性动画"
         />
+    <!--
+    默认这2种效果，也可以使用code替换：RippleDrawable
+    android:background="?attr/selectableItemBackground"
+    android:background="?attr/selectableItemBackgroundBorderless"
+    如果想要替换默认ripple效果使用theme的android:colorControlHighlight属性
+    -->
     <Button
         android:id="@+id/animatorset1"
         android:layout_width="match_parent"

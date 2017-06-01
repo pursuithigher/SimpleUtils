@@ -5,17 +5,13 @@
         <item name="android:colorPrimary">@color/colorPrimary</item>
         <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="android:colorAccent">@color/colorAccent</item>
+
         <item name="android:windowActivityTransitions">true</item>
 
         <!-- specify enter and exit transitions -->
         <item name="android:windowEnterTransition">@transition/explode</item>
         <item name="android:windowExitTransition">@transition/explode</item>
 
-        <!--<item name="android:windowIsTranslucent">true</item>
-        <item name="android:windowTranslucentStatus">false</item>
-        <item name="android:windowTranslucentNavigation">true</item>
-        &lt;!&ndash;Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色&ndash;&gt;
-        <item name="android:statusBarColor">@android:color/transparent</item>-->
         <!-- specify shared element transitions -->
         <!--<item name="android:windowSharedElementEnterTransition">
             @transition/change_image_transform</item>

@@ -32,13 +32,14 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
         super.onCreate(savedInstanceState);
 
 //        // inside your activity (if you did not enable transitions in your theme)
+        //android:windowActivityTransitions
 //        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
 //
 //        // set an exit transition
 //        getWindow().setExitTransition(new Explode());
 
-        setContentView(R.layout.activity_main);
-//        setAnimtionTest();
+//        setContentView(R.layout.activity_main);
+        setAnimtionTest();
     }
 
     private void setAnimtionTest(){
@@ -96,6 +97,10 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
 
     /**
      * load the tween Animation
+     * 默认这2种效果，也可以使用code替换：RippleDrawable
+     * android:background="?attr/selectableItemBackground"
+     * android:background="?attr/selectableItemBackgroundBorderless"
+     * 如果想要替换默认ripple效果使用theme的android:colorControlHighlight属性
      */
     private void setweenAnim(){
         Animation hyperspaceJump = AnimationUtils.loadAnimation(this, R.anim.tweenanims);
