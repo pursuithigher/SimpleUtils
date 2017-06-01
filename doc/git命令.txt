@@ -1,0 +1,66 @@
+查看git项目的config：
+git config --list
+
+1)：在git服务器上面创建一个空项目
+	右上角+号
+2)：查看Project下面的http地址
+
+3)：将Project下载到本地
+	git clone http://192.168.1.201/qzhu/gittest.git
+4)：进入项目中查看git配置
+	git config --list
+5)：添加想要提交的文件
+	git add [.|filename]		.表示全部 或者filename表示单个文件
+6):	将文件添加到本地仓库
+	git commit -m ‘comments’
+7):	将文件提交到远程
+	git push
+
+8): 合并分支(将v1与matster合并)
+	git statue 查看当前状态
+	git branch 查看本地分支
+	git checkout matser 从当前v1分支切换到master分支
+	git merge v1 把v1分支与matser合并
+	如果冲突,vi修改冲突部分，然后git add 修改的文件，最后git commit
+
+常见问题：
+分支相关：
+git branch命令的-r选项，可以用来查看远程分支，-a选项查看所有分支
+
+git fetch命令通常用来查看其他人的进程，因为它取回的代码对你本地的开发代码没有影响
+默认情况下，git fetch取回所有分支（branch）的更新。如果只想取回特定分支的更新，可以指定分支名
+
+
+切换项目工作分支：
+git branch v1  //在本地仓库创建一个新的分支
+git checkout v1 //本地仓库切换到v1分支
+
+1：git checkout -b v1 //本地仓库创建并且切换到v1分支
+
+2：git pull origin master //将远程V1分支更新到本地
+git push --set-upstream origin v1 //更新v1流
+
+3:git push origin v1 //把本地的origin提交到v1中,并在服务器上创建V1分支
+
+git branch -d v1 //删除本地v1分支
+git push origin --delete v1 //删除远程分支v1
+
+4:rm -rf * //删除本地文件
+
+5:git clone -b v1 http://192.168.1.201/njyx/***.git     //拷贝v1分支
+
+
+冲突的处理
+git stash      //把你本地的修改放入栈中,将本地修改存储起来
+git stash list //查看保存的信息stash@{0}就是刚才保存的内容
+git pull        //从远程上面下载到本地
+
+git stash pop stash@{0} //从栈中回退到本地，然后修改你的冲突的代码
+Updated upstream 和=====之间的内容就是pull下来的内容，====和stashed changes之间的内容就是本地修改的内容
+vi修改冲突部分，然后git add 修改的文件，最后git commit
+
+恢复旧版本：
+git reset --hard 编号
+
+#e95c5c
+
