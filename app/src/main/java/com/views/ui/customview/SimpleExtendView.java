@@ -1,5 +1,6 @@
 package com.views.ui.customview;
 
+import android.animation.ValueAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -9,8 +10,14 @@ import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
+import android.support.v4.widget.ViewDragHelper;
 import android.util.AttributeSet;
+import android.view.GestureDetector;
+import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewPropertyAnimator;
+import android.view.animation.LinearInterpolator;
+import android.widget.Scroller;
 
 import com.interf.MeasureSpaceCallBack;
 import com.views.simpleutils.R;
@@ -118,4 +125,80 @@ public class SimpleExtendView extends View {
         return 200;
     }
 
+    //添加InterAction
+    GestureDetector detector;
+    private void addInteractive(Context context){
+        detector = new GestureDetector(context,simpleOnGestureListener);
+    }
+
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        boolean ishandle = detector.onTouchEvent(event);//由simpleOnGestureListener处理了事件
+        if(!ishandle) //没有消耗的事件在条件中处理
+        {
+            //do something that decor not handle
+
+        }
+        return ishandle;
+    }
+
+    Scroller mscroll;
+    private int minX,minY,maxX,maxY;
+    private GestureDetector.SimpleOnGestureListener simpleOnGestureListener =
+            new GestureDetector.SimpleOnGestureListener(){
+                /**********必须要实现并且返回true,否则下面事件不处理*********/
+                @Override
+                public boolean onDown(MotionEvent e) {
+
+                    return true;
+                }
+
+                @Override
+                public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
+                    mscroll.fling(mscroll.getCurrX(),mscroll.getCurrY(),(int)velocityX/4,(int)velocityY/4,minX,minY,maxX,maxY);
+
+
+//                  postInvalidate();与onComputeScroll方法连用
+
+                    startFliping();
+                    return super.onFling(e1, e2, velocityX, velocityY);
+                }
+
+                @Override
+                public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY) {
+                    return super.onScroll(e1, e2, distanceX, distanceY);
+                }
+
+            };
+
+    public void setChanged(int valueX,int valueY){
+        //do something
+        
+        invalidate();
+    }
+
+    private void startFliping(){
+        final ValueAnimator valueAnimator = ValueAnimator.ofFloat(0,1);
+        valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
+            @Override
+            public void onAnimationUpdate(ValueAnimator animation) {
+                if(!mscroll.isFinished()){
+                    mscroll.computeScrollOffset();
+                    setChanged(mscroll.getCurrX(),mscroll.getCurrY());
+                    invalidate();
+                }else{
+                    valueAnimator.cancel();
+                    onFlipingEnd();
+                }
+            }
+        });
+
+        valueAnimator.setDuration(3000);
+        valueAnimator.setInterpolator(new LinearInterpolator());
+        valueAnimator.start();
+    }
+
+    public void onFlipingEnd(){
+
+    }
 }
