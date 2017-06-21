@@ -42,7 +42,14 @@
         android:text="View状态改变动画"
         android:stateListAnimator="@drawable/animator_state_change"
         />
+    <Button
+        android:id="@+id/animatorset5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scene动画"
+        />
     <RelativeLayout
+        android:id="@+id/image_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <ImageView
