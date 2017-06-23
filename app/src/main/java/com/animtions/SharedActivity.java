@@ -12,6 +12,7 @@ import android.view.ViewAnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 
+import com.squareup.leakcanary.LeakCanary;
 import com.views.simpleutils.R;
 
 /**

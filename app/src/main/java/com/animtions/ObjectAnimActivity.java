@@ -20,12 +20,13 @@ import android.view.animation.LinearInterpolator;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import com.MyApplication;
+import com.squareup.leakcanary.LeakCanary;
 import com.views.simpleutils.R;
 
 /**
  * Created by qzzhu on 17-5-17.
  */
-
 public class ObjectAnimActivity extends AppCompatActivity implements View.OnClickListener {
 
     ImageView image;
@@ -178,6 +179,7 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
      * and assign the animator to your view with the View.setStateListAnimator() method
      */
     private void loadAnimatorStateChange(){
+
         //see drawable-v21 animator_state_change.xml
     }
 
