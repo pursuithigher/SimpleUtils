@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <TextView
+        android:id="@+id/appwidget_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="SimpleUtils"
+        android:padding="8dp"
+        />
+    <Button
+        android:id="@+id/appwidget_launcher"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Launcher"
+        />
+</LinearLayout>

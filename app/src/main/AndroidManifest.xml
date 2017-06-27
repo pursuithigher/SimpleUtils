@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>-->
 
-        <activity android:name="com.device.media.TakePicActivity"
+        <activity android:name="com.animtions.ObjectAnimActivity"
             android:screenOrientation="portrait"
             >
             <intent-filter>
@@ -34,28 +34,53 @@
 
         <service android:name="com.functions.keepalive.AliveService" />
 
-        <activity android:name="com.functions.keepalive.KeepAliveActivity"
-            android:screenOrientation="portrait"
+        <activity
+            android:name="com.functions.keepalive.KeepAliveActivity"
             android:excludeFromRecents="true"
-            android:finishOnTaskLaunch="true"
             android:exported="false"
+            android:finishOnTaskLaunch="true"
             android:launchMode="singleInstance"
-            android:theme="@style/keepAliveStyle"
-            android:process=":alive"/>
+            android:process=":alive"
+            android:screenOrientation="portrait"
+            android:theme="@style/keepAliveStyle" />
 
         <!--<activity android:name="com.qzzhu.keepalive.MainActivity"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
             />-->
 
-        <activity android:name="com.animtions.SharedActivity"
-            android:screenOrientation="portrait"
+        <activity
+            android:name="com.animtions.SharedActivity"
             android:launchMode="singleTask"
-            />
+            android:screenOrientation="portrait" />
 
         <provider
-            android:authorities="com.views.simpleutils.authority"
-            android:name="com.data.provider.MyContentProvider"/>
+            android:name="com.data.provider.MyContentProvider"
+            android:authorities="com.views.simpleutils.authority" />
+
+        <receiver android:name="com.views.ui.appwidget.MyAppWidgetReceiver">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_UPDATE"
+                    />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/appwidget_info"
+                />
+        </receiver>
+
+        <activity android:name="com.views.ui.appwidget.AppWidgetConfigActivity">
+            <intent-filter>
+                <action
+                    android:name="android.appwidget.action.APPWIDGET_CONFIGURE"
+                    />
+            </intent-filter>
+        </activity>
+
+        <service android:name="com.views.ui.appwidget.AppWidgetService"
+            android:exported="false"
+            />
     </application>
 
 </manifest>

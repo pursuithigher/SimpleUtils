@@ -42,6 +42,7 @@ public class TakePicActivity extends AppCompatActivity implements SurfaceHolder.
         }
 
         canvas.getHolder().addCallback(this);
+
     }
 
     @Override

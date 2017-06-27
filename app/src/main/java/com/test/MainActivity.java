@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ViewFlipper;
 
 import com.data.provider.AccountBean;
 import com.views.simpleutils.R;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
         recycler.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL,false));
         TestAdapter adapter = new TestAdapter(this);
         recycler.setAdapter(adapter);
+
         process.setPrecessChangeListener(new LoadLayout.onPrecessChangeListener() {
             @Override
             public void onLoadProcessChange(View footer, int process) {

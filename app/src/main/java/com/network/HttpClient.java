@@ -51,22 +51,19 @@ public class HttpClient {
 
     private static SSLSocketFactory setCertificates(InputStream... certificates){
 //        InputStream is = new Buffer().writeUtf8(certificates).inputStream();
-
         try {
             CertificateFactory certificateFactory = CertificateFactory.getInstance("X.509");
             KeyStore keyStore = KeyStore.getInstance(KeyStore.getDefaultType());
             keyStore.load(null);
             int index = 0;
 
-            for(InputStream certificate : certificates)
-            {
+            for (InputStream certificate : certificates) {
                 String certificateAlias = Integer.toString(index);
-                keyStore.setCertificateEntry(certificateAlias,certificateFactory.generateCertificate(certificate));
+                keyStore.setCertificateEntry(certificateAlias, certificateFactory.generateCertificate(certificate));
 
-                try{
+                try {
 
-                }catch(Exception e)
-                {
+                } catch (Exception e) {
                     certificate.close();
                 }
             }
@@ -74,7 +71,7 @@ public class HttpClient {
             SSLContext sslContext = SSLContext.getInstance("TLS");
             TrustManagerFactory trustManagerFactory = TrustManagerFactory.getInstance(TrustManagerFactory.getDefaultAlgorithm());
             trustManagerFactory.init(keyStore);
-            sslContext.init(null,trustManagerFactory.getTrustManagers(),new SecureRandom());
+            sslContext.init(null, trustManagerFactory.getTrustManagers(), new SecureRandom());
             return sslContext.getSocketFactory();
         } catch (Exception e) {
             e.printStackTrace();
@@ -82,16 +79,16 @@ public class HttpClient {
         return null;
     }
 
-    public static HttpsResponse Post_Sync(String url , String args) throws IOException {
+    public static HttpsResponse Post_Sync(String url, String args) throws IOException {
         //use base64
         args = BuildConfig.HTTP_B64 ? Base64Util.encode(args) : args;
-        RequestBody argues = RequestBody.create(MediaType.parse("application/json"),args);
+        RequestBody argues = RequestBody.create(MediaType.parse("application/json"), args);
         Request request = new Request.Builder().url(url).header("charset", "UTF-8").post(argues).build();
         HttpsResponse httpsResponse = null;
         Response response = okHttpClient.newCall(request).execute();
         //use base64
-        httpsResponse = BuildConfig.HTTP_B64 ? new HttpsResponse(response.code(),Base64Util.decode(response.body().string()))
-                : new HttpsResponse(response.code(),response.body().string());
+        httpsResponse = BuildConfig.HTTP_B64 ? new HttpsResponse(response.code(), Base64Util.decode(response.body().string()))
+                : new HttpsResponse(response.code(), response.body().string());
         return httpsResponse;
     }
 
