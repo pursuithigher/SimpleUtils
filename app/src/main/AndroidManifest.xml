@@ -44,10 +44,10 @@
             android:screenOrientation="portrait"
             android:theme="@style/keepAliveStyle" />
 
-        <!--<activity android:name="com.qzzhu.keepalive.MainActivity"
+        <activity android:name="com.views.ui.customview.RecyclerviewDecorAndDrag.MainActivity"
             android:theme="@style/AppTheme"
             android:screenOrientation="portrait"
-            />-->
+            />
 
         <activity
             android:name="com.animtions.SharedActivity"

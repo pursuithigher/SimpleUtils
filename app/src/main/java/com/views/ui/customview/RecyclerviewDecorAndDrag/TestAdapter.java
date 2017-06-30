@@ -38,7 +38,7 @@ public class TestAdapter extends RecyclerView.Adapter<TestAdapter.ViewHolder> im
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.setText(datas.get(position));
+        holder.setText(datas.get(position),viewClickListener);
     }
 
     @Override
@@ -50,6 +50,13 @@ public class TestAdapter extends RecyclerView.Adapter<TestAdapter.ViewHolder> im
     public void onItemMove(int fromPosition, int toPosition) {
         Log.d("onitem move","form:"+fromPosition+"\t to:"+toPosition);
     }
+
+    private View.OnClickListener viewClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Log.i("click view",v.getTag().toString());
+        }
+    };
 
     @Override
     public void onItemDismiss(int position) {
@@ -69,6 +76,20 @@ public class TestAdapter extends RecyclerView.Adapter<TestAdapter.ViewHolder> im
 //            params.width = ViewGroup.LayoutParams.MATCH_PARENT;//720;//
 //            view.setLayoutParams(params);
             view.setText(args);
+            view.setTag(args);
+        }
+
+        public void setText(String args, View.OnClickListener clickListener){
+//            ViewGroup.LayoutParams params = view.getLayoutParams();
+//            params.width = ViewGroup.LayoutParams.MATCH_PARENT;//720;//
+//            view.setLayoutParams(params);
+            view.setText(args);
+            view.setTag(args);
+            view.setOnClickListener(clickListener);
+        }
+
+        public String getText(){
+            return view == null ? "":view.getText().toString();
         }
     }
 }
