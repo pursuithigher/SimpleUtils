@@ -1,8 +1,12 @@
 package com.test;
 
 
+import android.content.Intent;
+import android.support.test.espresso.Espresso;
+import android.support.test.espresso.IdlingResource;
 import android.support.test.espresso.ViewInteraction;
 import android.support.test.espresso.contrib.RecyclerViewActions;
+import android.support.test.espresso.intent.Intents;
 import android.support.test.espresso.matcher.BoundedMatcher;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
@@ -18,6 +22,8 @@ import org.hamcrest.Description;
 import org.hamcrest.Matcher;
 import org.hamcrest.Matchers;
 import org.hamcrest.TypeSafeMatcher;
+import org.junit.After;
+import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -25,10 +31,18 @@ import org.junit.runner.RunWith;
 import static android.support.test.espresso.Espresso.onView;
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
+import static android.support.test.espresso.intent.Intents.intended;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasAction;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasData;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasExtra;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.hasExtras;
+import static android.support.test.espresso.intent.matcher.IntentMatchers.toPackage;
+import static android.support.test.espresso.intent.matcher.UriMatchers.hasHost;
 import static android.support.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 import static android.support.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
+import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.instanceOf;
 import static org.hamcrest.Matchers.is;
 
@@ -50,6 +64,21 @@ import static org.hamcrest.Matchers.is;
 public class MainActivityTest {
     @Rule
     public ActivityTestRule<com.views.ui.customview.RecyclerviewDecorAndDrag.MainActivity> mActivityTestRule = new ActivityTestRule<>(com.views.ui.customview.RecyclerviewDecorAndDrag.MainActivity.class);
+
+    //添加延时操作
+    private IdlingResource idlingResource;
+
+    //@Before
+    public void registerIdlingResources(){
+        idlingResource = mActivityTestRule.getActivity();
+        if(idlingResource != null)
+            Espresso.registerIdlingResources(idlingResource);
+    }
+    @After
+    public void unregisterResources(){
+        if(idlingResource != null)
+            Espresso.unregisterIdlingResources(idlingResource);
+    }
 
     @Test
     public void mainActivityTest() {
@@ -86,11 +115,7 @@ public class MainActivityTest {
                 is(instanceOf(RecyclerView.class)),
                 isDisplayed()))
                 .perform(RecyclerViewActions.actionOnItemAtPosition(1, click()));
-        onView(allOf(
-                //withParent(withId(R.id.item_loader)),
-                is(instanceOf(RecyclerView.class)),
-                isDisplayed()))
-                .perform(RecyclerViewActions.scrollToPosition(15),click());
+
     }
 
     private Matcher<TestAdapter.ViewHolder> getHolderMatcher(final String arg){
