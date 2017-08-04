@@ -1,15 +1,21 @@
 package com.functions.keepalive;
 
+import android.app.job.JobInfo;
+import android.app.job.JobScheduler;
 import android.content.BroadcastReceiver;
+import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.Window;
 import android.view.WindowManager;
+
+import com.job.SchedulerService;
 
 /**
  * Created by qzzhu on 16-9-6.
@@ -38,6 +44,18 @@ public class KeepAliveActivity extends AppCompatActivity {
         window.setAttributes(layoutparams);
 
         registerReceiver(receiver,new IntentFilter(Action));
+    }
+
+    private void schedulerJobs(){
+        JobScheduler scheduler = (JobScheduler) getSystemService(Context.JOB_SCHEDULER_SERVICE);
+        JobInfo.Builder builder = new JobInfo.Builder(2,
+                new ComponentName(getPackageName(),SchedulerService.class.getName()))
+                .setMinimumLatency(3000)
+                ;
+        //builder.setPeriodic(3000);//此处7.0手机至少15min才会周期执行一次，该方法小于15min无效
+
+        int code = scheduler.schedule(builder.build());
+        Log.i("schedule code",String.valueOf(code)); //判断状态
     }
 
     @Override
