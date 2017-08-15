@@ -9,7 +9,7 @@ private void processMiscUsage() {
             Log.i(TAG, "Uptime since last unplugged = " + (timeSinceUnplugged / 1000));
         }
 	
-	//手机耗电量PowerProfile.POWER_RADIO_ACTIVE
+	//通话耗电量PowerProfile.POWER_RADIO_ACTIVE
         addPhoneUsage(uSecNow);
 
 	//屏幕耗电量PowerProfile.POWER_SCREEN_ON
