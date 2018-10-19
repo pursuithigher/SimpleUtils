@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_baseView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/hw_dp_8"
+    android:paddingBottom="@dimen/hw_dp_8"
+    android:paddingRight="@dimen/hw_dp_8">
+
+    <com.dzbook.view.search.ExpandFlowLayout
+        android:id="@+id/flowMark1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_9" />
+
+    <LinearLayout
+        android:id="@+id/llSecondLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_mark_title"
+            android:layout_width="@dimen/hw_dp_64"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/hw_dp_12"
+            android:paddingLeft="@dimen/hw_dp_8"
+            android:paddingRight="@dimen/hw_dp_8"
+            android:paddingTop="@dimen/hw_dp_12"
+            android:text="@string/str_all"
+            android:textColor="@color/color_pd0_text"
+            android:textSize="@dimen/hw_text_12" />
+
+
+        <com.dzbook.view.search.ExpandFlowLayout
+            android:id="@+id/flowMark2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llThirdLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_width="@dimen/hw_dp_64"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:gravity="left|center_vertical"
+            android:paddingBottom="@dimen/hw_dp_12"
+            android:paddingLeft="@dimen/hw_dp_8"
+            android:paddingRight="@dimen/hw_dp_8"
+            android:paddingTop="@dimen/hw_dp_12"
+            android:text="@string/str_all"
+            android:textColor="@color/color_pd0_text"
+            android:textSize="@dimen/hw_text_12" />
+
+        <com.dzbook.view.search.ExpandFlowLayout
+            android:id="@+id/flowMark3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_more"
+        android:layout_width="@dimen/hw_dp_97"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_8">
+
+        <ImageView
+            android:id="@+id/imageview_jiantou"
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_hw_arrow_right_grey" />
+
+        <TextView
+            android:id="@+id/textview_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/hw_dp_6"
+            android:layout_toLeftOf="@id/imageview_jiantou"
+            android:includeFontPadding="false"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:singleLine="true"
+            android:text="@string/more"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_13" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/relativelayout_more"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/color_90_000000"
+        android:textSize="@dimen/hw_text_15"
+        tools:text="@string/str_free_charge" />
+
+</RelativeLayout>

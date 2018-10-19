@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wallet_sdk_support_dialog_title">温馨提示</string>
+    <string name="wallet_sdk_use_flow_cancel">取消</string>
+    <string name="wallet_sdk_use_flow_sure">同意</string>
+    <string name="wallet_sdk_use_flow_reminder">参加更多活动，赢取更多花币，请下载华为钱包最新版本</string>
+    <string name="wallet_sdk_network_error">网络异常，请检查网络设置</string>
+    <string name="wallet_sdk_app_signature_illegal">签名不一致，应用无法打开</string>
+    <!-- 花币卡拍卡增加 -->
+    <string name="wallet_sdk_camera_use_hcoincard_tips">"请将扫描线对准花币卡密码并对齐左右边缘"</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_info">"花币卡密码确认"</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_tips">"请核对花币卡密码"</string>
+    <string name="wallet_sdk_camera_add_hcoincard">添加花币卡</string>
+    <string name="wallet_sdk_camera_input_by_user">手动输入</string>
+    
+    <string name="wallet_sdk_camera_disable_tips">"未能成功连接到摄像头，请检查连接摄像头权限是否被禁止"</string>
+    <string name="wallet_sdk_camera_confirm">"确定"</string>
+    
+        <!-- 分屏下不支持扫描的提示 -->
+    <string name="wallet_sdk_toast_scan_split">"分屏下不支持扫描"</string>
+</resources>

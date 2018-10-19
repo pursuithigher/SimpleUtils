@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fra_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_30_000000"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_FFF3F3F3"
+        android:paddingRight="@dimen/hw_dp_21"
+        app:common_title="@string/share"
+        app:hasBack="false"
+        app:showright="2" />
+
+    <com.dzbook.view.ReaderShareView
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:id="@+id/shareview"
+        android:layout_width="@dimen/hw_dp_295"
+        android:layout_height="@dimen/hw_dp_392"
+        android:layout_above="@+id/arecycler_view"
+        android:layout_below="@+id/commontitle" />
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_back"
+        android:layout_above="@+id/arecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/arecycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@color/color_100_FFFFFF"
+        android:paddingLeft="@dimen/hw_dp_8"
+        android:paddingRight="@dimen/hw_dp_8" />
+</RelativeLayout>

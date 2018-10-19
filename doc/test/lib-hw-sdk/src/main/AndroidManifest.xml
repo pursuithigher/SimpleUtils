@@ -1,0 +1,105 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="b.app.libhwsdk">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="com.huawei.permission.sec.MDM.v2" />
+    <uses-permission android:name="com.huawei.permission.sec.ACCESS_UDID" />
+
+    <!-- 意见反馈   -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <!-- 意见反馈  -->
+
+    <uses-sdk tools:overrideLibrary="com.huawei.hwCloudJs" />
+
+    <application>
+        <!-- 合入问题反馈功能，才需要合入activity相关，只合入日志上传功能，不需要合入问题反馈相关页面 -->
+
+        <!-- 问题反馈编辑界面 -->
+        <activity
+            android:name="com.huawei.feedback.ui.FeedbackEditActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/feedback_other_app"
+            android:theme="@style/feedback_NoTitle"
+            android:windowSoftInputMode="adjustUnspecified|adjustResize" />
+
+        <!-- 反馈记录Activity -->
+        <activity
+            android:name="com.huawei.feedback.ui.FeedbackRecordActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/feedbackRecord_title"
+            android:uiOptions="splitActionBarWhenNarrow" />
+
+        <!-- 反馈记录详细Activity -->
+        <activity
+            android:name="com.huawei.feedback.ui.FeedbackDetailActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/feedbackDetail_title"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 反馈记录详细截图全屏展示Activity -->
+        <activity
+            android:name="com.huawei.feedback.ui.FeedbackPicShowActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+
+
+        <service
+            android:name="com.huawei.feedback.component.ProgressService"
+            android:exported="false" />
+        <service
+            android:name="com.huawei.logupload.ExternalOperService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.huawei.logupload.ExternalOperService" />
+            </intent-filter>
+        </service>
+
+        <!-- 只用到日志上传功能，只需要合入下面两个service和上面的权限相关，上面的问题反馈相关页面和资源文件不需合入-->
+        <service
+            android:name="com.huawei.logupload.LogUploadService"
+            android:exported="false"
+            android:process=":loguploadservice" />
+
+        <service
+            android:name="com.huawei.feedback.component.AutoUploadService"
+            android:exported="false"
+            android:process=":autologuploadservice" />
+
+
+        <!-- 众测apk aidl接口打包日志时，无sdcard权限，弹出权限弹框-->
+        <activity
+            android:name="com.huawei.common.applog.SdCardPermissionActvity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleInstance"
+            android:taskAffinity="com.sdcardpermission.task"
+            android:theme="@android:style/Theme.Translucent" />
+        <!--hw feedback -sdk-->
+        <service
+            android:name="com.huawei.common.applog.AppLogPackLogService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="${app_applicationId}.applog.AppLogPackLogService" />
+            </intent-filter>
+        </service>
+
+        <!--hw JSSDK  如果需要开放给H5网页进行联调功能，需要加入测试工具所需的service-->
+        <service android:name="com.huawei.hwCloudJs.service.debugtool.ConnectionSdkService">
+            <intent-filter>
+                <action android:name="com.huawei.hwCloudJs.connectionSdkService" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

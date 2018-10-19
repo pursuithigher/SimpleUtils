@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wallet_sdk_support_dialog_title">Warm prompt</string>
+    <string name="wallet_sdk_use_flow_cancel">Cancel</string>
+    <string name="wallet_sdk_use_flow_sure">Sure</string>
+    <string name="wallet_sdk_use_flow_reminder">Take part in more activities, win more hcoin, please download the HiWallet is the latest version</string>
+    <string name="wallet_sdk_network_error">Network anomalies, please check the network Settings</string>
+    <string name="wallet_sdk_app_signature_illegal">apk sign is wrong,app can not open.</string>
+
+        <!-- 花币卡拍卡增加 -->
+    <string name="wallet_sdk_camera_use_hcoincard_tips">Place the scan lines on the card password and align the left and right edges</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_info">Verify password</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_tips">Verify your H-coins card password</string>
+    <string name="wallet_sdk_camera_add_hcoincard">Add H-coins card</string>
+    <string name="wallet_sdk_camera_input_by_user">Manual input</string>
+    
+    <string name="wallet_sdk_camera_disable_tips">Cannot open the camera. Check whether access to the camera is restricted.</string>
+    <string name="wallet_sdk_camera_confirm">OK</string>
+    
+        <!-- 分屏下不支持扫描的提示 -->
+    <string name="wallet_sdk_toast_scan_split">Scanning is not available in split-screen mode.</string>
+</resources>

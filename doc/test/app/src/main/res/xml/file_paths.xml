@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <root-path path="" name="files_root" />
+
+    <external-path path="/Android/data/${app_applicationId}/" name="files_root" />
+    <external-path path="." name="external_storage_root" />
+
+
+    <external-path name="root_path" path=".ishugui" />
+    <external-cache-path name="cache_root_path" path=".ishugui" />
+
+</paths>

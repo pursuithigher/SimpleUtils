@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ReaderMenu" />
+
+    <style name="ReaderMenu.CircleView">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ReaderMenu.PaddingView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+    </style>
+
+    <style name="ReaderMenu.Row">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">64dip</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="ReaderMenu.Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:src">@color/color_15_ffffff</item>
+    </style>
+
+    <style name="ReaderMenu.Line2">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">#26FFFFFF</item>
+    </style>
+
+    <style name="ReaderMenu.Line3">
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:src">#33FFFFFF</item>
+    </style>
+    
+    <style name="ReaderMenu.Panel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/reader_menu_panel_background</item>
+        <item name="android:clickable">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_gravity">bottom</item>
+    </style>
+
+    <style name="ReaderMenu.MainItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.0</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ReaderMenu.MainItemIcon">
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+    </style>
+
+    <style name="ReaderMenu.MainItemText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">7dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/reader_menu_text_color_1</item>
+        <item name="android:textSize">10dp</item>
+    </style>
+
+    <style name="ReaderMenu.NormalText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/reader_menu_text_color_1</item>
+        <item name="android:textSize">13dp</item>
+    </style>
+
+    <style name="ReaderMenu.CheckText01">
+        <item name="android:layout_width">64dp</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/reader_menu_check_text</item>
+        <item name="android:background">@drawable/reader_setting_rect_bk_01</item>
+    </style>
+
+    <style name="ReaderMenu.CheckText02">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">28dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">13dp</item>
+        <item name="android:textColor">@color/reader_menu_check_text</item>
+        <item name="android:background">@drawable/reader_setting_rect_bk_02</item>
+    </style>
+
+    <style name="ReaderMenu.RadioText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:textColor">@color/reader_menu_text_color_1</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawableRight">@drawable/hw_reader_radio</item>
+    </style>
+
+    <style name="ReaderMenu.SeekBar">
+        <!--<item name="style">?android:attr/progressBarStyleHorizontal</item>-->
+        <item name="android:maxHeight">2dp</item>
+        <item name="android:minHeight">2dp</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:progressDrawable">@drawable/reader_seekbar_style</item>
+        <item name="android:thumb">@drawable/reader_seekbar_btn</item>
+        <item name="android:thumbOffset">10dip</item>
+    </style>
+
+</resources>

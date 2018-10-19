@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/person_section_height">
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="@dimen/hw_dp_17"
+        android:layout_height="@dimen/hw_dp_17"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_person_contact" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_8"
+        android:layout_toRightOf="@id/imageView_icon"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_100_000000"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:id="@+id/textview_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_5"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:singleLine="true"
+        android:textColor="@color/color_100_000000"
+        android:textSize="@dimen/hw_text_13"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageview_mark"
+        android:layout_width="@dimen/hw_dp_13"
+        android:layout_height="@dimen/hw_dp_13"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:layout_toLeftOf="@id/textview_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_person_phone" />
+
+    <View
+        android:id="@+id/imageview_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+</RelativeLayout>

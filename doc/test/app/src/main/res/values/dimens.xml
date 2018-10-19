@@ -1,0 +1,30 @@
+<resources>
+
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_36">36dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_100">100dp</dimen>
+
+
+    <!--viewPageIndicator-->
+
+    <dimen name="person_section_height">48dp</dimen>
+    <dimen name="person_section_height2">62dp</dimen>
+
+
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_11">11dp</dimen>
+
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+
+
+</resources>

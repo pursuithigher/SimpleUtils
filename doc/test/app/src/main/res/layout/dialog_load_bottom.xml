@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom|center_horizontal">
+
+    <RelativeLayout
+        android:id="@+id/layout_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/shap_dialog_bg"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/loading_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/loadContent"
+            android:textColor="@color/color_100_000000"
+            android:textSize="@dimen/hw_text_15" />
+
+        <huawei.widget.HwProgressBar
+            android:id="@+id/loadingview"
+            style="@style/Widget.Emui.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

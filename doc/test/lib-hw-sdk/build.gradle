@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            postprocessing {
+                removeUnusedCode false
+                removeUnusedResources false
+                obfuscate false
+                optimizeCode false
+                proguardFile 'proguard-rules.pro'
+            }
+        }
+    }
+
+}
+
+dependencies {
+    api project(':libnew')
+    api(name: 'UXWidget-release', ext: 'aar')
+    api(name: 'HiAnalytics_SDK_2.0.0.309', ext: 'aar')
+    api(name: 'hiadsdk-business-release', ext: 'aar')
+    api(name: 'lib-processbar-20180622', ext: 'aar')
+    api(name: 'hwresources-0.2', ext: 'aar')
+    api(name: 'lib-subtab-20180620', ext: 'aar')
+    api(name: 'hwcommon-0.3', ext: 'aar')
+    api(name: 'hwdivider-0.3', ext: 'aar')
+    api(name: 'hwtextview-0.3', ext: 'aar')
+    api(name: 'JS_SDK_2.6.1.300', ext: 'aar')
+    api(name: 'hw-hms-base-2.6.0.301', ext: 'aar')
+    api(name: 'hw-hms-hwid-2.6.0.301', ext: 'aar')
+    api(name: 'hw-hms-iap-2.6.0.301', ext: 'aar')
+    api(name: 'hw-hms-push-2.6.0.301', ext: 'aar')
+    api files('libs/HwFeedbackSDK_5.0.6.302.jar')
+    api files('libs/WalletApi_SDK_v1.0.5.301.jar')
+}

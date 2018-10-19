@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:paddingBottom="@dimen/hw_dp_4"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/hw_dp_16"
+        android:paddingRight="@dimen/hw_dp_16"
+        android:paddingTop="@dimen/hw_dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:singleLine="true"
+            android:text="@string/string_search_recommend"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_13" />
+        <TextView
+            android:gravity="right"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_marginLeft="@dimen/hw_dp_20"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_13"
+            android:id="@+id/tv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</merge>

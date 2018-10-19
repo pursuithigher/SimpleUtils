@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="#ff262626"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="12dp"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:layout_width="136dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ToggleButton
+            android:id="@+id/toggleButton_mark"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_read_selector_rect_top"
+            android:button="@null"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textColor="#7Fffffff"
+            android:textOff="@string/str_add_book_mark"
+            android:textOn="@string/str_delete_book_mark"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/share_line"
+            style="@style/ReaderMenu.Line"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/textView_shareBook"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_read_selector_rect"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/str_share_book"
+            android:textColor="#7Fffffff"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/detail_line"
+            style="@style/ReaderMenu.Line"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+        <TextView
+            android:id="@+id/textView_bookDetail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/item_read_selector_rect_bottom"
+            android:gravity="center_vertical|left"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/book_detail"
+            android:textColor="#7Fffffff"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

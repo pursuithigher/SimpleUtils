@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp" >
+ 
+    <TextView 
+         android:id="@+id/zip_failed_tip"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:textSize="13sp" 
+		android:textColor="@color/feedback_text_color2"
+         android:lineSpacingExtra="2dp"
+         android:layout_gravity="center_horizontal"
+         android:text="@string/feedback_log_zip_failed"
+         android:layout_marginTop="15dp"/>
+
+</LinearLayout>

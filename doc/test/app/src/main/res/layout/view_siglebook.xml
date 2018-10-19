@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical">-->
+
+        <RelativeLayout
+            android:id="@+id/rl_imageview"
+            android:layout_width="107dp"
+            android:layout_height="139dp"
+            android:background="@drawable/bg_shadow_normal"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:duplicateParentState="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/aa_default_icon" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/com_item_pressed_selector"
+                android:duplicateParentState="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textview_chase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_imageview"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="4dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxEms="6"
+            android:singleLine="true"
+            android:textColor="@color/color_5e5e63"
+            android:textSize="@dimen/hw_text_13"
+            tools:text="第一拽妃第一拽妃" />
+    <!--</RelativeLayout>-->
+
+</merge>

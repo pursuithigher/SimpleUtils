@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title="@string/str_readpref"
+        app:showright="0" />
+
+    <com.dzbook.view.person.PersonReadPrefView
+        android:id="@+id/readPrefView_boy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isBoy="true"
+        app:view_content="@string/read_preference_books_boy"
+        app:view_title="@string/str_readpref_boy" />
+
+    <com.dzbook.view.person.PersonReadPrefView
+        android:id="@+id/readPrefView_girl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isBoy="false"
+        app:isLine="false"
+        app:view_content="@string/read_preference_books_girl"
+        app:view_title="@string/str_readpref_girl" />
+</LinearLayout>

@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layout_voice"
+        style="@style/ReaderMenu.Panel">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="@string/reader_voice_support"
+            android:textColor="@color/reader_menu_text_color_1"
+            android:textSize="@dimen/hw_text_10" />
+
+        <ImageView
+            style="@style/ReaderMenu.Line"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <RelativeLayout style="@style/ReaderMenu.Row">
+
+            <LinearLayout
+                android:id="@+id/layout_voiceTime"
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hw_reader_voice_time" />
+
+                <TextView
+                    style="@style/ReaderMenu.MainItemText"
+                    android:layout_marginTop="2dp"
+                    android:text="@string/reader_voice_time" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textView_voiceDown"
+                style="@style/ReaderMenu.NormalText"
+                android:layout_alignParentLeft="true"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/reader_voice_speed_slow" />
+
+            <TextView
+                android:id="@+id/textView_voiceUp"
+                style="@style/ReaderMenu.NormalText"
+                android:layout_toLeftOf="@id/layout_voiceTime"
+                android:gravity="center"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/reader_voice_speed_fast" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar_voiceSpeed"
+                style="@style/ReaderMenu.SeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/textView_voiceUp"
+                android:layout_toRightOf="@id/textView_voiceDown"
+                android:max="9" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_speedNum"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/seekBar_autoSpeed"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--android:maxLines="1"-->
+            <!--android:text="0"-->
+            <!--android:textColor="@color/readerset_item_text"-->
+            <!--android:textSize="@dimen/hw_text_10" />-->
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/ReaderMenu.Line"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            style="@style/ReaderMenu.Row"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reader_voice_type_local"
+                android:textColor="@color/reader_menu_text_color_2"
+                android:textSize="13dp" />
+
+            <ImageView
+                style="@style/ReaderMenu.Line3"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_voiceLocal0"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_local_0" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voiceLocal1"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_local_1" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voiceLocal2"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_local_2" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voiceLocal3"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_local_3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/translate_shape_left" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/translate_shape" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/ReaderMenu.Row"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <TextView
+                android:layout_width="72dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="@string/reader_voice_type_plus"
+                android:textColor="@color/reader_menu_text_color_2"
+                android:textSize="13dp" />
+
+            <ImageView
+                style="@style/ReaderMenu.Line3"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:overScrollMode="never"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_voicePlus0"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_plus_0" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voicePlus1"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_plus_1" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voicePlus2"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_plus_2" />
+
+
+                        <TextView
+                            android:id="@+id/textView_voicePlus3"
+                            style="@style/ReaderMenu.CheckText02"
+                            android:text="@string/reader_voice_plus_3" />
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|left"
+                    android:background="@drawable/translate_shape_left" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical|right"
+                    android:background="@drawable/translate_shape" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            style="@style/ReaderMenu.Line"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_finishVoice"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dp_56"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/hw_reader_voice_finish" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/reader_voice_finish"
+                android:textColor="@color/reader_menu_text_color_1"
+                android:textSize="@dimen/hw_text_10" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="scheme_hwreader">hwireader</string>
+    <string name="path_bookdetail">/bookdetail</string>
+    <string name="path_activity">/activity</string>
+    <string name="scheme_host">com.huawei.hwireader</string>
+    <string name="hw_push_scheme">hwreaderpush</string>
+    <string name="hw_search_scheme">hwreadersearch</string>
+    <string name="hw_search_action">com.huawei.hwread.dz.GLOBAL_SEARCH_MORE</string>
+    <string name="hw_local_file">file</string>
+    <string name="hw_local_content">content</string>
+</resources>

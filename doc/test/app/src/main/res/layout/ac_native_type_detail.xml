@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:loading="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/include_top_title_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showright="0" />
+
+    <RelativeLayout
+        android:id="@+id/rl_baseView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_top_title_item">
+
+        <LinearLayout
+            android:id="@+id/net_error_layout_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dp_48"
+            android:orientation="vertical"
+            android:visibility="gone" />
+
+        <com.dzbook.view.PullLoadMoreRecycleLayout
+            android:id="@+id/pullLoadMoreRecyclerViewLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/net_error_layout_view"
+            app:fastscroll_type="1" />
+
+        <LinearLayout
+            android:id="@+id/llSub"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/net_error_layout_view"
+            android:background="@color/color_f0ffffff"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rlSub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/hw_dp_40"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:paddingLeft="@dimen/hw_dp_20"
+                    android:paddingRight="@dimen/hw_dp_20"
+                    android:text=""
+                    android:textColor="@color/black_full"
+                    android:textSize="@dimen/hw_text_12" />
+
+                <ImageView
+                    android:layout_width="@dimen/hw_dp_40"
+                    android:layout_height="@dimen/hw_dp_40"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/hw_dp_4"
+                    android:padding="@dimen/hw_dp_10"
+                    android:src="@drawable/hw_type_right_expand_show" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.dzbook.view.common.StatusView
+        android:id="@+id/defaultview_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/include_top_title_item"
+        android:visibility="gone"
+        app:status_view_drawable="@drawable/hw_no_network"
+        app:status_view_hint="@string/hw_show_no_net_public"
+        app:status_view_no_loading="false"
+        app:status_view_set="@string/string_reference" />
+</RelativeLayout>

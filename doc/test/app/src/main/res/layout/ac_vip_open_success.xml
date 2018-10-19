@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_100_FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title="@string/str_open_success"
+        app:showright="0" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commontitle"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_open_succes"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="88dp"
+                android:src="@drawable/hw_success_tips" />
+
+            <TextView
+                android:id="@+id/tv_open_success_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/iv_open_succes"
+                android:layout_marginTop="16dp"
+                android:gravity="center_horizontal"
+                android:textColor="@color/color_100_000000"
+                android:textSize="@dimen/hw_text_18"
+                tools:text="@string/vip_open_success_tips" />
+
+            <RelativeLayout
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_open_success_tips"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="46dp">
+
+                <TextView
+                    android:id="@+id/tv_user_account_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="70dp"
+                    android:text="@string/str_user_account"
+                    android:textColor="@color/color_50_000000"
+                    android:textSize="@dimen/hw_text_13" />
+
+                <TextView
+                    android:id="@+id/tv_tv_user_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/tv_open_day"
+                    android:layout_toEndOf="@+id/tv_user_account_title"
+                    android:layout_toRightOf="@+id/tv_user_account_title"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_text_13"
+                    tools:text="yuanw**@huawei.com" />
+
+                <TextView
+                    android:id="@+id/tv_open_day_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_account_title"
+                    android:layout_marginTop="5dp"
+                    android:minWidth="70dp"
+                    android:text="@string/str_open_day"
+                    android:textColor="@color/color_50_000000"
+                    android:textSize="@dimen/hw_text_13" />
+
+                <TextView
+                    android:id="@+id/tv_open_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_user_account_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_open_day_title"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_text_13"
+                    tools:text="31天" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_open_day_title"
+                    android:layout_marginTop="5dp"
+                    android:minWidth="70dp"
+                    android:text="@string/str_member_dead_line"
+                    android:textColor="@color/color_50_000000"
+                    android:textSize="@dimen/hw_text_13" />
+
+                <TextView
+                    android:id="@+id/tv_member_deadLine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_open_day_title"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@id/tv_open_day_title"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_text_13"
+                    tools:text="2018/08/01" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/content"
+                android:layout_marginBottom="17dp"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/tv_open_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="@string/str_open_vip_success_msg"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_text_13" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_below="@id/tv_open_msg"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="21dp">
+
+                    <Button
+                        android:id="@+id/bt_back_vip"
+                        android:layout_width="164dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="4dp"
+                        android:background="@drawable/selector_hw_gray_common1"
+                        android:text="@string/str_back_vip_area"
+                        android:textSize="@dimen/hw_text_15" />
+
+                    <Button
+                        android:id="@+id/bt_look_open_his"
+                        android:layout_width="164dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_toRightOf="@id/bt_back_vip"
+                        android:background="@drawable/selector_hw_gray_common1"
+                        android:text="@string/str_look_vip_open_record"
+                        android:textSize="@dimen/hw_text_15" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

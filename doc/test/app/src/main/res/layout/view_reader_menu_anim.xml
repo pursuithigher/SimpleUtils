@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/layout_anim"
+        style="@style/ReaderMenu.Panel"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/textView_anim1"
+                style="@style/ReaderMenu.CheckText01"
+                android:text="@string/reader_anim_1" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_anim2"
+                style="@style/ReaderMenu.CheckText01"
+                android:text="@string/reader_anim_2" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_anim5"
+                style="@style/ReaderMenu.CheckText01"
+                android:text="@string/reader_anim_5" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_anim0"
+                style="@style/ReaderMenu.CheckText01"
+                android:text="@string/reader_anim_0" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</merge>

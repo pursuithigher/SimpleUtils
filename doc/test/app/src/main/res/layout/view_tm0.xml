@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="@string/str_tm1_title"
+        android:textColor="@color/color_100_1A1A1A"
+        android:textSize="@dimen/hw_dp_15"
+        android:textStyle="bold" />
+
+    <com.dzbook.view.store.CountDownTextView
+        android:id="@+id/textview_tm1"
+        android:layout_width="@dimen/hw_dp_108"
+        android:layout_height="@dimen/hw_dp_20"
+        android:layout_marginLeft="@dimen/hw_dp_8"
+        android:layout_marginTop="1dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        app:countdown_color="@color/color_100_CD2325"
+        app:countdown_size="15"
+        app:is_bold="2" />
+
+</merge>

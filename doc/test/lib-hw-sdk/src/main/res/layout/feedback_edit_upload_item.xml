@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/feedback_edit_show_image_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       >
+
+        <ImageView
+            android:id="@+id/feedback_edit_activity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/feedback_content_description_attached_picture"
+            android:focusable="true" />
+
+        <ImageView
+            android:id="@+id/feedback_edit_activity_delete_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/feedback_edit_activity_image"
+            android:layout_alignRight="@id/feedback_edit_activity_image"
+            android:layout_alignTop="@id/feedback_edit_activity_image"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="@string/feedback_cancel"
+            android:src="@drawable/feedback_close_red" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_cloud_service">"Aplicaciones de Huawei"</string>
+    <string name="feedback_msg_title">"El problema"</string>
+    <string name="feedback_continue_ask">"MÁS PREGUNTAS"</string>
+    <string name="formaterror_toast">"Número de teléfono o dirección de correo incorrectos."</string>
+    <string name="feedback_type">"Tipo de comentario"</string>
+    <string name="feedback_records">"Registro de comentarios"</string>
+    <string name="feedback_push_content">"Tiene un mensaje nuevo"</string>
+    
+    
+    <string name="feedback_bitchdelete_dialog_title">"Borrar"</string>
+    <string name="feedback_bitchdelete_dialog">"¿Borrar registro de comentarios?"</string>
+    <string name="feedback_score_usefull">"Útil"</string>
+    <string name="feedback_score_useless">"No útil"</string>
+    <string name="feedback_score_thankfulness">"¡Gracias! Agradecemos sus comentarios."</string>
+    <string name="feedback_descrption">"Descripción:"</string>
+    <string name="feedback_maxtip">"Se pueden guardar 500 registros de comentarios como máximo. Primero elimine algunos."</string>
+    <string name="feedback_handle_progress">"Estado: %s"</string>
+    <string name="feedback_submitted">"Enviado"</string>
+    <string name="feedback_tobe_evaluated">"Esperando para ser evaluado"</string>
+    <string name="feedback_has_evaluated">"Evaluado"</string>
+    <string name="feedback_describhe_content">"Escriba la pregunta o la sugerencia aquí (obligatorio)"</string>
+    <string name="feedback_descrption_suggestion">"Descripción o sugerencia:"</string>
+    <string name="feedback_question_frequency">"Frecuencia:"</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_waiting">"Espere..."</string>
+    <string name="feedback_beta">"Club BETA"</string>
+    
+    <string name="feedback_send_nolog_successfully">"Comentarios enviados"</string>
+    <string name="feedback_send_withlog_successfully">"Comentarios enviados. El registro se está cargando."</string>
+    <string name="feedback_record_delete">"Eliminar"</string>
+    <string name="feedback_log_zip_failed">"Error al guardar el registro de diagnóstico. Vuelva a intentarlo."</string>
+    <string name="feedback_other_app">"Problemas y sugerencias"</string>
+    <string name="feedbackRecord_title">"Registro de comentarios"</string>
+    <string name="feedbackRecord_draft">"[Borrador]"</string>
+    <string name="feedbackRecord_type">"Tipo de comentario"</string>
+    <string name="feedbackReply_title1">"Atención al cliente"</string>
+    <string name="feedbackBitchDelete_new">"Eliminar todos los registros de sugerencias"</string>
+    <string name="feedbackNoRecord">"Sin registros de comentarios"</string>
+    <string name="feedbackDetail_title">"Detalles de los comentarios"</string>
+    <string name="feedback_add_image">"Adjuntar imagen"</string>
+    
+    
+    
+    
+    <string name="feedback_sending_your_feedback">"Enviando comentarios..."</string>
+    
+    
+    <string name="feedback_send_successfully">"Comentarios enviados. ¡Gracias!"</string>
+    <string name="feedback_send__feedback_failed">"Comentarios no enviados."</string>
+    
+    
+    
+    <string name="feedback_your_contact">"Método de contacto:"</string>
+    <string name="feedback_input_feedback_hint">"Ingrese sus sugerencias"</string>
+    <string name="feedback_input_feedback_content">"(Obligatorio) Ingresar comentarios"</string>
+    <string name="feedback_input_email_or_phone">"Ingrese su correo o número de teléfono (obligatorio)"</string>
+    <string name="feedback_send">"Enviar"</string>
+    <string name="feedback_more_than_500_characters">"Los comentarios pueden contener hasta 500 caracteres."</string>
+    <string name="feedback_contact_cannot_more_than_50_characters">"El método de contacto puede contener hasta 50 caracteres."</string>
+    <string name="feedback_file_format_not_support">"Formato de archivo no soportado. Seleccione otro."</string>
+    <string name="feedback_screenshot_not_exist_and_choose_again">"La captura no existe. Seleccione otra."</string>
+    <string name="feedback_notify_to_replace_pic">"Se reemplazará la imagen existente."</string>
+    <string name="feedback_ok">"Aceptar"</string>
+    <string name="feedback_cancel">"Cancelar"</string>
+    <string name="feedback_dialog_title">"Sugerencia"</string>
+    <string name="feedback_submit">"Enviar"</string>
+    <string name="feedback_no_network_connection_prompt">"Red no disponible. Verifique la conexión de red."</string>
+    <string name="feedback_frequency_one">"Raramente"</string>
+    <string name="feedback_frequency_two">"Una vez por día"</string>
+    <string name="feedback_frequency_three">"Varias veces por día"</string>
+    <string name="feedback_frequency_four">"Siempre"</string>
+    <string name="feedback_advanced_fail_confirm_one">"Reintentar"</string>
+    <string name="feedback_advanced_loguploading">"Cargando registro avanzado… %s"</string>
+    <string name="feedback_advanced_loguploading_pause">"Pausar"</string>
+    <string name="feedback_advanced_loguploading_continue">"Continuar"</string>
+    <string name="feedback_advanced_logupload_fail">"Error al cargar registro avanzado"</string>
+    <string name="feedback_advanced_logupload_tips_new">"La carga del registro generará aproximadamente %d MB de tráfico de datos. ¿Continuar?"</string>
+    <string name="feedback_advanced_success_confirm">"Aceptar"</string>
+    
+    
+    
+    <string name="feedback_advanced_logupload_task_title">"Cargar tareas"</string>
+    <string name="feedback_advanced_logupload_feedbackrecord_delete">"¿Eliminar este registro?"</string>
+    <string name="feedback_space_not_enough">"Espacio insuficiente en memoria interna. Vacíe la memoria o elimine algunas aplicaciones para liberar más espacio."</string>
+    <string name="feedback_no_authority_tips">"Esta app requiere que se habiliten todos los permisos pertinentes. Acceda a Ajustes &gt; Apps, busque HiCare y habilite estos permisos."</string>
+    <string name="feedback_loading">"Cargando…"</string>
+    <string name="feedback_advanced_logupload_cancel_tips">"¿Cancelar la carga del registro avanzado?"</string>
+    <string name="feedback_advanced_logupload_tips_new_two">"La carga del registro de diagnóstico generará aproximadamente %d KB de tráfico de datos. ¿Continuar?"</string>
+    <string name="feedback_describhe_content_new">"Escriba su pregunta o sugerencia aquí"</string>
+    <string name="feedback_app_log_detail_upload">"Compartir el registro de la aplicación para facilitar la identificación de problemas"</string>
+    <string name="feedback_input_email_or_phone_new">"Correo electrónico o número de teléfono"</string>
+    <string name="feedback_oversea_tip">"Por el momento, esta función solo está disponible en China. Comuníquese con atención al cliente."</string>
+    <string name="feedback_menu_more">"Menú"</string>
+    <string name="feedback_qq_install">"Instale QQ."</string>
+    <string name="feedback_qq_service_contact">"Servicio de atención al cliente de QQ"</string>
+    <string name="feedback_nonet_touch_retry">"Sin conexión a Internet, presionar aquí para volver a intentar."</string>
+    <string name="feedback_describhe_content_hint">"Describa el contexto y los detalles del problema; además, incluya capturas de pantalla. Esto nos permitirá resolver el problema con rapidez"</string>
+    <string name="feedback_add_image_new">"Agregar capturas de pantalla (hasta %d)"</string>
+</resources>

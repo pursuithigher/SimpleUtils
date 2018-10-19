@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dp_192"
+            android:paddingRight="@dimen/hw_dp_16">-->
+
+
+    <RelativeLayout
+        android:id="@+id/rlBookImage"
+        android:layout_width="@dimen/hw_dp_152"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hw_dp_8"
+        android:layout_marginTop="@dimen/hw_dp_20">
+
+        <com.dzbook.view.common.BookImageView
+            android:id="@+id/imageView_cover"
+            android:layout_width="@dimen/hw_dp_104"
+            android:layout_height="@dimen/hw_dp_139"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:background="@drawable/bg_bookstore_shadow" />
+
+        <ImageView
+            android:id="@+id/viewBlur"
+            android:layout_width="@dimen/hw_dp_120"
+            android:layout_height="@dimen/hw_dp_20"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/hw_dp_139" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_26"
+        android:layout_toRightOf="@id/rlBookImage"
+        android:orientation="vertical"
+        android:paddingRight="@dimen/hw_dp_16">
+
+        <TextView
+            android:id="@+id/tv_bookName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:includeFontPadding="false"
+            android:maxLines="2"
+            android:minHeight="@dimen/hw_dp_24"
+            android:text="@string/book_name"
+            android:textColor="@color/color_ff000000"
+            android:textSize="@dimen/hw_text_18" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dp_16"
+            android:layout_marginTop="@dimen/hw_dp_4">
+
+            <com.dzbook.view.comment.CommentRatingBarView
+                android:id="@+id/ratingbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                app:clickable="false"
+                app:halfstart="true"
+                app:starCount="5"
+                app:starEmpty="@drawable/hw_star_empty"
+                app:starFill="@drawable/hw_star_full"
+                app:starHalf="@drawable/hw_star_half"
+                app:starImageHeight="@dimen/hw_dp_12"
+                app:starImagePaddingBottom="@dimen/hw_dp_1"
+                app:starImagePaddingLeft="@dimen/hw_dp_1"
+                app:starImagePaddingRight="@dimen/hw_dp_1"
+                app:starImagePaddingTop="@dimen/hw_dp_1"
+                app:starImageWidth="@dimen/hw_dp_12"
+
+                />
+
+            <TextView
+                android:id="@+id/tvScore"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/hw_dp_3"
+                android:layout_marginRight="@dimen/hw_dp_5"
+                android:layout_toRightOf="@+id/ratingbar"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:text=""
+                android:textColor="@color/color_100_FFBF00"
+                android:textSize="@dimen/hw_text_12" />
+
+            <TextView
+                android:id="@+id/tvCommentCount"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_toRightOf="@+id/tvScore"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:includeFontPadding="false"
+                android:singleLine="true"
+                android:text="@string/book_no_score"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_12" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/re_cp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:minHeight="@dimen/hw_dp_16">
+
+            <TextView
+                android:id="@+id/tvAuthorName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_toLeftOf="@+id/iv_down"
+                android:ellipsize="end"
+                android:textSize="@dimen/hw_text_12" />
+
+            <ImageView
+                android:id="@+id/iv_down"
+                android:layout_width="@dimen/hw_dp_16"
+                android:layout_height="@dimen/hw_dp_16"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/hw_type_right_expand_show"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_renew_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:minHeight="@dimen/hw_dp_16">
+
+            <TextView
+                android:id="@+id/tvRenewSt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_12" />
+
+            <TextView
+                android:id="@+id/tvRenewSt_line"
+                android:layout_width="1dp"
+                android:layout_height="@dimen/hw_dp_12"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hw_dp_6"
+                android:layout_marginRight="@dimen/hw_dp_6"
+                android:layout_toRightOf="@id/tvRenewSt"
+                android:background="@color/color_100_d8d8d8" />
+
+            <TextView
+                android:id="@+id/tvRenewSt_wordCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvRenewSt_line"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_12" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_book_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:minHeight="@dimen/hw_dp_16">
+
+            <TextView
+                android:id="@+id/tvBookPrice_original"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/hw_dp_6"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_12" />
+
+            <TextView
+                android:id="@+id/tvBookPrice_current"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tvBookPrice_original"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_12" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_detail_vip_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/hw_dp_9"
+            android:gravity="center_vertical"
+            android:textColor="@color/color_100_CD2325"
+            android:textSize="@dimen/hw_dp_12"
+            android:visibility="gone"
+            tools:text="@string/order_open_vip_tips" />
+    </LinearLayout>
+    <!--    </RelativeLayout>-->
+
+</merge>

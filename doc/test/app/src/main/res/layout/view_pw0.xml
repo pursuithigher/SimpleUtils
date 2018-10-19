@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/textview_pw0"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/hw_store_rembk"
+    android:ellipsize="end"
+    android:gravity="center"
+    android:paddingBottom="@dimen/hw_dp_5"
+    android:singleLine="true"
+    android:text="@string/str_pw0"
+    android:textColor="@color/color_100_000000"
+    android:textSize="@dimen/hw_text_15" />

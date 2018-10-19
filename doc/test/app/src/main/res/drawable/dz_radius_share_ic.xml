@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/common_backgroud_day_color" />
+    <stroke android:color="@color/color_10_000000" android:width="@dimen/hw_line"/>
+    <corners android:topLeftRadius="@dimen/hw_dp_8"
+        android:topRightRadius="@dimen/hw_dp_8"
+        android:bottomRightRadius="@dimen/hw_dp_8"
+        android:bottomLeftRadius="@dimen/hw_dp_8"/>
+</shape>

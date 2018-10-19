@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hw_dp_200"
+    android:layout_marginTop="@dimen/hw_dp_16"
+    android:paddingLeft="@dimen/hw_dp_16"
+    android:paddingRight="@dimen/hw_dp_16">
+    <!--
+    比例算法
+    原图比例宽高
+    328 152
+    实际像素1312
+    1312 * 152 / 328 = 608
+
+    调试所得实际为802
+
+    调试界面参考公式
+    设置值 * 802 / 608
+
+    计算比例
+    原图比例
+    1312 / 608 = 2.15
+    -->
+    <RelativeLayout
+        android:id="@+id/rl_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hw_person_top_login_bg"
+        android:gravity="center"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+            <!--title-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hw_dp_24"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.dzbook.view.SelectableRoundedImageView
+                    android:id="@+id/circleview_photo"
+                    android:layout_width="@dimen/hw_dp_48"
+                    android:layout_height="@dimen/hw_dp_48"
+                    android:layout_marginLeft="@dimen/dp_24"
+                    android:background="@drawable/hw_person_top_avatar"
+                    android:scaleType="centerCrop"
+                    app:sriv_oval="true" />
+
+                <TextView
+                    android:id="@+id/tv_user_nickname_or_id"
+                    android:layout_width="@dimen/hw_dp_0"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/hw_dp_15"
+                    android:layout_marginRight="@dimen/hw_dp_8"
+                    android:ellipsize="end"
+                    android:layout_weight="1"
+                    android:maxLines="2"
+                    android:textColor="@color/color_100_5B441A"
+                    android:textSize="@dimen/hw_text_15"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:text="Jiaqi" />
+                <!--等级-->
+                <LinearLayout
+                    android:id="@+id/ll_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/hw_dp_24"
+                    android:background="@drawable/bg_rounded_yellow"
+                    android:gravity="left|center"
+                    android:layout_gravity="center"
+                    android:paddingLeft="@dimen/hw_dp_7"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/iv_vip_logo"
+                        android:layout_width="@dimen/hw_dp_15"
+                        android:layout_height="@dimen/hw_dp_14"
+                        android:layout_gravity="center"
+                        android:src="@drawable/hw_person_top_title_vip_icon" />
+
+                    <TextView
+                        android:id="@+id/iv_vip_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/hw_dp_3"
+                        android:text="@string/person_top_vip"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_dp_10"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <!--wenben-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="@dimen/hw_dp_16"
+                android:layout_marginRight="@dimen/hw_dp_16"
+                android:layout_marginTop="@dimen/hw_dp_28"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_see_coin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_remain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_15"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:text="1200" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hw_dp_1"
+                        android:text="@string/person_top_remain"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_12"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/hw_dp_1"
+                    android:layout_height="@dimen/hw_dp_32"
+                    android:background="@color/color_30_5B441A" />
+
+                <LinearLayout
+                    android:id="@+id/ll_vouchers"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_vouchers"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_15"
+                        android:textStyle="bold"
+                        android:visibility="visible"
+                        tools:text="2008" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hw_dp_1"
+                        android:text="@string/person_top_vouchers"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_12"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/hw_dp_1"
+                    android:layout_height="@dimen/hw_dp_32"
+                    android:background="@color/color_30_5B441A" />
+
+                <LinearLayout
+                    android:id="@+id/linear_hcoin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_hb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="--"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_15"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hw_dp_1"
+                        android:text="@string/person_top_hb"
+                        android:textColor="@color/color_100_5B441A"
+                        android:textSize="@dimen/hw_text_12"
+                        android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_unlogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/hw_person_top_unlogin_bg"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/hw_dp_48"
+                android:layout_height="@dimen/hw_dp_48"
+                android:src="@drawable/hw_person_top_avatar" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hw_dp_17"
+                android:text="@string/str_login_huawei_account"
+                android:textColor="@color/color_100_000000"
+                android:textSize="@dimen/hw_text_15"
+                android:visibility="visible" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

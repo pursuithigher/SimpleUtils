@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ishugui">
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:resizeable="true"
+        android:smallScreens="true" />
+
+    <!-- 获取挂载和反挂载文件系统可移动存储的权限，用于在SDCard中创建与删除文件 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <!-- 获取网络权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序写入外部存储，从SD卡上写文件 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序读外部存储，从SD卡上读文件 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 获取网络信息状态，用于做网络状态判断 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取当前WIFI接入状态，用于做网络状态判断 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 改变WIFI状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 访问手机信息，读取手机唯一标识码需要用到 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 访问手机信息，读取手机唯一标识码需要用到 需要系统签名-->
+    <uses-permission
+        android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        android:protectionLevel="signature|privileged"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 唤醒锁定 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 获取下载管理器的访问权限 -->
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER" />
+    <!-- 读写系统设置的权限，设置屏幕常亮等 -->
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 允许该应用修改收集到的应用操作统计信息 -->
+    <uses-permission android:name="android.permission.UPDATE_APP_OPS_STATS" />
+    <!-- 允许应用在设备上跨多个用户执行操作 -->
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
+    <!-- 修改全局音频设置，语音朗读小说 -->
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <!-- 8.0系统调用安装界面需要该权限 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 读取Log -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- 阅读器需要震动权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 意见反馈需要的权限 -->
+    <uses-permission
+        android:name="android.permission.WRITE_MEDIA_STORAGE"
+        tools:ignore="ProtectedPermissions" />
+    <!-- 桌面角标 -->
+    <uses-permission android:name="com.huawei.android.launcher.permission.CHANGE_BADGE " />
+
+    <application
+        android:name="com.dzbook.AppContext"
+        android:allowBackup="false"
+        android:icon="@drawable/push"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/Theme.Light.NoTitleBar"
+        android:uiOptions="splitActionBarWhenNarrow"
+        tools:targetApi="n">
+
+        <!-- 华丽分割线   添加检测内存泄露 *************************************************** -->
+
+
+        <!-- <service -->
+        <!-- android:name="com.squareup.leakcanary.internal.HeapAnalyzerService" -->
+        <!-- android:enabled="false" -->
+        <!-- android:process=":leakcanary" /> -->
+        <!-- <service -->
+        <!-- android:name="com.squareup.leakcanary.DisplayLeakService" -->
+        <!-- android:enabled="false" /> -->
+
+
+        <!-- <activity -->
+        <!-- android:name="com.squareup.leakcanary.internal.DisplayLeakActivity" -->
+        <!-- android:enabled="false" -->
+        <!-- android:icon="@drawable/__leak_canary_icon" -->
+        <!-- android:label="@string/__leak_canary_display_activity_label" -->
+        <!-- android:taskAffinity="com.squareup.leakcanary" -->
+        <!-- android:theme="@style/__LeakCanary.Base" > -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- 华丽分割线   添加检测内存泄露 *************************************************** -->
+
+
+        <!--
+         小米手机全面屏 适配Android 标准接口中，支持应用声明其支持的最大屏幕高宽比
+         （maximum aspect ratio）。具体声明如下，
+          其中的 ratio_float 被定义为是高除以宽，
+          以16:9为例，ratio_float = 16/9 = 1.778
+          (18.5:9则为2.056)。
+          (19.5:9=2.17)
+        -->
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.17" />
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <!-- Loading 页 -->
+        <activity
+            android:name="com.dzbook.activity.SplashActivity"
+            android:configChanges="keyboardHidden|keyboard|screenSize|smallestScreenSize|screenLayout"
+            android:exported="true"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Launcher">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+
+                <!-- push -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/hw_push_scheme"
+                    android:host="@string/scheme_host"
+                    />
+            </intent-filter>
+
+            <intent-filter>
+
+                <!-- push -->
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/hw_search_scheme" />
+            </intent-filter>
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="@string/scheme_host"
+                    android:path="@string/path_activity"
+                    android:scheme="@string/scheme_hwreader" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="@string/scheme_host"
+                    android:path="@string/path_bookdetail"
+                    android:scheme="@string/scheme_hwreader" />
+            </intent-filter>
+
+            <intent-filter tools:ignore="AppLinkUrlError">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+                <data android:mimeType="application/epub+zip"/>
+                <data android:mimeType="application/msword"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+                <data android:mimeType="application/vnd.ms-powerpoint"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.presentationml.presentation"/>
+                <data android:mimeType="application/pdf"/>
+                <data android:mimeType="application/vnd.ms-excel"/>
+                <data android:mimeType="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+            </intent-filter>
+        </activity>
+        <!-- Loading 页 -->
+
+        <activity
+            android:name="com.dzbook.activity.GuideActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar" />
+        <activity
+            android:name="com.dzbook.activity.store.LimitFreeTwoLevelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.store.CommonTwoLevelActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <!-- 左滑菜单 -->
+        <activity
+            android:name="com.dzbook.activity.AboutActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.ActivityCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.CancelAutoOrderActivity"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.UpLoadActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+
+        <!-- 我的图书页面 -->
+        <activity
+            android:name="com.dzbook.activity.person.CloudBookShelfActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 左滑菜单 -->
+
+
+        <!-- 主界面 -->
+        <activity
+            android:name="com.dzbook.activity.Main2Activity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:label="MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeNoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <!-- 书城 -->
+        <!-- android:launchMode="singleTop" -->
+        <activity
+            android:name="com.dzbook.activity.CenterDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.ShareActivity"
+            android:theme="@style/activity_Translucent" />
+        <activity
+            android:name="com.dzbook.activity.detail.BookDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/activity_Translucent" />
+        <activity
+            android:name="com.dzbook.activity.comment.BookCommentMoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.store.VipStoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.store.ExpendStoreCommonActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.store.LimitFreeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.comment.BookCommentPersonCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.hw.PrivacyActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.hw.OldUserAssetsActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="false" >
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.dzbook.activity.hw.RealNameAuthActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.comment.BookCommentSendActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.comment.BookCommentItemDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppBaseTheme" />
+        <activity
+            android:name="com.dzbook.activity.detail.BookDetailChapterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- 礼品中心 -->
+        <activity
+            android:name="com.dzbook.activity.GiftCenterActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 连续包月会员 -->
+        <activity
+            android:name="com.dzbook.activity.continuous.AutoOrderVipListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 阅读器 -->
+        <activity
+            android:name="com.dzbook.activity.reader.ReaderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:hardwareAccelerated="false"
+            android:label="ReaderActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustNothing" />
+        <activity
+            android:name="com.dzbook.activity.reader.ReaderCatalogActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@style/catalogStyle"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name="com.dzbook.activity.reader.ReaderNoteActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/translucent"
+            android:windowSoftInputMode="adjustResize|stateVisible" />
+        <!-- 阅读器 -->
+
+        <!-- 搜索 -->
+        <activity
+            android:name="com.dzbook.activity.search.SearchActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:permission="com.huawei.android.launcher.permission.ACCESS_INTERFACE_NORMAL"
+            android:windowSoftInputMode="adjustPan">
+
+            <intent-filter>
+                <action android:name="android.intent.action.ONLINESEARCH" />
+                <action android:name="huawei.intent.action.ONLINESEARCH" />
+                <action android:name="com.huawei.hwread.dz.GLOBAL_SEARCH_MORE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="android.app.online_searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+
+        <activity
+            android:name="com.dzbook.activity.person.PersonAccountActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.person.PersonReadPrefActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.RankTopActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.reader.ChaseRecommendActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.reader.ChaseRecommendMoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.person.PersonSetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.person.PersonPluginActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.account.ConsumeBookSumActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.account.ConsumeSecondActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.account.ConsumeThirdActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <!-- 连续包月状态 -->
+        <activity
+            android:name="com.dzbook.activity.vip.AutoOrderVipActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name="com.dzbook.activity.vip.VipOpenSuccessActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <!-- 微信分享实现类 -->
+        <activity
+            android:name="${app_applicationId}.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/DzRechargeCoreTheme" />
+        <activity
+            android:name="com.huawei.hwread.dz.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/DzRechargeCoreTheme" />
+
+        <activity
+            android:name="com.huawei.hwireader.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/DzRechargeCoreTheme" />
+
+        <!-- 支付 -->
+        <activity
+            android:name="com.dzbook.activity.MainTypeDetailActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.MainTypeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name="com.dzbook.service.HwIntentService"
+            android:exported="false" />
+        <service
+            android:name="com.dzbook.service.HwInitSaleBooksIntentServices"
+            android:exported="false" />
+        <service
+            android:name="com.dzbook.service.HwAdvanceStoreIntentServices"
+            android:exported="false" />
+
+        <service
+            android:name="com.dzbook.service.SyncBookMarkService"
+            android:exported="false" />
+
+        <!-- ===================================== 授权登录配置 start =================== -->
+
+
+        <!-- ===================================== 微博sdk start =================== -->
+        <meta-data
+            android:name="WEIBO_APPKEY"
+            android:value="1630884126" />
+        <meta-data
+            android:name="WEIBO_CHANNEL"
+            android:value="weibo" />
+        <!-- ===================================== 微博sdk  end =================== -->
+
+
+        <!-- ===================================== 腾讯QQsdk start =================== -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="${tencent_AppId}" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <!-- ===================================== 腾讯QQsdk end =================== -->
+
+
+        <!-- ===================================== 授权登录配置 end =================== -->
+
+
+        <!-- ########  自有支付系统 ######## -->
+        <activity
+            android:name="com.dzbook.activity.reader.MissingContentActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.recharge.order.LotOrderPageActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.recharge.order.SingleOrderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.recharge.ui.RechargeListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzpay.recharge.activity.RechargeCoreActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
+            android:exported="false"
+            android:theme="@style/DzRechargeCoreTheme" />
+
+        <!-- 充值记录activity -->
+        <activity
+            android:name="com.dzbook.activity.account.RechargeRecordActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 代金券列表activity -->
+        <activity
+            android:name="com.dzbook.activity.account.VouchersListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+
+        <!-- +++华为HMS-SDK支付+++ -->
+        <meta-data
+            android:name="com.huawei.hms.client.appid"
+            android:value="${HMS_AppId}" />
+        <!-- +++华为HMS-SDK VIP自动续订支付需要+++ -->
+        <meta-data
+            android:name="com.huawei.hms.version"
+            android:value="2.6.0.000" />
+
+        <activity
+            android:name="com.huawei.hms.activity.BridgeActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.updatesdk.service.otaupdate.AppUpdateActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@style/upsdkDlDialog">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+        </activity>
+        <activity
+            android:name="com.huawei.updatesdk.support.pm.PackageInstallerActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:theme="@style/upsdkDlDialog">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <provider
+            android:name="com.huawei.hms.update.provider.UpdateProvider"
+            android:authorities="${app_applicationId}.hms.update.provider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+        <provider
+            android:name="com.huawei.updatesdk.fileprovider.UpdateSdkFileProvider"
+            android:authorities="${app_applicationId}.updateSdk.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true" />
+
+        <!-- 应用下载服务 -->
+        <service
+            android:name="com.huawei.updatesdk.service.deamon.download.DownloadService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.huawei.android.hms.agent.common.HMSAgentActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.android.hms.agent.pay.HMSPayAgentActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.android.hms.agent.hwid.HMSSignInAgentActivity"
+            android:configChanges="orientation|locale|screenSize|layoutDirection|fontScale"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <!-- +++华为HMS-SDK支付+++ -->
+        <!-- +++华为HMS-PUSH Start +++ -->
+        <receiver
+            android:name="com.dzbook.push.HwPushReceiver"
+            android:exported="true">
+            <intent-filter>
+
+                <!-- 必须,用于接收TOKEN -->
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <!-- 必须，用于接收消息 -->
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+                <!-- 可选，用于点击通知栏或通知栏上的按钮后触发onEvent回调 -->
+                <action android:name="com.huawei.android.push.intent.CLICK" />
+                <!-- 可选，查看PUSH通道是否连接，不查看则不需要 -->
+                <action android:name="com.huawei.intent.action.PUSH_STATE" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+
+                <!-- 接收通道发来的通知栏消息 -->
+                <action android:name="com.huawei.intent.action.PUSH" />
+            </intent-filter>
+        </receiver>
+        <!-- +++华为HMS-PUSH end +++ -->
+
+
+        <!-- ========  自有支付系统 ======== -->
+
+        <meta-data
+            android:name="SZICITY_APPKEY"
+            android:value="3clhitctfu6k" />
+        <meta-data
+            android:name="SZICITY_CHANNEL"
+            android:value="CHANNEL025" />
+
+        <!-- =================================== Umeng Start =========================== -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="52a1a2ae56240ba0780d786c" />
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${channel}" />
+        <meta-data
+            android:name="GIT_CODE"
+            android:value="${git_code}" />
+        <meta-data
+            android:name="GIT_TAG"
+            android:value="${git_tag}" />
+
+        <!-- ===================================== Umeng End =================== -->
+
+        <!-- 配置APP ID -->
+        <meta-data
+            android:name="BUGLY_APPID"
+            android:value="07ea63914b" />
+        <!-- 配置APP版本号 -->
+        <!--<meta-data-->
+        <!--android:name="BUGLY_APP_VERSION"-->
+        <!--android:value="<APP_Version>" />-->
+        <!-- 配置APP渠道号 -->
+        <meta-data
+            android:name="BUGLY_APP_CHANNEL"
+            android:value="${channel}" />
+        <!-- 配置Bugly调试模式（true或者false）-->
+        <meta-data
+            android:name="BUGLY_ENABLE_DEBUG"
+            android:value="false" />
+
+
+        <!-- 本地推送 -->
+
+
+        <!-- database -->
+        <!-- 针对sdk合作，已有authorities为包名产生provider冲突的，authorities前添加dzbook前缀 -->
+        <provider
+            android:name="com.dzbook.database.ShuguiProvider"
+            android:authorities="${app_applicationId}"
+            android:exported="false" />
+        <!-- mms database -->
+        <!-- hw feedback -sdk -->
+
+
+        <!-- hw wallet -sdk -->
+        <activity
+            android:name="com.huawei.walletapi.server.download.DownloadActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@style/HwPay.Theme.Translucent.NoTitleBar">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent.NoTitleBar" />
+        </activity>
+
+        <!-- hw wallet -sdk -->
+
+
+        <!-- 解决7.0以上手机传URI崩溃问题 -->
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${app_applicationId}.fileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!-- 下载器 start -->
+        <service android:name="com.dzbook.filedownloader.services.FileDownloadService$SharedMainProcessService" />
+        <service
+            android:name="com.dzbook.filedownloader.services.FileDownloadService$SeparateProcessService"
+            android:process=":filedownloader" />
+        <!-- 下载器 end -->
+        <activity
+            android:name="com.dzbook.activity.vip.MyVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.dzbook.activity.vip.VipPrivilegeActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

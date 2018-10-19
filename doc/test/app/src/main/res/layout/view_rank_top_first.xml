@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="48dp">-->
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:duplicateParentState="true"
+        android:paddingBottom="@dimen/hw_dp_4"
+        android:background="@drawable/selector_hw_red_line"
+        android:text=""
+        android:textColor="@color/color_rank_top_text"
+        android:textSize="@dimen/hw_text_15" />
+
+</merge>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 问题反馈频率 -->
+    <string-array name="feedback_frequency">
+        <item>@string/feedback_frequency_one</item>
+        <item>@string/feedback_frequency_two</item>
+        <item>@string/feedback_frequency_three</item>
+        <item>@string/feedback_frequency_four</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/wallet_sdk_reminder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="left"
+        android:text="@string/wallet_sdk_support_dialog_title"
+        android:textColor="@color/wallet_sdk_black_title"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/wallet_sdk_use_flow_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/wallet_sdk_reminder"
+        android:gravity="left"
+        android:textColor="@color/wallet_sdk_black_message"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:id="@+id/wallet_sdk_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wallet_sdk_use_flow_message"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/wallet_sdk_cancel_use_flow"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/wallet_sdk_use_flow_cancel"
+            android:textColor="@color/wallet_sdk_black_title"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/wallet_sdk_sure_use_flow"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_weight="1"
+            android:text="@string/wallet_sdk_use_flow_sure"
+            android:textColor="@color/wallet_sdk_black_title"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/wallet_sdk_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_below="@+id/wallet_sdk_action"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>

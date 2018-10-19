@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="76dp">
+
+    <RadioButton
+        android:id="@+id/radiobutton_recharge_bg"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:background="@drawable/dz_recharge_item_bg"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textview_money_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/hw_text_15"
+            tools:text="5元"
+            tools:textColor="@color/text_color_hw_order_selector" />
+
+        <TextView
+            android:id="@+id/textview_money_tipsBL_BR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textview_money_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dip"
+            android:textSize="@dimen/hw_text_12"
+            tools:text="500看点+25看点"
+            tools:textColor="@color/color_50_000000" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/relative_corner"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/ic_lot_order_subscript" />
+
+    <TextView
+        android:id="@+id/tv_corner_rate"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:includeFontPadding="false"
+        android:rotation="-45"
+        android:textColor="@color/color_100_000000"
+        android:textSize="@dimen/hw_text_8"
+        tools:text="9.5折" />
+
+</RelativeLayout>

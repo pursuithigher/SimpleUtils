@@ -1,0 +1,470 @@
+{
+  "boys": [
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "浊酒一湖",
+        "bookId": "11000132489",
+        "bookName": "神魂丹帝",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000132489/11000132489.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "26767367",
+          "chapterName": "第1章 狼心狗肺",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "26767368",
+          "chapterName": "第2章 半年时间",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "26767369",
+          "chapterName": "第3章 暴打秦江",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "蒙面加菲猫",
+        "bookId": "11000110787",
+        "bookName": "武道霸主",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000110787/11000110787.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "20605566",
+          "chapterName": "第1章 王腾",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "20605567",
+          "chapterName": "第2章 淬体丹",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "20605568",
+          "chapterName": "第3章 大夫人",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "柳枫",
+        "bookId": "11000091011",
+        "bookName": "龙破九天诀",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000091011/11000091011.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "16707697",
+          "chapterName": "第一章  医毒双绝",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "16707698",
+          "chapterName": "第二章 诡异",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "16707699",
+          "chapterName": "第三章  龙破九天诀",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "寂小贼",
+        "bookId": "11000073457",
+        "bookName": "九阳神王",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000073457/11000073457.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "10707657",
+          "chapterName": "第1章 落魄皇子",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "10707658",
+          "chapterName": "第2章 传说灵脉",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "10707659",
+          "chapterName": "第3章 灵气丹",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "恩赐解脱",
+        "bookId": "11000028531",
+        "bookName": "百炼成神",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000028531/11000028531.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "4798278",
+          "chapterName": " 第一章 以德报怨",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "4798279",
+          "chapterName": " 第二章 炼器功法",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "4798280",
+          "chapterName": " 第三章 奇妙的身体",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.10",
+        "author": "第一神",
+        "bookId": "11000008404",
+        "bookName": "万古天帝",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000008404/11000008404.jpg",
+        "control": 1,
+        "price": "0.10",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "3696761",
+          "chapterName": "第1章 战神重生",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "3696762",
+          "chapterName": "第2章 滚下去",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "3696763",
+          "chapterName": "第3章 强硬逼婚",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "忘情至尊",
+        "bookId": "11000123614",
+        "bookName": "武道大帝",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000123614/11000123614.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "24217094",
+          "chapterName": "第一章　生死珠",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "24217095",
+          "chapterName": "第二章 扬眉吐气！",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "24217096",
+          "chapterName": "第三章 修为提升",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "12.99",
+        "author": "[日]东野圭吾",
+        "bookId": "11000090911",
+        "bookName": "虚无的十字架",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000090911/11000090911.jpg",
+        "control": 1,
+        "price": "12.99",
+        "unit": 1
+      },
+      "chapterList": [
+        {
+          "chapterId": "16674281",
+          "chapterName": "序幕",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "16674282",
+          "chapterName": "第一章　我很庆幸离婚了",
+          "isCharge": "1"
+        },
+        {
+          "chapterId": "16674283",
+          "chapterName": "第二章　仁科家的烦恼",
+          "isCharge": "1"
+        }
+      ]
+    }
+  ],
+  "girls": [
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "月荼",
+        "bookId": "11000113922",
+        "bookName": "相府庶女：王妃不好惹",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000113922/11000113922.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "21488071",
+          "chapterName": "第001章 借尸还魂",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21488072",
+          "chapterName": "第002章 异世孤魂",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21488073",
+          "chapterName": "第003章 诈尸",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "森森",
+        "bookId": "11000028102",
+        "bookName": "坑爹儿子鬼医娘亲",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000028102/11000028102.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "4711931",
+          "chapterName": "第一章  贱人，沉塘",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "4711932",
+          "chapterName": "第二章  六年后",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "4711933",
+          "chapterName": "第三章  何德何能啊",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "承九",
+        "bookId": "11000079414",
+        "bookName": "医妃权倾天下",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000079414/11000079414.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "12593303",
+          "chapterName": "001逼嫁，一个巴掌拍死",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "12593305",
+          "chapterName": "002曝光，命运很悲催",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "12593307",
+          "chapterName": "003真爱，白莲花妹妹",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "秦喜儿",
+        "bookId": "11000093253",
+        "bookName": "农女致富记",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000093253/11000093253.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "17563277",
+          "chapterName": "001竟然做了春梦",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "17563278",
+          "chapterName": "002相亲？",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "17563279",
+          "chapterName": "003你妹的穿越",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "顾年华",
+        "bookId": "11000116013",
+        "bookName": "重生九零小商女",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000116013/11000116013.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "21928049",
+          "chapterName": "第一章重生",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21928051",
+          "chapterName": "第二章异能初现",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21928053",
+          "chapterName": "第三章去赌石",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "楚鲤",
+        "bookId": "11000120256",
+        "bookName": "神厨狂后",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000120256/11000120256.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "23061641",
+          "chapterName": "便宜夫君",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "23061642",
+          "chapterName": "掌扇公主",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "23061643",
+          "chapterName": "冷宫惊险",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "暖白",
+        "bookId": "11000072621",
+        "bookName": "妖孽儿子腹黑娘亲",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000072621/11000072621.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "10373610",
+          "chapterName": "第001章 穿越时空",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "10373611",
+          "chapterName": "第002章 路上救人",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "10373612",
+          "chapterName": "第003章 惊心动魄",
+          "isCharge": "0"
+        }
+      ]
+    },
+    {
+      "book": {
+        "amount": "0.15",
+        "author": "流潋紫",
+        "bookId": "11000114410",
+        "bookName": "后宫如懿传套装（1-6）",
+        "coverWap": "https://qng.kuaikandushu.cn/cppartner/1x1/11x0/110x0/11000114410/11000114410.jpg",
+        "control": 1,
+        "price": "0.15",
+        "unit": 0
+      },
+      "chapterList": [
+        {
+          "chapterId": "21621922",
+          "chapterName": "正文",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21621923",
+          "chapterName": "第一章灵前",
+          "isCharge": "0"
+        },
+        {
+          "chapterId": "21621924",
+          "chapterName": "第二章自处",
+          "isCharge": "0"
+        }
+      ]
+    }
+  ]
+}

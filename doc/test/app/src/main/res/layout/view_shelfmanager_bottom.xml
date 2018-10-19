@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentBottom="true"
+    android:background="@color/color_100_f2f2f2"
+    android:duplicateParentState="false"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/hw_dp_57"
+    android:paddingRight="@dimen/hw_dp_57">
+
+    <RelativeLayout
+        android:background="@drawable/selector_hw_list_item_04_cornor"
+        android:id="@+id/rl_manage_select"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/iv_manage_select"
+            android:layout_width="@dimen/hw_dp_24"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:background="@drawable/selector_btn_shelfmanagerselect" />
+
+        <TextView
+            android:id="@+id/tv_manage_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hw_dp_4"
+            android:duplicateParentState="true"
+            android:text="@string/all_select"
+            android:textColor="@color/color_100_000000"
+            android:textSize="@dimen/hw_text_10" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="@drawable/selector_hw_list_item_04_cornor"
+        android:id="@+id/rl_manage_delete"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/hw_dp_8"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:id="@+id/iv_manage_delete"
+            android:layout_width="@dimen/hw_dp_24"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:src="@drawable/ic_shelf_manage_delete" />
+
+        <TextView
+            android:id="@+id/tv_manage_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hw_dp_4"
+            android:duplicateParentState="true"
+            android:text="@string/comment_delete"
+            android:textColor="@color/color_100_000000"
+            android:textSize="@dimen/hw_text_10" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:background="@drawable/selector_hw_list_item_04_cornor"
+        android:id="@+id/rl_manage_sort"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/hw_dp_8"
+        android:layout_weight="1.0">
+
+        <ImageView
+            android:layout_width="@dimen/hw_dp_24"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/hw_dp_4"
+            android:src="@drawable/ic_hw_shelf_sort" />
+
+        <TextView
+            android:id="@+id/textview_sort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/hw_dp_4"
+            android:duplicateParentState="true"
+            android:text="@string/ordering_in_book_name"
+            android:textColor="@color/color_100_000000"
+            android:textSize="@dimen/hw_text_10" />
+    </RelativeLayout>
+
+</LinearLayout>

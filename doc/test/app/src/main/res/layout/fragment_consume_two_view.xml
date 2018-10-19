@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_100_FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/gift"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:paddingRight="@dimen/hw_dp_18">
+
+        <ImageView
+            android:id="@+id/iv_other_icon"
+            android:layout_width="@dimen/hw_dp_20"
+            android:layout_height="@dimen/hw_dp_20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hw_dp_18"
+            android:scaleType="centerInside"
+            android:alpha="0.5"
+            android:src="@drawable/ic_activity_public_new" />
+
+        <TextView
+            android:id="@+id/tv_other_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_other_icon"
+            android:maxWidth="237dp"
+            android:textColor="@color/color_100_1a1a1a"
+            android:textSize="@dimen/hw_text_15"
+            android:text="@string/str_item_activity" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_right" />
+
+        <View
+            android:id="@+id/v_other_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_line"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@id/iv_other_icon"
+            android:background="@drawable/hwdivider_horizontal_gray_emui"  />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/vip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_item_height"
+        android:paddingRight="@dimen/hw_dp_18">
+
+        <ImageView
+            android:id="@+id/iv_other_icon2"
+            android:layout_width="@dimen/hw_dp_20"
+            android:layout_height="@dimen/hw_dp_20"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hw_dp_18"
+            android:scaleType="centerInside"
+            android:alpha="0.5"
+            android:src="@drawable/ic_vip_public_new" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_toRightOf="@id/iv_other_icon2"
+            android:maxWidth="237dp"
+            android:textColor="@color/color_100_1a1a1a"
+            android:textSize="@dimen/hw_text_15"
+            android:text="@string/str_book_vipxm" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_person_right" />
+    </RelativeLayout>
+
+</LinearLayout>

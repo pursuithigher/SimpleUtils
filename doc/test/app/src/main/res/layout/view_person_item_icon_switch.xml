@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/person_section_height"
+                android:paddingLeft="@dimen/hw_dp_16"
+                android:paddingRight="@dimen/hw_dp_16">
+
+    <ImageView
+        android:id="@+id/imageView_icon"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_person_readmode"/>
+
+    <com.dzbook.view.person.ToggleButton
+        android:id="@+id/togglebutton_readmode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:btnHeight="25"
+        app:btnWidth="35"
+        app:circleRadius="6"
+        app:isStroke="true"
+        app:lineHeight="2"
+        app:offColor="@color/color_b5b5b5"
+        app:onColor="@color/color_706ec5"/>
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/togglebutton_readmode"
+        android:layout_toRightOf="@id/imageView_icon"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:singleLine="true"
+        android:textColor="@color/color_100_000000"
+        android:textSize="@dimen/hw_text_15"
+        tools:text="123"/>
+
+    <ImageView
+        android:id="@+id/imageview_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hwdivider_horizontal_gray_emui"/>
+
+</RelativeLayout>

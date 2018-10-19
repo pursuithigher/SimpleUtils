@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shelf_manage_menu"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_comment_popwindow"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/com_common_item_selector"
+        android:gravity="center"
+        android:text="@string/comment_edit"
+        android:textColor="@color/color_ff5e5e5e"
+        android:textSize="@dimen/hw_text_12" />
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+    <TextView
+        android:id="@+id/tv_delete"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_gravity="center_vertical"
+        android:background="@drawable/com_common_item_selector"
+        android:gravity="center"
+        android:text="@string/comment_delete"
+        android:textColor="@color/color_ff5e5e5e"
+        android:textSize="@dimen/hw_text_12" />
+
+
+</LinearLayout>

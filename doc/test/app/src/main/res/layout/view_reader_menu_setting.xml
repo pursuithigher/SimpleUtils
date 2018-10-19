@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/layout_setting"
+        style="@style/ReaderMenu.Panel"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout style="@style/ReaderMenu.Row">
+
+            <LinearLayout
+                android:id="@+id/layout_textSize"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:background="@drawable/reader_setting_text_size_bk"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+
+                <TextView
+                    android:id="@+id/textView_textSizeDown"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="A-"
+                    android:textColor="@color/reader_menu_text_color_1"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/textView_textSize"
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    tools:text="1" />
+
+                <TextView
+                    android:id="@+id/textView_textSizeUp"
+                    android:layout_width="45dip"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="A+"
+                    android:textColor="@color/reader_menu_text_color_1"
+                    android:textSize="21dp" />
+            </LinearLayout>
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_sizeSmall"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_bk"
+                android:text="@string/str_reader_menu_small_size"
+                android:textColor="@color/reader_menu_text_color_1"
+                android:textSize="12dp" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_sizeDef"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_bk"
+                android:text="@string/str_default"
+                android:textColor="@color/reader_menu_text_color_1"
+                android:textSize="12dp" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_sizeBig"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_bk"
+                android:text="@string/str_reader_menu_large_size"
+                android:textColor="@color/reader_menu_text_color_1"
+                android:textSize="13dp" />
+        </LinearLayout>
+
+        <ImageView style="@style/ReaderMenu.Line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dip"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+
+            <ImageView
+                android:id="@+id/imageView_layoutStyle0"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_layout_style"
+                android:src="@drawable/hw_reader_layout_style_0" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <ImageView
+                android:id="@+id/imageView_layoutStyle1"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_layout_style"
+                android:src="@drawable/hw_reader_layout_style_1" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <ImageView
+                android:id="@+id/imageView_layoutStyle2"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_layout_style"
+                android:src="@drawable/hw_reader_layout_style_2" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <ImageView
+                android:id="@+id/imageView_layoutStyle3"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_layout_style"
+                android:src="@drawable/hw_reader_layout_style_3" />
+        </LinearLayout>
+
+        <ImageView style="@style/ReaderMenu.Line" />
+
+        <LinearLayout style="@style/ReaderMenu.Row">
+
+            <TextView
+                android:id="@+id/textView_colorStyle0"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_color_0"
+                android:text="@string/str_reader_menu_eye"
+                android:textColor="@color/reader_color_text0"
+                android:textSize="10dp" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_colorStyle1"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_color_1"
+                android:text="@string/str_reader_backgroud_1"
+                android:textColor="@color/reader_color_text1"
+                android:textSize="10dp" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_colorStyle2"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_color_2"
+                android:text="@string/str_reader_backgroud_2"
+                android:textColor="@color/reader_color_text2"
+                android:textSize="10dp" />
+
+            <View style="@style/ReaderMenu.PaddingView" />
+
+            <TextView
+                android:id="@+id/textView_colorStyle3"
+                style="@style/ReaderMenu.CircleView"
+                android:background="@drawable/reader_setting_circle_color_3"
+                android:text="@string/str_reader_backgroud_3"
+                android:textColor="@color/reader_color_text3"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <ImageView style="@style/ReaderMenu.Line" />
+
+        <LinearLayout style="@style/ReaderMenu.Row">
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_anim"-->
+            <!--style="@style/ReaderMenu.CircleView"-->
+            <!--android:background="@drawable/reader_setting_circle_bk"-->
+            <!--android:text="翻页方式"-->
+            <!--android:textColor="@color/readerset_item_text" />-->
+
+            <!--<View style="@style/ReaderMenu.PaddingView" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_autoRead"-->
+            <!--style="@style/ReaderMenu.CircleView"-->
+            <!--android:background="@drawable/reader_setting_circle_bk"-->
+            <!--android:text="自动翻页"-->
+            <!--android:textColor="@color/readerset_item_text" />-->
+
+            <!--<View style="@style/ReaderMenu.PaddingView" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_orientation"-->
+            <!--style="@style/ReaderMenu.CircleView"-->
+            <!--android:background="@drawable/reader_setting_circle_bk"-->
+            <!--android:text="横屏切换"-->
+            <!--android:textColor="@color/readerset_item_text" />-->
+
+            <LinearLayout
+                android:id="@+id/menu_animStyle"
+                style="@style/ReaderMenu.MainItem">
+
+                <ImageView
+                    style="@style/ReaderMenu.MainItemIcon"
+                    android:src="@drawable/hw_reader_anim" />
+
+                <TextView
+                    style="@style/ReaderMenu.MainItemText"
+                    android:text="@string/reader_anim_style" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_autoRead"
+                style="@style/ReaderMenu.MainItem">
+
+                <ImageView
+                    style="@style/ReaderMenu.MainItemIcon"
+                    android:src="@drawable/hw_reader_auto_read" />
+
+                <TextView
+                    style="@style/ReaderMenu.MainItemText"
+                    android:text="@string/reader_auto_read" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menu_orientation"
+                style="@style/ReaderMenu.MainItem">
+
+                <ImageView
+                    style="@style/ReaderMenu.MainItemIcon"
+                    android:src="@drawable/hw_reader_orientation" />
+
+                <TextView
+                    android:id="@+id/textView_orientation"
+                    style="@style/ReaderMenu.MainItemText"
+                    android:text="@string/reader_orientation_landscape" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

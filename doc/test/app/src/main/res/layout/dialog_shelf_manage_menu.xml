@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_shelf_manage_menu"
+    android:layout_width="wrap_content"
+    android:minWidth="@dimen/hw_dp_158"
+    android:layout_height="204dp"
+    android:background="@drawable/ic_hw_shelf_menubk"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/hw_dp_6"
+    android:paddingLeft="@dimen/hw_dp_6"
+    android:paddingRight="@dimen/hw_dp_16"
+    android:paddingTop="@dimen/hw_dp_6">
+
+    <TextView
+        android:id="@+id/tv_shelf_menu_local_import"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_common_item_selector3"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/local_import"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:background="#33182233" />
+
+
+    <TextView
+        android:id="@+id/tv_shelf_menu_cloud"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_common_item_selector"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/cloud_bookshelf"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:background="#33182233" />
+
+    <TextView
+        android:id="@+id/tv_shelf_menu_manage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_common_item_selector"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/bookshelf_manage"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:background="#33182233" />
+
+    <TextView
+        android:id="@+id/tv_shelf_menu_bookshelf_mode"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/com_common_item_selector4"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/bookshelf_list_mode"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/hw_text_15" />
+
+</LinearLayout>

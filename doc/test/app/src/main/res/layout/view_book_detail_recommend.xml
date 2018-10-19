@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/re_main"
+    android:layout_marginTop="@dimen/hw_dp_8"
+    android:layout_height="wrap_content">
+
+    <!--android:background="@drawable/com_common_item_selector"-->
+
+    <com.dzbook.view.common.BookImageView
+        android:id="@+id/imageView_cover"
+        android:layout_width="@dimen/hw_dp_104"
+        android:layout_height="@dimen/hw_dp_139"
+        app:book_havclick="false"
+        app:book_havPress="false"
+        android:background="@drawable/bg_bookstore_shadow" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/hw_dp_16"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/textView_bookName"
+        android:layout_width="@dimen/hw_dp_104"
+        android:layout_height="@dimen/hw_dp_17"
+        android:layout_below="@+id/imageView_cover"
+        android:layout_marginTop="@dimen/hw_dp_9"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_text_13" />
+</RelativeLayout>

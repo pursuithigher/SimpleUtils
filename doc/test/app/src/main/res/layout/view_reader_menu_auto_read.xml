@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/layout_autoRead"
+        style="@style/ReaderMenu.Panel">
+
+        <RelativeLayout style="@style/ReaderMenu.Row">
+
+            <TextView
+                android:id="@+id/textView_speedDown"
+                style="@style/ReaderMenu.NormalText"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/reader_speed_down" />
+
+            <TextView
+                android:id="@+id/textView_speedUp"
+                style="@style/ReaderMenu.NormalText"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:text="@string/reader_speed_up" />
+
+
+            <SeekBar
+                android:id="@+id/seekBar_autoSpeed"
+                style="@style/ReaderMenu.SeekBar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/textView_speedUp"
+                android:layout_toRightOf="@id/textView_speedDown"
+                android:max="9" />
+
+            <!--<TextView-->
+            <!--android:id="@+id/textView_speedNum"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_above="@id/seekBar_autoSpeed"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:gravity="center"-->
+            <!--android:maxLines="1"-->
+            <!--android:textColor="@color/reader_menu_text_color_1"-->
+            <!--android:textSize="@dimen/hw_text_10"-->
+            <!--tools:text="0" />-->
+
+        </RelativeLayout>
+
+        <ImageView
+            style="@style/ReaderMenu.Line"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            style="@style/ReaderMenu.Row"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+
+            <TextView
+                android:id="@+id/textView_anim4"
+                style="@style/ReaderMenu.CheckText01"
+                android:text="@string/reader_anim_4" />
+
+
+            <TextView
+                android:id="@+id/textView_anim3"
+                style="@style/ReaderMenu.CheckText01"
+                android:layout_marginLeft="20dp"
+                android:text="@string/reader_anim_3" />
+
+        </LinearLayout>
+
+        <ImageView
+            style="@style/ReaderMenu.Line"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layout_finishAuto"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_dp_56"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/hw_reader_voice_finish" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:text="@string/str_quit_auto_read"
+                android:textColor="@color/reader_menu_text_color_1"
+                android:textSize="@dimen/hw_text_10" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/tvTips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hw_dp_34"
+        android:text="@string/real_name_pre_phone_num"
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_dp_18" />
+
+    <TextView
+        android:id="@+id/tvPhoneNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/hw_dp_11"
+        android:layout_marginTop="@dimen/hw_dp_9"
+        android:text=""
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_dp_18" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/hw_dp_16"
+        android:orientation="horizontal">
+
+        <EditText
+            style="@style/EditTextStyle"
+            android:id="@+id/etVerifyCode"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hw_dp_32"
+            android:layout_weight="3"
+            android:background="@drawable/shape_hw_0d000_corner"
+            android:gravity="left|center_vertical"
+            android:hint="@string/real_name_input_verify_code"
+            android:inputType="number"
+            android:longClickable="false"
+            android:paddingLeft="@dimen/hw_dp_5"
+            android:textColorHint="@color/color_30_1A1A1A"
+            android:textCursorDrawable="@null"
+            android:textIsSelectable="false"
+            android:textSize="@dimen/hw_dp_13" />
+
+
+        <Button
+            android:id="@+id/btGetVerifyCode"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/hw_dp_20"
+            android:layout_weight="2"
+            android:background="@drawable/selector_hw_red_common1"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="@string/real_name_get_verify_code"
+            android:textColor="@color/color_full_white"
+            android:textCursorDrawable="@null"
+            android:textSize="@dimen/hw_dp_15" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btSubmit"
+        android:layout_width="@dimen/hw_dp_192"
+        android:layout_height="@dimen/hw_dp_32"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/selector_hw_red_common1"
+        android:text="@string/real_name_auth"
+        android:textColor="@color/color_full_white"
+        android:textSize="@dimen/hw_dp_15" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/hw_dp_15"
+        android:paddingRight="@dimen/hw_dp_15"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/hw_dp_25"
+        android:gravity="center"
+        android:text="@string/real_name_auth_tips2"
+        android:textColor="@color/color_30_1A1A1A"
+        android:textColorHint="@color/color_30_1A1A1A"
+        android:textSize="@dimen/hw_dp_13" />
+</LinearLayout>

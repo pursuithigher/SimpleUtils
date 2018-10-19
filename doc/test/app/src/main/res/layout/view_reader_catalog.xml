@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/hw_dp_48"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_chapterNum"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/hw_dp_16"
+            android:layout_weight="1.0"
+            android:gravity="left"
+            android:paddingTop="@dimen/dp_24"
+            android:text="共600章"
+            android:textColor="@color/black"
+            android:textSize="@dimen/hw_text_13" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_gravity="right|bottom"
+            android:layout_marginEnd="@dimen/hw_dp_16"
+            android:layout_marginRight="@dimen/hw_dp_16">
+
+            <TextView
+                android:id="@+id/textView_selectBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:text="1-10章"
+                android:textColor="@color/color_100_1A1A1A"
+                android:textSize="@dimen/hw_text_13" />
+
+            <View
+                android:id="@+id/view_triangle"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/hw_dp_4"
+                android:layout_marginStart="@dimen/hw_dp_4"
+                android:layout_toEndOf="@id/textView_selectBlock"
+                android:layout_toRightOf="@id/textView_selectBlock"
+                android:background="@drawable/shape_hw_triangle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0">
+
+        <ListView
+            android:id="@+id/listView_chapter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="@null"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:fastScrollAlwaysVisible="false"
+            android:fastScrollEnabled="true"
+            android:overScrollMode="never" />
+
+        <TextView
+            android:id="@+id/textView_chapterMessage"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:background="@color/day_main_bg"
+            android:gravity="center"
+            android:textColor="@color/color_100_7f7f7f"
+            android:textSize="@dimen/hw_text_14" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_purchasedChapters"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_dp_48"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/textView_downloadDes"
+            android:layout_width="@dimen/hw_dp_200"
+            android:layout_height="@dimen/hw_dp_28"
+            android:layout_gravity="center"
+            android:background="@drawable/hw_free_open_book"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/hw_dp_8"
+            android:paddingRight="@dimen/hw_dp_8"
+            android:text="@string/down_follow_chapter"
+            android:textColor="@color/white"
+            android:textSize="@dimen/hw_text_12" />
+    </RelativeLayout>
+
+</merge>

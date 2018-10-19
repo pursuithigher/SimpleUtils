@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+	<!--横屏适配 -->
+	<dimen name="feedback_btn_width">330dp</dimen>
+	<dimen name="feedback_text_size_normal">15sp</dimen>
+	<dimen name="feedback_ui_sp_12">12sp</dimen>
+	<dimen name="feedback_ui_sp_11">11sp</dimen>
+	<dimen name="feedback_divider_height">1px</dimen>
+	<dimen name="feedback_text_size_list">13sp</dimen>
+	<dimen name="feedback_hotword_firstline_top">14dp</dimen>
+	
+	  <!-- 各个界面内布局元素距离左右的边距 -->
+    <dimen name="feedback_layout_start_end_padding">16dp</dimen>
+    <dimen name="feedback_layout_start_end_padding_ten">14dp</dimen>
+    <dimen name="feedback_page_with_toolbar_marginbottom_emui50">56dp</dimen>
+    <dimen name="feedback_ui_9_dip">9dp</dimen>
+    <dimen name="feedback_ui_12_dip">12dp</dimen>
+	
+</resources>

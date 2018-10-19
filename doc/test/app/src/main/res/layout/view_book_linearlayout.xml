@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_8"
+        android:paddingLeft="@dimen/hw_dp_16"
+        android:paddingRight="@dimen/hw_dp_16">
+
+        <RelativeLayout
+            android:id="@+id/re_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/hw_dp_3"
+            android:layout_marginTop="@dimen/hw_dp_14">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/hw_dp_5"
+                android:layout_toLeftOf="@+id/iv_arrow"
+                android:includeFontPadding="false"
+                android:text="@string/more"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_13" />
+
+            <ImageView
+                android:id="@+id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:maxHeight="@dimen/hw_dp_20"
+                android:maxWidth="@dimen/hw_dp_20"
+                android:src="@drawable/hw_arrow_right" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_left"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/hw_dp_12"
+            android:includeFontPadding="false"
+            android:text=""
+            android:textColor="@color/color_ff000000"
+            android:textSize="@dimen/hw_text_15" />
+
+    </RelativeLayout>
+
+</merge>

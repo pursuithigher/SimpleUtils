@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title="@string/str_order_book_orders"
+        app:showright="0" />
+
+    <com.dzbook.view.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0"
+        android:background="@color/color_100_FFFFFF"
+        android:scrollbars="none">
+
+        <com.dzbook.view.order.CommonOrdersView
+            android:id="@+id/common_orders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp" />
+
+    </com.dzbook.view.ElasticScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_100_FFFFFF"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_lot_order_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:drawablePadding="8dp"
+            android:drawableRight="@drawable/ic_hw_right"
+            android:gravity="center_vertical"
+            android:padding="8dp"
+            android:textColor="@color/color_100_FB6522"
+            android:textSize="@dimen/hw_dp_14"
+            android:visibility="gone"
+            tools:text="@string/lot_order_sale" />
+
+        <Button
+            android:id="@+id/bt_order"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/dz_recharge_go_recharge_selector"
+            android:gravity="center"
+            android:textColor="@color/dz_recharge_white"
+            android:textSize="@dimen/hw_dp_15"
+            tools:text="@string/str_now_buy" />
+
+    </LinearLayout>
+</LinearLayout>

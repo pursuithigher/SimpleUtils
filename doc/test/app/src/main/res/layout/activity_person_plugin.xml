@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title="@string/string_plugin_manage"
+        app:showright="0" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/commontitle">
+
+        <RelativeLayout
+            android:id="@+id/layout_tts"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_section_height"
+            android:background="@drawable/com_common_item_selector"
+            android:paddingLeft="@dimen/hw_dp_16"
+            android:paddingRight="@dimen/hw_dp_16"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/hw_dp_8"
+                android:layout_toLeftOf="@id/frame_tts"
+                android:text="@string/str_voice_reading_tips"
+                android:textColor="@color/color_100_000000"
+                android:textSize="@dimen/hw_dp_15" />
+
+            <FrameLayout
+                android:id="@+id/frame_tts"
+                android:layout_width="@dimen/hw_dp_72"
+                android:layout_height="@dimen/hw_dp_28"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_tts_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/progress_bar_plugin_load"
+                    android:padding="1dp">
+
+                    <com.dzbook.view.PluginDLProgress
+                        android:id="@+id/progressBar_tts"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress_bar_plugin_load"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView_tts"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_hw_btn_common1"
+                    android:gravity="center"
+                    android:text="@string/str_free_down"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_dp_13" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/hw_line"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/hwdivider_horizontal_gray_emui" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_wps"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/person_section_height"
+            android:layout_below="@id/layout_tts"
+            android:background="@drawable/com_common_item_selector"
+            android:paddingLeft="@dimen/hw_dp_16"
+            android:paddingRight="@dimen/hw_dp_16"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="@string/str_plugin_office"
+                android:textColor="@color/color_100_000000"
+                android:textSize="@dimen/hw_dp_15" />
+
+            <FrameLayout
+                android:layout_width="@dimen/hw_dp_72"
+                android:layout_height="@dimen/hw_dp_28"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/rl_wps_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/progress_bar_plugin_load"
+                    android:padding="1dp">
+
+                    <com.dzbook.view.PluginDLProgress
+                        android:id="@+id/progressBar_wps"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress_bar_plugin_load"
+                        android:visibility="visible" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView_wps"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/selector_hw_btn_common1"
+                    android:gravity="center"
+                    android:text="@string/str_free_down"
+                    android:textColor="@color/color_100_000000"
+                    android:textSize="@dimen/hw_dp_13" />
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <com.dzbook.view.common.StatusView
+            android:id="@+id/statusView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:status_view_drawable="@drawable/hw_empty_default"
+            app:status_view_no_loading="false" />
+    </RelativeLayout>
+
+</RelativeLayout>

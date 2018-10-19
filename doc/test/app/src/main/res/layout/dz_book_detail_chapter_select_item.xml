@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="44dip">
+    <TextView
+        android:id="@+id/tv_chapter_name"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="44dip"
+        android:text="@string/strs_select_chapter"
+        android:textColor="@color/detail_tip"
+        android:textSize="@dimen/hw_text_14" />
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/chapter_iv"
+        android:layout_marginRight="27dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/chapter_select_item"
+        android:layout_width="@dimen/hw_dp_15"
+        android:layout_height="@dimen/hw_dp_15" />
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:background="@color/divide_seperate_color" />
+</RelativeLayout>

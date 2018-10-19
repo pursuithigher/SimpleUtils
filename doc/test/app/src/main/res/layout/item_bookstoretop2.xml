@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hw_dp_152">
+
+
+    <com.dzbook.view.common.BookImageView
+        android:id="@+id/ivBookIcon"
+        android:layout_width="@dimen/hw_dp_104"
+        android:layout_height="@dimen/hw_dp_139"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        app:book_havclick="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_18"
+        android:layout_toRightOf="@id/ivBookIcon"
+        android:paddingLeft="@dimen/hw_dp_16">
+
+        <TextView
+            android:id="@+id/tvOrderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/hw_dp_10"
+            android:maxLines="1"
+            android:textColor="@color/color_ee3333"
+            android:textSize="@dimen/hw_dp_15"
+            android:textStyle="bold"
+            tools:text="1" />
+
+        <TextView
+            android:id="@+id/tvBookName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/tvOrderName"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="180dp"
+            android:textColor="@color/color_ff000000"
+            android:textSize="@dimen/hw_dp_15"
+            android:textStyle="normal"
+            tools:text="第一拽妃：追追妃子" />
+
+
+        <TextView
+            android:id="@+id/tvBookContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvBookName"
+            android:layout_marginTop="@dimen/hw_dp_12"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingRight="@dimen/hw_dp_16"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_dp_13"
+            tools:text="" />
+
+        <TextView
+            android:id="@+id/tvAuthorName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_dp_13"
+            tools:text="作者名字" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:layout_toRightOf="@+id/ivBookIcon"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+</merge>

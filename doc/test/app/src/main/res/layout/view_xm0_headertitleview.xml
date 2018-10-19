@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textview_xm1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:textSize="@dimen/hw_text_15"
+        tools:text="八零九零" />
+
+    <ImageView
+        android:id="@+id/imageview_select"
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:layout_alignLeft="@id/textview_xm1"
+        android:layout_alignRight="@id/textview_xm1"
+        android:layout_below="@id/textview_xm1"
+        android:layout_marginTop="@dimen/hw_dp_4"
+        android:background="@color/color_100_CD2325"
+        android:scaleType="fitXY" />
+</merge>

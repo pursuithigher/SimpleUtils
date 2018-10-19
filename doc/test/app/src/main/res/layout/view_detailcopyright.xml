@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/hw_dp_16"
+    android:paddingRight="@dimen/hw_dp_16">
+
+    <TextView
+        android:id="@+id/tv_book_more_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_17"
+        android:singleLine="true"
+        android:text="@string/str_bookdetail_moreinfo"
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_text_15" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_16"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="@string/book_copyright"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_12" />
+
+        <TextView
+            android:id="@+id/textview_copyright"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/hw_dp_12"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/color_ff000000"
+            android:textSize="@dimen/hw_text_12" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_9"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="@dimen/dp_56"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:gravity="start"
+            android:text="@string/book_disclaimer"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_12" />
+
+        <TextView
+            android:id="@+id/textview_disclaimer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/hw_dp_12"
+            android:lineSpacingMultiplier="1.2"
+            android:textColor="@color/color_ff000000"
+            android:textSize="@dimen/hw_text_12" />
+    </LinearLayout>
+
+
+</LinearLayout>

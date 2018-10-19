@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color_bg"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:common_title="@string/string_about"
+        app:showright="0" />
+
+    <com.dzbook.view.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_about_icon"
+                    android:layout_width="@dimen/hw_dp_72"
+                    android:layout_height="@dimen/hw_dp_72"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/hw_dp_45"
+                    android:background="@drawable/push" />
+
+                <ImageView
+                    android:id="@+id/img_test"
+                    android:layout_width="@dimen/hw_dp_72"
+                    android:layout_height="@dimen/hw_dp_72"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/hw_dp_53"
+                    android:layout_toLeftOf="@id/img_about_icon"
+                    android:layout_toStartOf="@id/img_about_icon"
+                    android:background="@color/transparent" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_app_name_about"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/hw_dp_9"
+                android:text="@string/app_inner_name"
+                android:textColor="@color/color_100_000000"
+                android:textSize="@dimen/hw_text_15" />
+
+            <TextView
+                android:id="@+id/tv_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/version"
+                android:textColor="@color/color_50_000000"
+                android:textSize="@dimen/hw_text_13" />
+
+            <com.dzbook.view.person.PersonCommonView
+                android:id="@+id/tv_phone_num_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hw_dp_68"
+                app:icon_show="false"
+                app:item_content="@string/phone_num_content"
+                app:item_title="@string/str_contact_phone_number"
+                app:line_show="false" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/hw_dp_12"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <Button
+                        android:id="@+id/tvOpenSource"
+                        android:layout_marginBottom="@dimen/hw_dp_16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/hw_dp_32"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/open_source"
+                        android:background="@drawable/selector_hw_btn_common1"
+                        android:textColor="@color/color_100_1A1A1A"
+                        android:textSize="@dimen/hw_text_15" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/hw_dp_16"
+                        android:layout_marginRight="@dimen/hw_dp_16"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_notice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/hua_wei_reads_and_sends_notices"
+                            android:textColor="@color/color_100_D0021B"
+                            android:textSize="@dimen/hw_text_10" />
+
+                        <TextView
+                            android:id="@+id/tv_and"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/and"
+                            android:textColor="@color/color_100_000000"
+                            android:textSize="@dimen/hw_text_10" />
+
+                        <TextView
+                            android:id="@+id/tv_statement"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/privacy_statement"
+                            android:textColor="@color/color_100_D0021B"
+                            android:textSize="@dimen/hw_text_10" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tv_statement2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/privacy_statement"
+                        android:textColor="@color/color_100_D0021B"
+                        android:textSize="@dimen/hw_text_10"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/rights_reserved1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hw_dp_3"
+                        android:text="@string/splash_rights_reserved"
+                        android:textColor="@color/color_50_000000"
+                        android:textSize="@dimen/hw_text_10" />
+
+                    <TextView
+                        android:id="@+id/rights_reserved2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/hw_dp_3"
+                        android:text="@string/technical_support"
+                        android:textColor="@color/color_50_000000"
+                        android:textSize="@dimen/hw_text_10" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.dzbook.view.ElasticScrollView>
+</LinearLayout>

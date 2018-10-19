@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/feedback_page_with_toolbar_marginbottom_emui50">
+	<!-- 空布局用来填充emui5.0 toobar下面的空间  -->
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hw_dp_152"
+    android:maxHeight="@dimen/hw_dp_152"
+    android:paddingLeft="@dimen/hw_dp_16"
+    android:paddingRight="@dimen/hw_dp_16"
+    >
+    <!--android:background="@drawable/com_common_item_selector"-->
+
+    <com.dzbook.view.common.BookImageView
+        android:layout_marginTop="@dimen/hw_dp_8"
+        android:layout_marginBottom="@dimen/hw_dp_5"
+        android:id="@+id/imageViewCover"
+        android:layout_width="@dimen/hw_dp_104"
+        android:layout_height="@dimen/hw_dp_139"
+        android:background="@drawable/bg_bookstore_shadow" />
+
+    <TextView
+        android:gravity="center_vertical"
+        android:id="@+id/textViewBookName"
+        android:layout_width="@dimen/hw_dp_186"
+        android:layout_height="@dimen/hw_dp_20"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_17"
+        android:layout_toRightOf="@id/imageViewCover"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:lineSpacingMultiplier="1.2"
+        android:layout_marginTop="@dimen/hw_dp_13"
+        android:layout_toRightOf="@id/imageViewCover"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_below="@+id/textViewBookName"
+        android:id="@+id/textViewDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="3"
+        android:layout_centerVertical="true"
+        android:ellipsize="end"
+        android:includeFontPadding="false"
+        android:singleLine="false"
+        android:text=""
+        android:textColor="@color/color_50_000000"
+        android:textSize="@dimen/hw_text_13" />
+
+    <TextView
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/hw_text_12"
+        android:id="@+id/tv_add_shelf"
+        android:layout_marginTop="@dimen/hw_dp_8"
+        android:layout_below="@+id/textViewDesc"
+        android:gravity="center"
+        android:text="@string/add_book_shelf"
+        android:background="@drawable/hw_shape_frame"
+        android:textColor="@color/color_100_1A1A1A"
+        android:layout_width="@dimen/hw_dp_72"
+        android:layout_height="@dimen/hw_dp_28" />
+
+    <View
+        android:id="@+id/book_line"
+        android:layout_toRightOf="@id/imageViewCover"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:background="@color/divide_seperate_color"
+        />
+
+</RelativeLayout>

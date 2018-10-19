@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_cloud_service">"華為應用程式"</string>
+    <string name="feedback_msg_title">"您的問題"</string>
+    <string name="feedback_continue_ask">"其他問題"</string>
+    <string name="formaterror_toast">"手機號碼或電子郵件地址無效。"</string>
+    <string name="feedback_type">"意見類型"</string>
+    <string name="feedback_records">"意見回饋記錄"</string>
+    <string name="feedback_push_content">"您有一個新的訊息"</string>
+    
+    
+    <string name="feedback_bitchdelete_dialog_title">"清除"</string>
+    <string name="feedback_bitchdelete_dialog">"清除意見反應記錄嗎？"</string>
+    <string name="feedback_score_usefull">"有幫助"</string>
+    <string name="feedback_score_useless">"沒有幫助"</string>
+    <string name="feedback_score_thankfulness">"謝謝！感謝您的回覆意見！"</string>
+    <string name="feedback_descrption">"說明："</string>
+    <string name="feedback_maxtip">"最多可以儲存 500 筆意見反映的記錄。請先刪除一些記錄。"</string>
+    <string name="feedback_handle_progress">"狀態：%s"</string>
+    <string name="feedback_submitted">"已送出"</string>
+    <string name="feedback_tobe_evaluated">"等待評估中"</string>
+    <string name="feedback_has_evaluated">"評估完成"</string>
+    <string name="feedback_describhe_content">"請在此說明您的問題或建議 (必填)"</string>
+    <string name="feedback_descrption_suggestion">"說明或建議"</string>
+    <string name="feedback_question_frequency">"出現頻率"</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_waiting">"請稍候..."</string>
+    <string name="feedback_beta">"BETA 俱樂部"</string>
+    
+    <string name="feedback_send_nolog_successfully">"已提交回饋意見"</string>
+    <string name="feedback_send_withlog_successfully">"已提交回饋意見，記錄上傳中"</string>
+    <string name="feedback_record_delete">"刪除"</string>
+    <string name="feedback_log_zip_failed">"無法封存診斷記錄。請再試一次。"</string>
+    <string name="feedback_other_app">"問題或建議"</string>
+    <string name="feedbackRecord_title">"意見回饋記錄"</string>
+    <string name="feedbackRecord_draft">"[草稿]"</string>
+    <string name="feedbackRecord_type">"意見類型"</string>
+    <string name="feedbackReply_title1">"客戶服務"</string>
+    <string name="feedbackBitchDelete_new">"刪除所有意見回饋記錄"</string>
+    <string name="feedbackNoRecord">"沒有意見反應記錄"</string>
+    <string name="feedbackDetail_title">"意見反應詳細資料"</string>
+    <string name="feedback_add_image">"附加影像"</string>
+    
+    
+    
+    
+    <string name="feedback_sending_your_feedback">"正在傳送您的意見回饋…"</string>
+    
+    
+    <string name="feedback_send_successfully">"已送出意見回饋。謝謝！"</string>
+    <string name="feedback_send__feedback_failed">"未送出意見反應。"</string>
+    
+    
+    
+    <string name="feedback_your_contact">"聯絡方法"</string>
+    <string name="feedback_input_feedback_hint">"輸入您的意見"</string>
+    <string name="feedback_input_feedback_content">"輸入您的意見 (必填)"</string>
+    <string name="feedback_input_email_or_phone">"輸入電子郵件或電話號碼（必填）"</string>
+    <string name="feedback_send">"傳送"</string>
+    <string name="feedback_more_than_500_characters">"意見內容最多可以包含 500 個字元。"</string>
+    <string name="feedback_contact_cannot_more_than_50_characters">"聯絡方式最多可以包含 50 個字元。"</string>
+    <string name="feedback_file_format_not_support">"不支援此檔案格式， 請選取其他檔案"</string>
+    <string name="feedback_screenshot_not_exist_and_choose_again">"螢幕擷取畫面不存在。請選取其他檔案。"</string>
+    <string name="feedback_notify_to_replace_pic">"將取代目前的圖片"</string>
+    <string name="feedback_ok">"確定"</string>
+    <string name="feedback_cancel">"取消"</string>
+    <string name="feedback_dialog_title">"提示"</string>
+    <string name="feedback_submit">"傳送"</string>
+    <string name="feedback_no_network_connection_prompt">"網路無法使用。請檢查網路連線。"</string>
+    <string name="feedback_frequency_one">"很少"</string>
+    <string name="feedback_frequency_two">"一天一次"</string>
+    <string name="feedback_frequency_three">"一天幾次"</string>
+    <string name="feedback_frequency_four">"經常"</string>
+    <string name="feedback_advanced_fail_confirm_one">"重試"</string>
+    <string name="feedback_advanced_loguploading">"上傳進階記錄中… %s"</string>
+    <string name="feedback_advanced_loguploading_pause">"暫停"</string>
+    <string name="feedback_advanced_loguploading_continue">"繼續"</string>
+    <string name="feedback_advanced_logupload_fail">"無法上傳進階記錄"</string>
+    <string name="feedback_advanced_logupload_tips_new">"上傳記錄會產生大約 %d MB 的數據流量。是否繼續？"</string>
+    <string name="feedback_advanced_success_confirm">"確定"</string>
+    
+    
+    
+    <string name="feedback_advanced_logupload_task_title">"上傳工作"</string>
+    <string name="feedback_advanced_logupload_feedbackrecord_delete">"刪除此記錄？"</string>
+    <string name="feedback_space_not_enough">"內部存儲空間不足。請清理儲存空間或移除一些應用程式，以釋放額外的空間。"</string>
+    <string name="feedback_no_authority_tips">"需要啟用所有相關的權限才能使用本應用程式。請前往設定 &gt; 應用程式，尋找 HiCare 並啟用這些權限。"</string>
+    <string name="feedback_loading">"載入中... "</string>
+    <string name="feedback_advanced_logupload_cancel_tips">"取消上傳進階記錄嗎？"</string>
+    <string name="feedback_advanced_logupload_tips_new_two">"上傳診斷記錄會產生大約 %d KB 的數據流量。是否繼續？"</string>
+    <string name="feedback_describhe_content_new">"請在此說明您的問題或建議"</string>
+    <string name="feedback_app_log_detail_upload">"共用應用程式日誌資訊，以準確診斷問題"</string>
+    <string name="feedback_input_email_or_phone_new">"電子郵件地址或電話號碼"</string>
+    <string name="feedback_oversea_tip">"此功能目前只能在中國使用。請洽詢客服。"</string>
+    <string name="feedback_menu_more">"功能表"</string>
+    <string name="feedback_qq_install">"請安裝 QQ。"</string>
+    <string name="feedback_qq_service_contact">"QQ 客戶服務"</string>
+    <string name="feedback_nonet_touch_retry">"沒有網際網路連線，輕觸以重試"</string>
+    <string name="feedback_describhe_content_hint">"請您詳細描述問題發生的場景和現象，並加入截圖，這將有助於我們快速解決您的問題。"</string>
+    <string name="feedback_add_image_new">"加入截圖 (最多 %d 張)"</string>
+</resources>

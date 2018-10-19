@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationTabView">
+        <attr name="tab_icon" format="reference" />
+        <attr name="tab_stateColor" format="reference" />
+        <attr name="tab_text" format="string" />
+        <attr name="text_gone" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="BottomBarLayout">
+        <attr name="tab_containerId" format="reference" />
+    </declare-styleable>
+</resources>

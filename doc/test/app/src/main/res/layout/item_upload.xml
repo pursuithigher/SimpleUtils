@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:minHeight="64dp"
+    android:paddingLeft="@dimen/hw_dp_16"
+    android:paddingRight="@dimen/hw_dp_16"
+    android:gravity="center_vertical"
+    android:background="@drawable/com_common_item_selector">
+
+    <TextView
+        android:id="@+id/imageview_upload_file_img"
+        android:layout_width="@dimen/hw_dp_40"
+        android:layout_height="@dimen/hw_dp_40"
+        android:scaleType="centerCrop"
+        android:layout_centerVertical="true"
+        android:background="@drawable/shape_hw_book_type_txt"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/hw_dp_12"
+        android:text=""/>
+
+    <ImageView
+        android:id="@+id/file_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:src="@drawable/hw_arrow_right"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hw_dp_64"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/imageview_upload_file_img"
+        android:layout_toLeftOf="@id/file_right_icon"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_upload_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/hw_dp_16"
+            android:layout_marginRight="@dimen/hw_dp_80"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="91panderReader"
+            android:textColor="#1A1A1A"
+            android:textSize="@dimen/hw_dp_15" />
+
+        <TextView
+            android:id="@+id/textview_upload_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_left"
+            android:layout_marginTop="@dimen/hw_dp_3"
+            android:text="19项"
+            android:textColor="@color/color_b5b5b5"
+            android:textSize="@dimen/hw_dp_13" />
+
+    </LinearLayout>
+
+
+    <!-- 下面弄一个 -->
+    <CheckBox
+        android:id="@+id/checkbox_uploadfile_file"
+        style="@style/shelf_grid_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/textview_imported"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dip"
+        android:text="@string/imported"
+        android:textColor="@color/color_5e5e63"
+        android:textSize="@dimen/hw_dp_14" />
+
+    <View
+        android:id="@+id/line_long"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="@dimen/hw_dp_56"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+    <View
+        android:id="@+id/line_short"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:visibility="invisible"
+        android:layout_marginLeft="@dimen/hw_dp_56"
+        android:background="@drawable/hwdivider_horizontal_gray_emui"/>
+
+</RelativeLayout>

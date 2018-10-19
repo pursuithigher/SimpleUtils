@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">HUAWEI Reader</string>
+    <string name="tms_language">bo_CN</string>
+    <string name="copy_finish">འདྲ་བཟོ་ལེགས་གྲུབ་</string>
+    <string name="gift_help_01">བེད་སྤྱོད་རོགས་རམ།</string>
+    <string name="gift_help_02">• བརྗེ་སྤྲོད་ཚབ་རྟགས་ནི་ཅི་ཞིག་ཡིན།</string>
+    <string name="gift_help_03">བརྗེ་སྤྲོད་ཚབ་རྟགས་ནི་ཧྭ་ཝེའི་དཔེ་ཀློག་ནས་སྤྱོད་མཁན་ལ་ཕྱིར་གྲ་སྒྲིག་བྱས་པའི་ཐོན་རྫས་ལག་རྟགས་ཡིན། དེའི་ནང་དུ་དཔེ་དེབ་དང་། VIP ལྟ་ཚེག དངུལ་འཛིན་བྱང་བུ་སོགས་ཚུད་ཆོག </string>
+    <string name="gift_help_04">• བརྗེ་སྤྲོད་ཚབ་རྟགས་ཅི་ལྟར་ལེན།</string>
+    <string name="gift_help_05">1.དཔེ་གྲོང་གླིང་གི་བྱེད་སྒོའི་འབུལ་སྟེར།</string>
+    <string name="gift_help_06">2.པོད་འཕྲིན་དང་སྐད་འཕྲིན་གྱི་མཉམ་ལས་རྒྱན་ཤོག་འབུལ་སྟེར།</string>
+    <string name="gift_help_07">3.སྐུད་འོག་ཏུ་པར་འདེབས་བྱང་བུ་འབུལ་སྟེར།</string>
+    <string name="gift_help_08">ཁྱེད་བྱེད་སྒོ་ཁག་མང་བོར་ཞུགས་ཏེ། བརྗེ་སྤྲོད་ཚབ་རྟགས་ཐོབ་ལེན་བྱས་ཆོག</string>
+    <string name="gift_help_09">• བརྗེ་སྤྲོད་ཚབ་རྟགས་ཅི་ལྟར་བེད་སྤྱོད་བྱེད་དགོས།</string>
+    <string name="gift_help_10">བརྗེ་སྤྲོད་ཚབ་རྟགས་ཐོབ་རྗེས། ཁྱོད་ཀྱིས་རིམ་པ་བཞིན“ ངའི་” -“ ལེགས་སྐྱེས་” -“ སྐྱེས་བྱང་བརྗེ་སྤྲོད” ལྡེབ་ངོས་སུ་བརྗེ་སྤྲོད་ཚབ་རྟགས་ཨང་ནང་འཇུག་བྱས་ཏེ་བརྗེ་སྤྲོད་བྱས་ཆོག</string>
+    <string name="gift_help_11">• བརྗེ་སྤྲོད་ཚབ་རྟགས་བཀོལ་སྤྱོད་སྒྲིག་སྲོལ།</string>
+    <string name="gift_help_12">1.བརྗེ་སྤྲོད་ཚབ་རྟགས་ལ་གོ་ཆོད་དུས་ཡུན་ཡོད་པས། ཁྱེད་ཀྱིས་དུས་ཐོག་ཏུ་བརྗེ་དགོས།</string>
+    <string name="gift_help_13">2.རྩིས་ཨང་འདྲ་མཚུངས་ཤིག་དང་། བརྗེ་སྤྲོད་ཚབ་རྟགས་འདྲ་མཚུངས་ཤིག་ཐེངས་གཅིག་ལས་སྤྱོད་མི་ཆོག བསྐྱར་ཟློས་ཀྱིས་བརྗེ་སྤྲོད་བྱས་མི་ཆོག</string>
+    <string name="gift_help_14">3.རྩིས་ཐོ་རེ་རེའི་ཉིན་རེའི་བརྗེ་སྤྲོད་ཐེངས་གྲངས་ལ་ཚད་ཡོད་པ་དང་། ཁྱེད་ཀྱིས་བརྗེ་སྤྲོད་ཚབ་རྟགས་ཡང་དག་པ་དེ་འགོད་རོགས།</string>
+
+    <string name="gift_exchange">གཏན་ཁེལ།</string>
+    <string name="continuous_monthly_status_user_status">སྤྱོད་མཁན་གྱི་རྣམ་པ།    </string>
+    <string name="continuous_monthly_status_end_time">མིག་སྔར་ནུས་ཡོད་ཚད།</string>
+    <string name="continuous_monthly_status_auto_pay">རང་འགུལ་གྱིས་གྲོན་དངུལ་འཇོག་པ།</string>
+    <string name="continuous_monthly_status_auto_pay_time">རང་འགུལ་གྱིས་དུས་ཚོད་གཏན་ཁེལ།</string>
+
+
+    <string name="real_name_part1">འོས།</string>
+    <string name="book_comment">དཔྱད་བརྗོད་</string>
+    <string name="real_name_part2">རྒྱལ་ཁབ་དྲ་བའི་དཔྱད་བརྗོད་ཀྱི་དངོས་མིང་།</string>
+    <string name="real_name_part3">དགོས།གཏམ་བཤད་དཔྱད་གཏམ་ལ་ཁ་པར་ཨང་གྲངས་སྦྲེལ་དགོས།</string>
+    <string name="real_name_part4">དོ་དམ་གྱི་གཏན་འབེབས།</string>
+    <string name="content_validity">ནང་དོན་མདོར་བསྡུས།</string>
+    <string name="brief">简介</string>
+    <string name="recommend">推荐</string>
+    <string name="hw_comment_empty">དཔྱད་གཏམ་མེད།</string>
+    <string name="add_book_shelf">དཔེ་སྒྲོམ་ནང་བཞག</string>
+    <string name="book_copyright">དཔེ་སྐྲུན་ཁང་།</string>
+    <string name="book_disclaimer">འགན་ཡོལ་གསལ་བསྒྲགས།</string>
+    <string name="my_comment">ངའི་དཔེ་ཆའི་དཔྱད་གཏམ།</string>
+    <string name="my_comment_score">ངའི་དཔྱད་སྐར།</string>
+
+
+    <string name="person_top_remain">དོ་སྣང་བྱེད་ས།</string>
+    <string name="person_top_vouchers">དངུལ་ཚབ་འཛིན་ཤོག</string>
+
+
+    <string name="splash_agree_content1">ཧྭ་ཝེའི་དཔེ་ཀློག་ནི་ཧྭ་ཝེའི་མཉེན་ཆས་ལག་རྩལ་ཚད་ཡོད་ཀུང་སི་ཡིས ། ཁྱེད་ལ་གློག་རྡུལ་དཔེ་ཆའི་མཉེན་ཆས་ཕབ་ལེན་དང་། ལྟ་ཀློག   དོ་དམ་བཅས་འདོན་སྤྲོད་བྱེད་པ་ཡིན།  གོང་གསལ་གྱི་བྱེད་ནུས་དེ་དག་མངོན་འགྱུར་བྱ་ཆེད། ཉེར་སྤྱོད་འདི་བཀོལ་སྤྱོད་བྱེད་པའི་བརྒྱུད་རིམ་ཁྲོད་དྲ་བར་སྦྲེལ་དགོས་ཤིང་། ཁྱེད་རང་གི་ཁ་པར་གྱི་གསོག་ཉར་དང་། ཁ་པར་སོགས་ཀྱི་དབང་ཚད་དང་བྱེད་ནུས་འདི་དག་ལེན་སྤྱོད་བྱེད་དགོས་ལ། ད་དུང་ཁྱེད་རང་གི་གཤམ་གསལ་ཆ་འཕྲིན་དག་བཀོལ་སྤྱོད་དང་། བསྡུ་ལེན་བྱེད་དགོས།：</string>
+    <string name="splash_agree_content2_title">སྒྲིག་ཆས་ཆ་འཕྲིན།</string>
+    <string name="splash_agree_content2">དེའི་ནང་སྒྲིག་ཆས་མཚོན་རྟགས་དང་། བརྙན་ཡོལ་ཚད་གཞི། བཀོལ་སྤྱོད་མ་ལག  མཐའ་སྣེ་དབྱིབས་རྟགས། སྤོ་སྒུལ་རྒྱལ་ཁབ་ཀྱི་ཚབ་ཨང་། འབྱེད་ཕྱོད།  སྐད་བརྡའི་མ་ལག་བཅས་འདུས།；</string>
+    <string name="splash_agree_content3_title">དྲ་རྒྱའི་ཆ་འཕྲིན།</string>
+    <string name="splash_agree_content3">དེའི་ནང་དྲ་རྒྱ་སྦྲེལ་མཐུད་ཀྱི་རྣམ་པ་དང་། དྲ་རྒྱར་སྦྲེལ་བའི་ཐབས་ལམ་དང་རིགས་དབྱེ། IP གནས་ཡུལ་སོགས་འདུས།；</string>
+    <string name="splash_agree_content4_title">མགྲོན་སྣེའི་ཆ་འཕྲིན།</string>
+    <string name="splash_agree_content4">དེའི་ནང་མགྲོན་སྣེའི་ཆ་འཕྲིན་ལྟ་ཀློག་པར་གཞིའི་རྟགས། མགྲོན་སྣེའི་ཕབ་ལེན་ཐབས་ལམ། ཁྱེད་ལ་མགྲོན་སྣེའི་ཁ་ཕྱེ/སྒོ་རྒྱག་གི་དུས་ཚོད་སོགས་འདུས།；</string>
+    <string name="splash_agree_content5_title">ཉེར་སྤྱོད་ཆ་འཕྲིན།</string>
+    <string name="splash_agree_content5">དེའི་ནང་མགྲོན་སྣེའི་ཆ་འཕྲིན་ལྟ་ཀློག་པར་གཞིའི་རྟགས། མགྲོན་སྣེའི་ཕབ་ལེན་ཐབས་ལམ། ཁྱེད་ལ་མགྲོན་སྣེའི་ཁ་ཕྱེ/སྒོ་རྒྱག་གི་དུས་ཚོད་སོགས་འདུས།ཉེར་སྤྱོད་ཆ་འཕྲིན། དེའི་ནང་ཕབ་ལེན་བྱས་ཟིན་པའི་གློག་རྡུལ་དཔེ་ཆའི་གཞུང་རེའུ་དང་། གློག་རྡུལ་དཔེ་ཆའི་བཀོལ་སྤྱོད་ཟིན་ཐོ། གློག་རྡུལ་དཔེ་ཆའི་འཚོལ་བཤེར་ཟིན་ཐོ། བརྡ་ཁྱབ་ནང་དོན་གྱི་འགྲེམས་སྟོན་དང་རྡེབ་མནན་ཟིན་ཐོ་སོགས་འདུས།;ཁྱེད་ཀྱིས་ང་ཚོར་འདོན་སྤྲོད་བྱེད་དགོས་པའི་འབྲེལ་ཡོད་གཞི་གྲངས་གཞན་དག་ནི། གནད་དོན་བསྟན་པའི་ཉིན་ཐོ། འབྲེལ་གཏུགས་ཆ་འཕྲིན། རྒྱལ་ཁབ</string>
+    <string name="splash_agree_content6">གོང་གསལ་གྱི་གཞི་གྲངས་དག་ཀྲུང་ཧྭ་མི་དམངས་སྤྱི་མཐུན་རྒྱལ་ཁབ་ཀྱི་ས་ཁོངས་ནང་གི་ཞབས་ཞུའི་འཕྲུལ་ཆས་སུ་བརྒྱུད་གཏོང་དང་ཉར་ཚགས་བྱེད་ངེས།。</string>
+    <string name="splash_agree_content7">ཉེར་སྤྱོད་འདི་ནས་ཕྱིར་འཐེན་བྱས་རྗེས། རྒྱབ་སྟེགས་ཀྱི་དྲ་བར་སྦྲེལ་ཏེ་འཕྲིན་ཐུང་བསྡུ་ལེན་གྱི་ཞབས་ཞུ་ལེགས་འགྲུབ་བྱེད་དགོས།。</string>
+    <string name="splash_agree_content8">
+       གལ་ཏེ་ཁྱེད་ཉིད་ང་ཚོས་གོང་གསལ་གྱི་ཆ་འཕྲིན་འཚོལ་སྡུད་བྱེད་པར་འཐད་པ་མིན་པ་དང་།  ཡང་ན་འབྲེལ་ཡོད་ཁ་པར་དབང་ཚད་ལེན་སྤྱོད་བྱེད་པར་མོས་འཐད་མེད་ན། དེས་མཉེན་ཆས་འདི་རྒྱུན་ལྡན་དུ་འཁོར་སྐྱོད་བྱེད་མི་ཐུབ། ང་ཚོས་ཁྱེད་རང་ལ་ཞབས་ཞུ་མཁོ་འདོན་བྱེད་ཐབས་བྲལ། ཁྱེད་རང་རྩིས་ཨང་ལས་ཕྱིར་འཐེན་བྱས་ཏེ་གྲངས་གཞི་ཁ་ཤས་འཚོལ་སྡུད་བྱེད་པའི་མཚམས་བཞག་ཆོག ཡང་ན་ཉེར་སྤྱོད་འདི་ནས་ཕྱིར་འཐེན་བྱས་ཏེ་ གོང་གསལ་གྱི་བྱེད་ནུས་དང་གྲངས་གཞི་ཚང་མ་འཚོལ་སྡུད་བྱེད་པའི་མཚམས་བཞག་ཆོགཁྱེད་ཀྱིས“ མོས་འཐད” རྡེབ་གནོན་བྱས་ན།  ཁྱེད་རང་གོང་གསལ་གྱི་ནང་དོན་དང་། ཧྭ་ཝེའི་ལྟ་ཀློག་གི་སྤྱོད་མཁན་གྱི་གྲོས་ཡིག ཧྭ་ཝེའི་དཔེ་ཀློག་དང་སྒེར་གྱི་གསང་དོན་སྐོར་གྱི་གསལ་བསྒྲགས་བཅས་མོས་འཐད་ཡོད་པ་མཚོན།
+    </string>
+    <string name="splash_agree_content9"> “འཐད་པ” མནན་ན། ཁྱེད་རང་གོང་གསལ་ནང་དོན་ལ་འཐད་པ་མཚོན།</string>
+    <string name="splash_agree_content10">ཧྭ་ཝེའི་དཔེ་ཀློག་གི་སྤྱོད་མཁན་གྲོས་མཐུན།</string>
+    <string name="splash_agree_content12">ཧྭ་ཝེའི་དཔེ་ཀློག་དང་གསང་དོན་གྲོས་མོལ་གྱི་གསལ་བསྒྲགས་སྐོར།</string>
+    <string name="splash_agree">མོས་མཐུན།</string>
+
+    <string name="str_order_price">རིན་གོང་།</string>
+    <string name="str_order_vouchers">དངུལ་ཚབ་འཛིན་ཤོག</string>
+    <string name="str_order_need_pay">སྤྲོད་དགོས།</string>
+    <string name="str_order_buy_chapter">ཉོ་སྒྲུབ་ལེའུ།</string>
+    <string name="str_order_current_account_remain">མིག་སྔར་རྩིས་ཐོའི་ནང་གི་ལྷག་དངུལ།：</string>
+    <string name="str_order_current_account_voucher">མིག་སྔའི་དངུལ་འཛིན་བྱང་བུ།：</string>
+    <string name="str_order_auto_purchase_next_chapter">རང་འགུལ་གྱིས་གཤམ་གྱི་ལེའུ་ཉོ།</string>
+    <string name="str_order_book_orders">དཔེ་དེབ་མངག་ཐོ</string>
+
+
+    <string name="jump_wps_dialog_title">ཁྱེད་རང་གི་ད་དུང་བསྒར་ལྷུ་སྒྲིག་སྦྱོར་བྱས་མེད་། སྒྲིག་སྦྱོར་བྱས་རྗེས་བེད་སྤྱོད་ཆོག་པའི་བྱེད་ལས་</string>
+    <string name="real_name_auth_title">དངོས་མིང་བདེན་དཔང་།</string>
+    <string name="real_name_auth_tips">དངོས་མིང་བདེན་དཔང་ལ་ཁྱེད་རང་གི་ཁ་པར་ཨང་གྲངས་ངོ་མར་ཚོད་ལྟ་བདེན་བརྟག་བྱེད་དགོས་ཤིང་།ཀྲུང་གོའི་སྐམ་ས་ཁོ་ནའི་ཁ་པར་ཨང་གྲངས་ལས་མི་ཆོག。</string>
+    <string name="real_name_auth_tips2">དངོས་མིང་བདེན་དཔང་ལ་ཁྱེད་རང་གི་ཁ་པར་ཨང་གྲངས་ངོ་མར་ཚོད་ལྟ་བདེན་བརྟག་བྱེད་དགོས་ཤིང་། \nཞིང་། ཀྲུང་གོའི་སྐམ་ས་ཁོ་ནའི་ཁ་པར་ཨང་གྲངས་ལས་མི་ཆོག。</string>
+    <string name="real_name_auth">བདེན་དཔང་འབུལ་སྤྲོད།</string>
+    <string name="real_name_input_verify_code">བདེན་བཤེར་ཨང་ནང་འཇུག་བྱེད་རོགས།</string>
+    <string name="real_name_input_num">ཁ་པར་ཨང་གྲངས་འབྲི་རོགས།</string>
+    <string name="real_name_get_verify_code">བདེན་བཤེར་ཨང་ཐོབ་ལེན།</string>
+    <string name="real_name_get_verify_code_retry">ཡང་བསྐྱར་ལེན་པ།</string>
+    <string name="real_name_please_input_phone">ཁ་པར་ཨང་གྲངས་འབྲི་རོགས།</string>
+    <string name="real_name_phone_num_format_error">ཁ་པར་ཨང་གྲངས་ཀྱི་རྣམ་པ་ནོར་བ།</string>
+    <string name="real_name_phone_check_error">བདེན་དཔང་ཕམ་ཉེས་བྱུང་བ།</string>
+    <string name="dialog_real_name">བདེན་དཔང་འཕྲལ་མར་བྱེད་པ།</string>
+    <string name="get_sms_verify_fail_please_retry">བདེན་བཤེར་ཨང་ཐོབ་ལེན་བྱས་པ་ཕམ་ཉེས་བྱུང་བས། ཡུད་ཙམ་གྱིས་ཡང་བསྐྱར་ཚོད་ལྟ་བྱོས།</string>
+
+    <string name="cancel_monthly_dialog_enter_cancel">མེད་བཟོ་གཏན་ཁེལ།</string>
+    <string name="cancel_monthly_dialog_think_again">ཡང་འདང་རྒྱོབ།</string>
+
+    <string name="send_success">བསྐུར་བ་ལེགས་འགྲུབ་བྱུང་།</string>
+    <string name="real_name_switch_phone_num">བདེན་དཔང་བྱེད་པའི་ཁ་པར་ཨང་གྲངས་བརྗེ་བ།</string>
+    <string name="real_name_switch_success">ལེགས་འགྲུབ་བྱུང་།</string>
+    <string name="real_name_pre_phone_num">བདེན་དཔང་བྱེད་པའི་ཁ་པར་ཨང་གྲངས་ལེགས་འགྲུབ་བྱུང་།</string>
+    <string name="real_name_pre_success">ཐོབ་ཐང་ཆ་འཕྲིན་བདེན་དཔང་བྱེད་པ་ལེགས་འགྲུབ་བྱུང་།</string>
+
+    <string name="str_cloudshelf_delete_failed">བསུབ་པ་ཕམ་ཉེས་བྱུང་། ཡུད་ཙམ་གྱིས་ཡང་བསྐྱར་ཚོད་ལྟ་བྱོས།</string>
+
+    <string name="str_person_common_sign_in">འབྱོར་ཐོ་འགོད་པ།</string>
+    <string name="str_person_common_top_up">དངུལ་འཇོག</string>
+    <string name="str_person_common_gift">འབུལ་རྟེན།</string>
+    <string name="str_shelf_delete_this_books">ཡིན་མིན་སུབ་པ་འདིའི་དཔེ་དེབ།</string>
+    <string name="str_person_common_activity">བྱེད་སྒོ།</string>
+
+    <string name="str_shelf_delete_books">ཡིན་མིན་སུབ་པ་བདམས་པ་འི། %dའདིའི་དཔེ་དེབ། </string>
+    <string name="str_shelf_sort_type">སྒྲིག་ཐབས།</string>
+    <string name="str_shelf_sorttype_name">དཔེ་ཆའི་མིང་ལྟར་གོ་རིམ་སྒྲིག་པ།</string>
+    <string name="str_shelf_prompt1">དཔེ་ཆའི་མིང་ཁྱོད་ཀྱིས་མིག་སྔའི་གནས་སར་རིམ་པ་བྱས་ཏེ་གསར་བ་ཞིག་གདམ་རོགས་།</string>
+    <string name="str_shelf_prompt2">ཁྱོད་མིག་སྔར་དུས་ཚོད་རིམ་སྒྲིག་ཏུ་གནས་ཡོད་པས།ཡང་བསྐྱར་གདམ་གསེས་གནང་རོགས།</string>
+    <string name="str_shelf_sorttype_time">ཉེ་ཆར་ལྟ་ཀློག་ལྟར་རིམ་སྒྲིག</string>
+
+    <string name="str_book">དཔེ་ཆ།</string>
+    <string name="str_other">གཞན་དག</string>
+    <string name="str_consume_record">འཛད་སྤྱོད་བྱས་པའི་ཐོ།</string>
+
+    <string name="str_shelf_noselect">མ་བདམ།</string>
+    <string name="cloud_bookshelf">སྤྲིན་དཔེ་སྒྲོམ།</string>
+    <string name="local_import">རང་སའི་དཔེ་ཆ་འདྲེན་འཇུག</string>
+    <string name="bookshelf_manage">དཔེ་སྒམ་དག་སྒྲིག</string>
+    <string name="bookshelf_list_mode">རེའུ་རྣམ་མ་དཔེ།</string>
+    <string name="bookshelf_page_mode">མདུན་ཤོག་དཔེ་དབྱིབས།</string>
+
+    <string name="str_book_detail_menu_jrsj">དཔེ་སྒྲོམ་ལ་འཇོག་པ།</string>
+    <string name="str_book_detail_menu_yxz">སྒྲོམ་ནས་ཕབ།</string>
+    <string name="str_open_success">ཤར་གཏོང་ལེགས་འགྲུབ་བྱུང་།</string>
+    <string name="str_now_recharge">མྱུར་དུ་དངུལ་འཇོག</string>
+    <string name="str_convert_information">ལྟ་ཚེག་དངུལ་བརྗེས་འཛའ་ཐང་།སྒོར1=མེ་ཏོག་དངུལ་ལོར1=ལྟ་ཚེག100</string>
+    <string name="str_recharge">དངུལ་འཇོག</string>
+    <string name="str_now_buy">མྱུར་དུ་ཉོ།</string>
+
+
+    <string name="recharge_list_remind_1">1དངུལ་འཇོག་དཔེ་ཀློག་འདི་དཔེ་གྲོང་འདི་ཁོ་ན་ལས་བཀོལ་སྤྱོད་བྱས་ཆོག。</string>
+    <string name="recharge_list_remind_2">2 འཕྲིན་ཐུང་མ་ཡིན་པའི་དངུལ་འཇོག་ལ། སྒོར1 ནི་ལྟ་ཚེག་100ལ་བརྗེ།。</string>
+    <string name="recharge_list_remind_3">3 དངུལ་འཇོག་ལས་ཐོབ་པའི་དངུལ་འཛིན་བྱང་བུའི་དུས་ཡུན་ནུས་ཚད་ནི་ཉིན་བདུན་ཡིན། ཁྱོད་ཀྱིས་རིམབཞིན“ ངའི་རྩིས་ཐོ”-“ དངུལ་འཛིན་བྱང་བུ”-“དུས་ཡུན་ནུས་ཚད” བརྒྱུད་དེ། དངུལ་འཛིན་བྱང་བུའི་དུས་ཡུན་ནུས་ཚད་ལ་བལྟས་ཆོག。</string>
+    <string name="recharge_list_remind_4">4གལ་ཏེ་དངུལ་བཞག་རྗེས་རྩིས་ཐོའི་ནང་གི་ལྷག་དངུལ་དུས་ཡུན་རིང་བོར་འགྱུར་ལྡོག་གང་ཡང་མེད་ན། རོགས། ཁྱེད་ཀྱིས་རང་གི་སྤྱོད་མིང་#userId#ཟིན་ཐོར་བཀོད་དེ། མགྲོན་ཞུའི་ཨང་གྲངས400–118–0066ལ་ཁ་པར་གཏོང་རོགས།。</string>
+
+
+    <string name="person_top_hb">མེ་ཏོག་དངུལ།</string>
+
+    <string name="person_account_help_info">ལྟ་ཚེག་དང་དངུལ་འཛིན་བྱང་བུས་དཔེ་དེབ་ཉོས་ཆོག ལྟ་ཚེག་ལ་དངུལ་བཞག་རྗེས་ནམ་ཡང་གོ་ཆོད་པ་དང་།དངུལ་འཛིན་བྱང་བུའི་ནུས་ཡོད་ཚད་ནི་དུས་ཡོལ་བྱུང་རྗེས་རང་འགུལ་གྱིས་ནུས་པ་ཤོར་འགྲོ</string>
+    <string name="person_account_period_validity">དུས་ཚོད་ནུས་ཚོད། ></string>
+    <string name="str_setting">གསར་འཛུགས།</string>
+
+    <string name="item_vouchers_balance">ལྷག་དངུལ།</string>
+
+    <string name="this_week_has_been_read">གཟའ་འཁོར་འདིར་ཀློག་ཟིན།</string>
+    <string name="str_minutes">སྐར་མ།</string>
+
+    <string name="and">དང་</string>
+
+
+    <string name="str_lot_download_rule">སྡེབ་ཉོས་སྒྲིག་སྲོལ།</string>
+    <string name="str_lot_select_chapter_num">ཉོ་དགོས་པའི་ལེའུ་གྲངས་གདམ་པ།</string>
+
+    <string name="str_user_account">སྤྱོད་མཁན་གྱི་རྩིས་ཐོ།</string>
+    <string name="str_open_day">ཉིན་གྲངས་ཤར་གཏོང་།</string>
+    <string name="str_member_dead_line">ཚོགས་མི་དུས་ཐོན།</string>
+    <string name="str_back_vip_area">VIP ཆེད་ཁུལ་ལ་ཕྱིར་ལོག</string>
+    <string name="str_look_vip_open_record">ཤར་གཏོང་ཟིན་ཐོ་ལ་བལྟ་བ།</string>
+    <string name="str_open_vip_success_msg">ཤར་གཏོང་ལེགས་འགྲུབ་བྱུང་རྗེས། དཔེར་ན་དུས་ཡུན་རིང་བོར་འགྱུར་ལྡོག་གང་ཡང་མེདན། ཁྱེད་ཀྱིས400–118–0066ལ་ཁ་པར་ཐོང་།</string>
+    <string name="str_version_number">པར་མའི་རྟགས།</string>
+    <string name="str_tel">tel:</string>
+
+    <string name="str_weizhi">མི་ཤེས་པ།</string>
+    <string name="str_jrmfzq">རིན་མེད་ཆེད་ཁུལ་ལ་འཛུལ་བ།</string>
+    <string name="str_jrqd">དེ་རིང་འབྱོར་ཐོ་འགོད་པ།</string>
+    <string name="str_jryq">དེ་རིང་འབྱོར་ཐོ་བཀོད་ཟིན་པ།</string>
+    <string name="str_qdlkd">འབྱོར་ཐོ་འགོད་པ་ལེན་ནང་ཀུན་གྱིས་དོ་སྣང་བྱེད་ས་།</string>
+    <string name="str_qqd">དེ་རིང་འབྱོར་ཐོ་འགོད་པ།</string>
+    <string name="str_book_xj">སྒྲོམ་ནས་ཕབ་པ།</string>
+    <string name="str_book_xm">རིན་མེད་ཚད་བཀག</string>
+    <string name="str_book_gx">གསར་སྒྱུར།</string>
+
+    <string name="str_member_start_time">ཚོགས་མི་ནུས་ཐོན་དུས་ཚོད།</string>
+    <string name="str_member_end_time">ཚོགས་མི་དུས་ལོངས་དུས་ཚོད།</string>
+    <string name="str_order_num">མངགས་ཐོའི་ཨང་གྲངས།：</string>
+
+    <string name="str_contact_phone_number">མགྲོན་ཞུའི་འབྲེལ་གཏུགས།</string>
+
+    <string name="dialog_isLoading">"སྣོན་འཇུག་བྱེད་བཞིན་པ།…"</string>
+
+    <string name="str_set_up_the_network">ལེགས་སྒྲིག་བྱས་རྗེས་དྲ་བའི་</string>
+    <string name="str_check_network_connection">དྲ་རྒྱ་སྦྲེལ་མེད</string>
+
+    <!-- 导航 -->
+    <string name="string_active_center">འགུལ་སྐྱོད་ལྟེ་གནས།</string>
+    <string name="string_feedback">རོགས་རམ་དང་ལྡོག་སྐྱེལ།</string>
+    <string name="string_about">སྐོར།</string>
+    <string name="string_activity_centre">བྱེད་སྒོ།</string>
+    <string name="string_gift_center">ལག་རྟགས་ལྟེ་གནས།</string>
+
+    <string name="net_work_notuse">དྲ་རྒྱའི་མི་བརྟན་ན་ཡུད་ཙམ་ནས་ཡང་བསྐྱར་ལྟ་རོགས་།</string>
+    <string name="loadContent">བཤར་འབེབས་བྱེད་བཞིན་ཡོད།…</string>
+    <string name="request_data_failed">ཞབས་ཞུ་ཆས་ཕལ་ཆེར་ཡུལ་སྐོར་ལ་བུད་སོང་བས། ཅུང་ཙམ་འགོར་རྗེས་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+    <string name="no_more_data">གཞི་གྲངས་དེ་བས་མང་བ་མེད།</string>
+    <string name="chapter_list_error">རྩོམ་སྒྲིག་མི་སྣ་ཧ་ཅང་སྒྱིད་ལུག་ཡིན་པས། ལེའུ་ནང་གི་ཆ་འཕྲིན་ཆད་ཤོར་བྱུང་འདུག</string>
+    <string name="download_chapter_error">ལེའུ་ཕབ་སྣོན་ཕམ་ཉེས་བྱུང་བས། ཅུང་ཙམ་འགོར་རྗེས་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+    <string name="add_book_shelf_fail_retry">དཔེ་སྒྲོམ་ནང་བཞག་པ་ཕམ་ཉེས་བྱུང་བས། ཅུང་ཙམ་འགོར་རྗེས་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+
+    <!-- 版本升级 -->
+
+    <!-- 书架 -->
+    <string name="fr_recommend_titletext">མཚམས་སྦྱོར།</string>
+
+    <!-- 关于 -->
+    <string name="version">པར་རྟགས།1.0</string>
+    <string name="check_update">ཞིབ་བཤེར་གསར་བཟོ།</string>
+
+
+    <string name="phone_num_content">400-118-0066</string>
+
+    <!-- FeelBack -->
+
+    <!-- Reader -->
+
+
+    <string name="write_note">ཟིན་བྲིས་འབྲི།</string>
+    <string name="store_note">གཏན་འཁེལ་ཟིན་ཐོ་</string>
+    <!--<string name="reader_catelog">དཀར་ཆག</string>-->
+
+    <string name="book_down_shelf">དགོངས་པ་མ་ཚོམ།དེབ་དེ་དཔེ་ཁྲི་ལས་བླངས་ཟིན།</string>
+    <!-- 预加载 -->
+    <string name="preload_load_fail">ཕབ་སྣོན་ཕམ་ཉེས་བྱུང་། ཅུང་ཙམ་འགོར་རྗེས་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+    <string name="preload_loading_fail">དཔེ་དེབ་ཀྱི་ལེའུ་གཅིག་ཀྱང་མེད། ཡང་བསྐྱར་དཔེ་སྒྲོམ་ནང་དུ་འཇོག་པར་ཚོད་ལྟ་བྱོས།</string>
+
+    <string name="preload_sdcard_notexist">གསོག་འཇོག་བྱང་བུ་མི་གནས་པས། ཁྱེད་ཀྱིས་གསོག་འཇོག་བྱང་བུ་ཞིབ་གཤེར་བྱོས།。</string>
+
+    <!-- 短信屏蔽功能的strings -->
+
+    <!-- -->
+    <string name="down_follow_chapter">ཕབ་ལེན་རྗེས་མཐུད་ལེའུ་ཉོས་ཟིན།</string>
+    <string name="same_book">རིགས་མཚུངས་ཀྱི་དཔེ་དེབ།</string>
+    <string name="book_detail">དཔེ་ཆ་གནས་ཚུལ་གསལ་བོ།</string>
+    <string name="more">དེ་ལས་མང་པོ།</string>
+    <string name="free">རིན་མི་དགོས་བ།</string>
+    <string name="chapter_directory">ས་བཅད་དཀར་ཆག</string>
+    <string name="cancel">མེད་བཟོ།</string>
+    <string name="add_bookshelf">དཔེ་སྒྲོམ་ནང་བཞག་པ།</string>
+    <string name="add_bookshelf_fail">དཔེ་སྒྲོམ་ནང་བཞག་པ་ཕམ་ཉེས་བྱུང་།</string>
+    <string name="free_test_read">རིན་མེད་དཔེ་ཀློག་ཚོད་ལྟ།</string>
+    <string name="book_name">འཁྱགས་རོམ་དང་མེའི་གླུ།</string>
+    <string name="book_no_score">ད་བར་དཔྱད་སྐར་མེད།</string>
+    <string name="keep_read">མུ་མཐུད་དུ་དཔེ་ཀློག</string>
+    <string name="last_ten_chapter">ལེའུ་10</string>
+    <string name="all_select">ཡོངས་འདེམས།</string>
+    <string name="delete">བསུབ་པ།</string>
+    <string name="dialog_join_bookshelf_hint">དཔེ་ཆ་འདི་ལ་དགའ་ན་དཔེ་སྒྲོམ་ནང་དུ་ཞུགས་རོགས་།</string>
+    <string name="sure">གཏན་ཁེལ།</string>
+
+    <string name="imported">འདྲེན་འཇུག་བྱས་ཟིན།</string>
+    <string name="ordering_in_book_name">གོ་རིམ།</string>
+
+
+    <string name="store_not_enough">ཁྱེད་ཀྱི་གསོག་འཇོག་བྱང་བུའི་བར་སྟོང་ཁ་བཀང་བས། བེད་མེད་ཀྱི་ཡིག་ཚགས་ཁ་ཤས་སུབ་རོགས།</string>
+    <string name="sdcard_unavailable">ཁྱེད་ཀྱི་གསོག་འཇོག་བྱང་བུ་བཀོལ་མི་ཐུབ་པས།ཁྱེད་ཀྱིས་ལེགས་པོར་བཙུགས་ཡོད་མེད་ལ་ཞིབ་བཤེར་བྱོས།</string>
+    <string name="load_data_failed">རེ་ཞུའི་གཞི་གྲངས་རྒྱུན་ལྡན་མིན་པས། ཅུང་ཙམ་འགོར་རྗེས་ཚོད་ལྟ་བྱོས།</string>
+
+
+    <!--911网络挟持-->
+
+    <!--充值取消意见反馈-->
+    <string name="str_rank_top">རིམ་ཐོ།</string>
+    <string name="str_search">བཤེར་འཚོལ།</string>
+    <string name="str_search_hint">དཔེ་མིང་།/རྩོམ་པ་པོ/རྟགས་འཚོལ་བ།</string>
+    <string name="str_search_hint_author">རྩོམ་པ་པོ</string>
+    <string name="str_search_hint_tag">རྟགས་འཚོལ་བ།</string>
+    <string name="str_searchhot_title">དཔེ་དེབ་འཚོལ་བ།</string>
+    <string name="str_searchhot_history">ལོ་རྒྱུས་འཚོལ་བ།</string>
+    <string name="str_searchkeys_read">ཀློག་པ།</string>
+    <string name="str_eye_care_read_mode">མིག་སྲུང་རྣམ་པ།</string>
+    <string name="str_myaccount">ངའི་རྩིས་ཐོ།</string>
+    <string name="str_myvip">ངའི་ཟླ་རྩིསVIP</string>
+    <string name="str_systemset">གསར་འཛུགས།</string>
+    <string name="str_readpref">དཔེ་ཀློག་དགའ་ཕྱོགས།</string>
+    <string name="str_person_cloudself">ངའི་སྤྲིན་དཔེ་སྒྲོམ་སྤྲིན།</string>
+    <string name="str_read_length">ངའི་ཀློག་འདོན་དུས་ཡུན།</string>
+    <string name="str_book_review">ངའི་དཔེ་ཆའི་དཔྱད་གཏམ།</string>
+    <string name="str_rechargerecord">དངུལ་འཇོག་ཟིན་ཐོ།</string>
+    <string name="string_clearcache">གཙང་སེལ་ལྷོད་གསོག</string>
+    <string name="string_plugin_manage">བར་གཞུག་དོ་དམ།</string>
+    <string name="string_cacelbuy_next">ལེའུ་རང་འགུལ་ཉོ་བ།</string>
+    <string name="string_reference">གསར་གཙང་།</string>
+
+    <!--བསམ་ཡུལ་ལས་འདས་པར་སྟོང་བ་རེད། མགྱོགས་པོར་སོང་སྟེ་དཔེ་གྲོང་ནས་འདེམས་ཤིག-->
+    <string name="string_empty_type">བསམ་ཡུལ་ལས་འདས་པར་སྟོང་བ་རེད། ཚོགས་པ་གཞན་དག་ཏུ་ཚོད་ལྟ་བྱོས།</string>
+    <!--书城改成信息流的提示-->
+    <string name="string_gobookstore">ངོ་མཚར་ཆེ་བའི་ནང་དོན་སྔར་ལས་མང་བ།</string>
+
+    <string name="sign_in">འབྱོར་ཐོ་འགོད་པ།</string>
+    <string name="cancel_all_select">ཚང་མ་མི་འདེམས་པ།</string>
+    <string name="jump">མཆོང་བརྒལ།</string>
+    <string name="no_search_data">གནད་ཚིག་འདིར་བཤེར་འཚོལ་གཞི་གྲངས་མེད།</string>
+
+    <string name="refresh">གསར་སྒྱུར།</string>
+
+    <string name="str_deletebooks">དཔེ་དེབ་སུབ་བཞིན་པ།</string>
+
+
+    <string name="receive">ལེན་པ།</string>
+    <string name="next_chapter">ལེའུ་འོག་མ།</string>
+    <string name="free_book_not_support_downlod">དཔེ་དེབ་རིན་མེད་ཚད་བཀག་ལ་གནས་སྐབས་སུ་སྡེབ་མང་ཕབ་ལེན་རྒྱབ་སྐྱོར་མེད།</string>
+
+    <string name="data_error_please_retry">གཞི་གྲངས་ནོར་འཁྲུལ་ཡིན་པས།ཅུང་ཙམ་འགོར་རྗེས་ཚོད་ལྟ་བྱོས།。</string>
+
+
+    <string name="no_download_already_order_chapter">རྗེས་མཐུད་དུ་ལྷོད་གསོག་ས་བཅད་མེད།</string>
+    <string name="local_book_no_chapters_please_retry_add">དཔེ་དེབ་ཏུ་དཀར་ཆག་ཆ་འཕྲིན་ཐོབ་ལེན་བྱེད་མི་ཐུབ་པས།ཡང་བསྐྱར་འདྲེན་འཇུག་གནང་རོགས།</string>
+
+    <string name="str_bookdetail_moreinfo">དཔེ་དེབ་ཆ་འཕྲིན་དེ་བས་མང་།</string>
+    <string name="str_synccloudshelf_more">ཉེ་ལམ་ཁྱེད་ཀྱིས་ལྟ་ཀློག་གི་དཔེ་དེབ་དཔེ་སྒྲོམ་སྣོན་དང་། དཔེ་ཆ་དེ་བས་མང་བ་དཔེ་སྒྲོམ་ལ་གནོན་། སྤྲིན་</string>
+    <string name="str_synccloudshelf">ཉེ་ལམ་ཁྱེད་ཀྱིས་ཀློག་པའི་དཔེ་དེབ་དཔེ་སྒྲོམ་ལ་བཅུག་ཡོད།</string>
+    <string name="downstart">ཁྱེད་རང་ལ་ཕབ་ལེན་བྱེད་མགོ་བརྩམས། མ་ལག་གི་བརྡ་ཐོའི་ལྡེབས་ངོས་སུ་བལྟས་ཆོག</string>
+    <string name="downhttpexception">སྟབས་མི་ལེགས་པ་ཞིག་ནི། ཞབས་ཞུ་ཆས་བོར་སོང་། ཅུང་ཙམ་འགོར་རྗེས་ཚོད་ལྟ་བྱོས།</string>
+    <string name="downoutexception">ནང་གསོག་བར་སྟོང་མི་འདང་བས།  ཁྱེད་ཀྱིས་གསོག་འཇོག་བར་སྟོང་ཁ་ཤས་གྲོལ་གཏོང་བྱས་རྗེས་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+    <string name="down_tip_content">མིག་སྔའི་ཕབ་ལེན་གྱིས་ཁྱེད་ཀྱི་ཁ་པར་གྱི་བཞུར་རྒྱུན་ཟད་གྲོན་གཏོང་བས།Wi-Fiཡོད་པའི་ཁོར་ཡུག་ཏུ་ཕབ་ལེན་བྱེད་པའི་བསམ་འཆར་བཏོན་པ་ཡིན།</string>
+    <string name="down_ok">མུ་མཐུད་ཕབ་ལེན།</string>
+    <string name="down_cancel">སྒོ་གཏན།</string>
+
+    <string name="comment_edit">རྩོམ་སྒྲིག</string>
+    <string name="comment_delete">བསུབ་པ།</string>
+    <string name="comment_error">དགོངས་དག དཔྱད་བརྗོད་གསལ་བོ་ཐོབ་ལེན་ཕམ་ཉེས་བྱུང་།</string>
+    <string name="comment_commit_error">དགོངས་དག ཡར་སྤྲོད་ཕམ་ཉེས་བྱུང་།</string>
+    <string name="comment_send_comment">དཔྱད་བརྗོད་བྲིས།</string>
+    <string name="comment_send_comment_error">དགོངས་དག ་དཔྱད་གཏམ་སྤེལ་བ་ཕམ་ཉེས་བྱུང་།</string>
+    <string name="comment_getmore">ཚང་མར་བལྟ་བ།</string>
+    <string name="comment_not_allow_emoji">སྙིང་ཉེ། བཟོ་ལྟ་རྟགས་ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་དང་། ནང་དོན་ལ་ཞིབ་བཤེར་བྱེད་རོགས།</string>
+    <string name="comment_not_allow_minlength">དཔེ་དེབ་དཔྱད་བརྗོད་ཉུང་ཤོས་ལའང་ཡིག་འབྲུ5 ལོངས་དགོས།  ཉིད་ཀྱིས་བསམ་འཆར་མང་བོ་ཞིག་འབྲི་རོགས།</string>
+    <string name="comment_fail_quikly">ཁྱེད་ཀྱིས་བཀོལ་སྤྱོད་མགྱོགས་དྲགས་སོང་།</string>
+
+    <string name="order_open_vip_tips">VIP ཤར་གཏོང་བྱས་ན། སྒྲུང་ཐུང་ཁྲི་ཕྲག་རིན་མེད་ཀྱིས་བལྟ་ཐུབ།！</string>
+    <string name="vip_free_read">VIP ཡི་རིན་མེད་དཔེ་ཀློག</string>
+
+    <string name="str_first_page">ཤོག་གྲངས་དང་པོ་རེད།</string>
+    <string name="str_last_page">མཐའ་མཇུག་གི་ཤོག་ངོས་ཡིན།</string>
+    <string name="str_pw0">ཁྱོད་ཕལ་ཆེར་ད་རུང་དགའ་བ།</string>
+    <string name="str_tm1_title">མཇུག་སྒྲིལ་ལྡོག་རྩིས་དུས་ཚོད།</string>
+    <string name="str_fl">རིགས་དབྱེ།</string>
+
+    <string name="akpay_warm_prompt">ཤ་ཚའི་དྲན་སྐུལ།</string>
+
+    <string name="string_search_recommend">གཤམ་གྱི་ནང་དོན་ལ་ཁྱེད་ཉིད་ཕལ་ཆར་དགའ་སྲིད།</string>
+
+    <string name="single_scheme">ishugui</string>
+
+    <string name="lot_order_sale">སྡེབ་ཉོ་ལགཟིགས་སྐྱོང་ལོངས་སྤྱོད་སྔར་ལས་མང་།</string>
+
+
+    <!--       阅读器    -->
+    <string name="reader_pre_chapter">ལེའུ་གོང་མ།</string>
+    <string name="reader_next_chapter">ལེའུ་འོག་མ།</string>
+    <string name="reader_menu_chapter">ལེའུ་ཡི་དཀར་ཆག་</string>
+    <string name="reader_menu_brightness">གསལ་ཚད་སྒྲིག་འགོད།</string>
+    <string name="reader_menu_voice">སྐད་གདངས་ཀློག་འདོན།</string>
+    <string name="reader_menu_setting">ལྟ་ཀློག་གསར་འཛུགས།</string>
+
+    <string name="reader_eye_mode">མིག་སྲུང་རྣམ་པ།</string>
+    <string name="reader_sys_light">མ་ལག་གསལ་ཚད།</string>
+
+    <string name="reader_voice_time">དུས་བཅད།</string>
+    <string name="reader_voice_speed_slow">དལ།</string>
+    <string name="reader_voice_speed_fast">མགྱོགས།</string>
+
+    <string name="reader_voice_time_close">དུས་བཅད་སྒོ་རྒྱག</string>
+    <string name="reader_voice_time_15">སྐར་མ15</string>
+    <string name="reader_voice_time_30">སྐར་མ30</string>
+    <string name="reader_voice_time_60">སྐར་མ60</string>
+    <string name="reader_voice_time_90">སྐར་མ90</string>
+
+    <string name="reader_voice_finish">རང་འགུལ་དཔེ་ཀློག་ནསཕྱིར་འཐེན།</string>
+    <string name="reader_voice_support">པེ་ཏུའུ་སྐད་ལ་ལག་རྩལ་རྒྱབ་སྐྱོར་འདོན་སྤྲོད།</string>
+
+    <string name="reader_voice_type_plus">སྤུས་ཚད་མཐོ་བའི་ཀློག་འདོན།</string>
+    <string name="reader_voice_plus_0">སྙན་འཇེབས་བུ་མོའི་སྒྲ།</string>
+    <string name="reader_voice_plus_1">སྐྱེས་པ་ན་གཞོན་གྱི་སྐད་གདངས།</string>
+    <string name="reader_voice_plus_2">སྐྱེས་པའི་བརྩེ་དུང་གི་སྐད་གདངས།</string>
+    <string name="reader_voice_plus_3">གཞོན་ནུ་མའི་སྒྲ།</string>
+
+    <string name="reader_voice_type_local">དྲ་མེད་ཀློག་འདོན།</string>
+    <string name="reader_voice_local_0">བུད་མེད་ན་གཞོན་གྱི་སྐད་གདངས།</string>
+    <string name="reader_voice_local_1">སྐྱེས་པ་ན་གཞོན་གྱི་སྐད་གདངས།</string>
+    <string name="reader_voice_local_2">ཕོའི་རྒྱང་སྒྲོག་པ་གཙོ་བོ།</string>
+    <string name="reader_voice_local_3">བྱིས་པའི་སྒྲ</string>
+
+    <string name="reader_anim_style">ཤོག་སྒྱུར་བྱེད་སྟངས།</string>
+    <string name="reader_auto_read">རང་འགུལ་ཀློག་འདོན།</string>
+    <string name="reader_orientation_landscape">འཕྲེད་ཤེལ།</string>
+    <string name="reader_orientation_portrait">གཞུང་ཤེལ།</string>
+
+    <string name="reader_anim_1">འདྲ་བཟོ།</string>
+    <string name="reader_anim_2">གཡོགས་པ།</string>
+    <string name="reader_anim_5">འདྲེད་འགུལ།</string>
+    <string name="reader_anim_0">མེད།</string>
+    <string name="reader_anim_3">གཡོགས་པ།</string>
+    <string name="reader_anim_4">འགྲིལ་ཤེལ།</string>
+
+    <string name="reader_speed_down">དལ་གཏོང་།</string>
+    <string name="reader_speed_up">མགྱོགས་གཏོང་།</string>
+
+    <string name="str_quit_auto_read">རང་འགུལ་དཔེ་ཀློག་ནསཕྱིར་འཐེན།</string>
+    <string name="str_default">ཞེ་ལེན།</string>
+    <string name="str_reader_menu_large_size">ཆེ།</string>
+    <string name="str_reader_menu_eye">མིག་སྲུང་།</string>
+    <string name="str_reader_backgroud_1">ལུག་ལྤགས་ཤོག་བུ།</string>
+    <string name="str_reader_backgroud_2">མཚན་མོའི་མཛེས་པ།</string>
+    <string name="str_reader_backgroud_3">བཙུན་མོའི་ཕྱེ་མ།</string>
+    <string name="str_reader_menu_timing_close_setting">དུས་ཚོད་ངེས་གཏན་ནང་སྒོ་རྒྱག་པ་གསར་འཛུགས།</string>
+
+    <string name="str_voice_reading_tips">ཀློག་འདོན།( པེ་ཏུའུ་སྐད་ཀྱི་སྐད་གདངས་རྒྱབ་སྐྱོར།)</string>
+    <string name="str_free_down">རིན་མེད་ཕབ་ལེན།</string>
+    <string name="str_plugin_office">Office བར་གཞུག</string>s
+    <string name="note_leave_your_idea">དཔེ་དེབ་འདི་ལ་ཁྱེད་ཀྱི་བསམ་ཚུལ་དང་མྱོང་ཚོར་བརྗོད་རོགས།</string>
+    <string name="search_author_main_index">རྩོམ་པ་པོ་གཙོ་ངོས།</string>
+    <string name="str_delete_book_mark">དཔེ་རྟགས་བབསུབ་པ།</string>
+    <string name="clean_all_book_marks">ཤོག་བྱང་གཙང་སེལ།</string>
+    <string name="note_amend_idea">བསམ་ཚུལ་བཟོ་བཅོས།</string>
+    <string name="note_delete_idea">བསམ་ཚུལ་སུབ་པ།</string>
+    <string name="note_clean_all_idea">བསམ་ཚུལ་གཙང་སེལ།</string>
+
+
+    <!-- 阅读器    -->
+
+    <string name="dialog_cloud_shelf_need_login">སྤྲིན་དཔེ་སྒྲོམ་ལ་ཐོ་འགོད་བྱས་རྗེས་བཀོལ་སྤྱོད་བྱས་ཆོག</string>
+    <string name="dialog_need_login_ok">ཐོ་འཇུག་བྱེད་དུ་སོང་།</string>
+    <string name="dialog_need_login_cancel">གནས་སྐབས་ཐོ་འཇུག་མི་བྱེད།</string>
+    <string name="book_shelf">དཔེ་སྒྲོམ།</string>
+
+
+    <string name="dialog_voice_install_tips">ཁྱེད་ཀྱིས་ད་དུང་སྐད་གདངས་ཀློག་འདོན་བར་གཞུག་སྒྲིག་སྦྱོར་བྱས་མེད་པས། སྒྲིག་སྦྱོར་བྱས་རྗེས་ཀློག་འདོན་ནུས་པ་དེའི་ཁ་ཕྱེ་ཆོག</string>
+    <string name="how_many_points">སྐར་མ།</string>
+    <string name="In_total">ཁྱོན།</string>
+    <string name="chapter">ལེའུ།</string>
+    <string name="already_received">དངུལ་ལེན་ཚར།</string>
+    <string name="no_catalogues">གནས་སྐབས་དཀར་ཆག་མེད།</string>
+    <string name="vip_already_opened">ཤར་གཏོང་བྱས་ཟིན།</string>
+    <string name="recharge_recharge_and_purchase">དངུལ་འཇོག་དང་ཉོ་སྒྲུབ།</string>
+    <string name="recharge_buy_now">མྱུར་དུ་ཉོ།</string>
+    <string name="dialog_the_lastest_chapter">ལེའུ་གསར་ཤོས།:</string>
+    <string name="str_verb_writing">[བརྩམས།]</string>
+    <string name="str_score_tips1">ཁྲི་+དཔྱད་སྐར།</string>
+    <string name="str_score_tips2">མི་ཁྲིའི་དཔྱད་སྐར།</string>
+    <string name="str_socre_tips3">མིའི་དཔྱད་སྐར།</string>
+    <string name="comment_failed_pass">ཞིབ་བཤེར་གཏན་འབེབས་ལ་་གྲོས་འཆམ་མ་བྱུང་།</string>
+    <string name="str_no_chapter_can_download">རྗེས་མཐུད་དུ་ཉོས་ཟིན་པའི་ལེའུ་ཕབ་ལེན་བྱ་རྒྱུ་མེད།</string>
+    <string name="str_download_purchase_chapters">རྗེས་མཐུད་ཉོས་ཟིན་པའི་ལེའུ་ཕབ་ལེན།</string>
+    <string name="str_downling">ཕབ་ལེན་བྱེད་བཞིན་པ།</string>
+    <string name="str_loading">སྣོན་འཇུག་བྱེད་བཞིན་པ།…</string>
+    <string name="str_load_fail_retry">ཕབ་སྣོན་ཕམ་ཉེས་བྱུང་། ཡར་འཐེན་ཏེ་བསྐྱར་དུ་ཚོད་ལྟ་བྱོས།</string>
+
+    <string name="str_note">ཟིན་ཐོ།：</string>
+    <string name="str_original_text">མ་ཡིག：</string>
+    <string name="strs_select_chapter">ལེའུ་ཡི་གདམ་ག</string>
+    <string name="recharge_to_purchase">ཉོ་སྒྲུབ་ལེའུ།</string>
+    <string name="recharge_open_vip_free">vipཤར་གཏོང་བྱས་ན་རིན་མི་དགོས།</string>
+    <string name="str_item_activity">བྱེད་སྒོ།</string>
+    <string name="str_signed_send_gift">འབྱོར་ཐོ་འགོད་པའི་སྐྱེས་འབུལ།</string>
+    <string name="str_add_book_mark">དཔེ་རྟགས་ཁ་སྣོན།</string>
+    <string name="str_share_book">དཔེ་ཆ་མཉམ་སྤྱོད།</string>
+    <string name="str_to_sign_and_get">འབྱོར་ཐོ་འགོད་ན་ཐོབ།</string>
+    <string name="str_free_charge">དུས་བཀག་ནང་རིན་མེད་</string>
+    <string name="str_must_read">ངེས་ཀློག</string>
+    <string name="str_selected">གཅེས་བཏུས།</string>
+    <string name="str_my_account">ངའི་རྩིས་ཐོ།</string>
+    <string name="str_send_coupons">ཆྰོན་ལོག</string>
+    <string name="str_login_huawei_account">ཧྭ་ཝུའེ་ཐོ་འཇུག་ཐོ་ཁོངས་</string>
+
+
+    <string name="str_read_just">ད་སྔོན་བཏོན་མྱོང་།</string>
+    <string name="str_today_sign">དེ་རིང་འབྱོར་ཐོ་འགོད་པ།</string>
+    <string name="str_unselect">མ་བདམས།</string>
+    <string name="vip_book_not_support_downlod">VIPདཔེ་དེབ་ལ་གནས་སྐབས་སུ་སྡེབ་མང་ཕབ་ལེན་རྒྱབ་སྐྱོར་མེད།</string>
+
+    <!--以下是新增 add 2018-05-03 13:11:43-->
+    <string name="look_book_comment">དཔྱད་གཏམ་ལ་བལྟ་བ་།</string>
+    <string name="hw_comment_content_hint">དཔེ་དེབ་འདི་ལ་རོགས་། ཁྱེད་ཀྱི་བསམ་ཚུལ་དང་མྱོང་ཚོར་ </string>
+    <string name="str_please_enter_the_exchange_code">བརྗེ་སྤྲོད་ཚབ་རྟགས་འགོད་རོགས་།</string>
+
+    <string name="chapter_book">ས་བཅད་</string>
+    <string name="hw_mark">གདོང་འཛར་</string>
+    <string name="hw_note">ཟིན་བྲིས་/ དབྱེ་འབྱེད་།</string>
+
+    <string name="reader_download_local">ས་གནས་དེ་གའི་དཔེ་དེབ་ལྷོད་གསོག་དྲ་ཐོག་ཏུ་མེད་པའི་བྱེད་ནུས་ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་</string>
+    <string name="search_empty">ཟླ་སྒྲིག་བྱས་པའི་འབྲས་བུ་མེད་།</string>
+    <string name="end_chapter">ཁྱེད་རང་དཔེ་དེབ་ཆ་ཚང་དུ་བཀླགས་ཟིན་སོང་། རྩོམ་པ་པོས་ཁྱེད་ཀྱི་སྨན་བཅོས་ལ་སྒུག་བཞིན་གདེང་འཇོག་ཨོ་།～</string>
+    <string name="read_preference_books_boy">གྲོང་ཁྱེར་གྱི་སྒྱུ་འཕྲུལ་དང་། ལོ་རྒྱུས་། དམག་དོན་དང་། དྲག་རྩལ་ལ་དྲང་སྲུང་དཔའ་བོ་འདུག་</string>
+    <string name="read_preference_books_girl">མི་དྲག་གི་ཙུང་ཚའེ་བརྒལ་ཏེ་སླར་ཡང་གསོན་ཤུགས་རྒྱས་ཏེ་ལང་ཚོའི་སློབ་རའི་</string>
+    <string name="order_lot_buy_success_tips">མང་པོ་ཉོས་ན་གྲུབ་འབྲས་ཐོབ་པའི་ངང་</string>
+    <string name="order_single_buy_success_tips">དེབ་དེ་ཉོས་ཟིན་པའི་གྲུབ་འབྲས་ཐོབ་པའི་ངང་</string>
+    <string name="order_recharge_not_enough_buy_chapter">ལེའུ་ཉོ་ན་ང་མི་འདེང་བའི་ལྟ་ཡུལ་གཙོ་བོ་ཞིག་བཞག་</string>
+    <string name="author_other_book">རྩོམ་པ་པོ་དེའི་དཔེ་དེབ་གཞན་དག</string>
+    <string name="share_fail">ཕམ་ཁ་མཉམ་སྤྱོད་</string>
+    <string name="share_success">གྲུབ་འབྲས་མཉམ་སྤྱོད་</string>
+    <string name="share_cancel">མཉམ་སྤྱོད་མེད་པ་བཟོས་</string>
+    <string name="str_not_wifi_prompt">མིག་སྔར་དྲ་རྒྱའི་གནས་དང་ཕབ་ལེན་བཞུར་ཚད་ཅུང་མང་པོ་འཕྲོ་བརླག་གཏོང་སྲིད་། མིན་མུ་མཐུད་ཕབ་ལེན་བྱེད་བཞིན་ཡོད་།</string>
+
+    <string name="str_gift_exchange">ལག་རྟགས་བརྗེས་</string>
+    <string name="followed_by_no_cacheable_chapter">རྗེས་མཐུད་དུ་ལྷོད་གསོག་ཀྱི་ས་བཅད་མེད།</string>
+
+    <string name="book_store">དེབ་གྲོང་།</string>
+    <string name="my">ངའི།</string>
+    <string name="str_permission_title">སྣེ་སྟོན་ཆ་འཕྲིན་</string>
+    <string name="str_permission_tips">དགོས་མཁོ་ར་དགོས་ངེས་ཀྱི་དབང་ཆ་ར་འགན་ལེན་དང་རྒྱུན་ལྡན་གྱི་བཀོལ་སྤྱོད། </string>
+    <string name="str_permission_goto_grant">སྣེ་འཁྲིད་དེ་དབང་བསྐུར། </string>
+    <string name="str_splash_tips">ཧྭ་ཝེའི་དཔེ་ཀློག་བརྡ་ཐོ།</string>
+
+
+    <!--2018年05月09日10:39:09-->
+    <string name="share">མཉམ་སྤྱོད་</string>
+    <string name="thing_share">བསམ་ཚུལ་མཉམ་སྤྱོད་</string>
+    <string name="five_score">ཧ་ཅང་གི་ཡག་པོ་འདུག་</string>
+    <string name="four_score">ཧ་ཅང་ཡག་པོ་འདུག་</string>
+    <string name="third_score">སྤྱི་བཏང་</string>
+    <string name="second_score">ཧ་ཅང་ཞན་།</string>
+    <string name="first_score">ཧ་ཅང་ཞན་།</string>
+    <string name="str_book_vipxm">vip</string>
+
+    <string name="str_exchange">དངུལ་ལོར་བརྗེ་འགྲུལ་</string>
+
+    <!--   2018年05月10日19:22:00  -->
+    <string name="share_tip">"བརྩོན་ལེན་བྱེད་བཞིན་པ་ནང་། མཉམ་སྤྱོད་བྱེད་ནུས་། རེ་སྒུག་ "</string>
+    <string name="add_bookshelf_success">གྲུབ་འབྲས་འཛམ་གླིང་དཔེ་སྒྲོམ།</string>
+    <string name="real_name_verify_code_error">ར་སྤྲོད་ཨང་ཡང་དག་པ་ཞིག་མ་རེད་།</string>
+    <string name="splash_rights_reserved">པར་དབང་ © 2015 ། 2018 མཉེན་ཆས་ལག་རྩལ་ཚད་ཡོད་ཀུང་སི་། ཧྭ་ཝུའེ་། དབང་ཆ་ཡོད་ཚད་སོར་འཇོག་</string>
+    <string name="reader_catalog">དཀར་ཆག་</string>
+    <string name="str_order_start_chapter">མགོ་ན་ལེའུ་དང།</string>
+    <string name="str_order_buy_chapter_tips">(དེ་ཉོ་ལེའུ་དང་མི་འཐེན་འཕྲི་གླ།)</string>
+    <string name="str_page_1">དེ་མཚུངས་ཀྱི་བར་མ།</string>
+    <string name="str_page_2">ཚལ་ཐོ་འཐུལ་།</string>
+    <string name="str_click_up">སྟེང་ཤོག་ངོས། </string>
+    <string name="str_click_down">རྗེས་མའི་ཤོག་ངོས།</string>
+    <string name="toast_sd_unavailable">གཱ་སྤྱད་ཆོག་གི་མེད་པ་མངོན་པ་།</string>
+    <string name="toast_getcapter_error">ལེའུ་དང་ས་བཅད་ཀྱི་ཆ་འཕྲིན་ཐོབ་ཐབས་ཕམ་། ཅུང་ཙམ་འགོར་རྗེས་ཚོད་ལྟ་བྱེད་</string>
+    <string name="toast_shlef_try_later">ང་ཚོས་ཁྱོད་ལ་གྲ་སྒྲིག་བྱེད་བཞིན་ཡོད་། དཔེ་སྒྲོམ་དང་། ཅུང་ཙམ་འགོར་རྗེས་བསྐྱར་བརྟག་</string>
+    <string name="toast_delete_size_not_empty">གདམ་ག་བྱས་མེད་ན་། བསུབ་པའི་དཔེ་ཆ་ཞིག་རེད་།</string>
+    <string name="toast_comment_commit_success">གྲུབ་འབྲས་ཐོབ་པའི་ངང་ཕུལ་</string>
+    <string name="toast_sdcard_no_exist">གསོག་འཇོག་ཁཱར་མི་གནས་དང་། ། ཞིབ་གཤེར་གསོག་ཁཱ་།</string>
+    <string name="toast_file_not_exit">ཡིག་ཆ་མེད་ནི་རེད་།</string>
+    <string name="toast_file_is_empty">ཡང་ན་གནོད་པ་བྱུང་ཡིག་ཆ་སྟོང་པ་རེདད་།</string>
+    <string name="toast_unsupport_format">ཆིན་, རྣམ་གཞག་ཀྱི་ཡིག་ཆ་དེ་ད་ལྟ་གནས་སྐབས་སུ་ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་</string>
+    <string name="toast_native_book_unsupport_cache">ས་གནས་དེ་གའི་དཔེ་དེབ་ལྷོད་གསོག་དྲ་ཐོག་ཏུ་མེད་པའི་བྱེད་ནུས་ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་</string>
+    <string name="toast_need_login">རོགས་། སྔོན་ལ་ཐོ་འཇུག་</string>
+    <string name="toast_js_error">བཀོལ་སྤྱོད་ཕམ་པ་, དེའི་རྒྱུ་མཚན་གང་ཡིན་ཞེ་ན་འདོན་སྤྱོད་ཞུགས་གྲངས་ཡང་དག་པ་ཞིག་མ་རེད་།</string>
+    <string name="toast_please_wait">བཞིན་ཡོད་། ཐག་གཅོད་ཁྲོད་། ཏོག་ཙམ་སྒུག་གནང་རོགས་།</string>
+    <string name="toast_add_bookmark_success">དཔེ་རྟགས་གྲུབ་འབྲས་ཐོབ་པའི་ངང་སྦྱོར་རྟ་</string>
+    <string name="toast_comment_error">དགོངས་དག་, བཀོལ་སྤྱོད་ཕམ་པ་</string>
+    <string name="toast_delete_bookmark_success">དཔེ་རྟགས་བསུབ་གྲུབ་འབྲས་ཐོབ་པའི་ངང་</string>
+    <string name="toast_push_tips">བསྡུ་ལེན་བརྡ་ཐོ་བརྡ་ཐོ་དབང་ཚད་ཕྱེ་དགོས་</string>
+
+
+    <string name="technical_support">ཀུན་ལ་ལག་རྩལ་གྱི་རྒྱབ་སྐྱོར་ཚན་རྩལ་མ་རྐང་ཚད་ཡོད་ཀུང་སི་། པེ་ཅིང་ཆུ་ཚོད་</string>
+    <string name="hua_wei_reads_and_sends_notices">ཧྭ་ཝུའེ་ཡིས་དཔེ་ཀློག་གྲོས་མཐུན་།</string>
+    <string name="privacy_statement">ཧྭ་ཝུའེ་སྐོར་གྱི་དཔེ་ཀློག་དང་སྒེར་གྱི་གསང་དོན་གྱི་གསལ་བསྒྲགས་</string>
+    <string name="un_install_wx">"ཁྱེད་རང་གི་ད་དུང་སྐད་འཕྲིན་དུད་སྣེའི་སྒྲིག་སྦྱོར་བྱས་མེད་པ་"</string>
+    <string name="need_updata_wx">"ཁྱེད་ཀྱི་ཐོག་རྣམ་པར་གཞི་དམའ་བ་དང་། མི་བྱེད་པར་རྒྱབ་སྐྱོར་ལོངས་སུ་སྤྱོད་ཞུ་རིམ་སྤར་ཐོག་རྣམ་པར་གཞི། "</string>
+    <string name="reader_add_book_shelf">《%1$s》</string>
+    <string name="guide_select_sex_tip1">"ཁྱེད་ཀྱི་བསལ་འདེམས་ཀྱིས་ཕོ་མོ། "</string>
+    <string name="guide_select_sex_tip2">"ལྟར་ན་ཁྱོད་ཕོ་མོ་ཁྱོད་འོས་སྦྱོར་ཆེས་མི་ཆུང་བའི་དཔེ་ཆ། "</string>
+    <string name="gender_man">"ཕོ། "</string>
+    <string name="gender_woman">"བུད་མེད། "</string>
+    <string name="str_auto_order_vip">"ཟླ་རྩིས་བསྟུད་མ།"</string>
+    <string name="continuous_monthly_status_see_data">"ལྟ་ཞིབ་བསྟུད་མར་ཕོ་བྲང་པོ་ཏ་ལ་འི་ལོ་རྒྱུས། "</string>
+    <string name="continuous_monthly_status_cancel">"མེད་པར་བསྟུད་མར་ཕོ་བྲང་པོ་ཏ་ལ། "</string>
+    <string name="cancel_monthly_dialog_content">"མེད་པར་བསྟུད་མར་མེ་འཁོར་ཤར་གཏོང་ཐུབ་རྗེས་ས་མི་བདེ་བར་གཟིགས་སྐྱོང་མཐུད་གྲོན་དངུལ་ཞབས་ཞུ་ཡོད་མེད་ངོས་འཛིན་ཡས། "</string>
+    <string name="cancel_monthly_dialog_title">"མེད་པར་བསྟུད་མར་ཕོ་བྲང་པོ་ཏ་ལ། "</string>
+    <string name="vip_open_success_tips">"ཕོ་བྲང་པོ་ཏ་ལ་འི་ལེགས་གྲུབ། "</string>
+    <string name="str_activity_continuous_monthly_status_list">"བསྟུད་མར་ཕོ་བྲང་པོ་ཏ་ལ་འི་ལོ་རྒྱུས། "</string>
+    <string name="str_vip_open_tips">"བསྟུད་མར་ཕོ་བྲང་པོ་ཏ་ལ་VIPཚོགས་མི། མ་ལག་ས་ཚོགས་མི་ཐིམ་གོང་རང་འགུལ་གྱིས་ལ་བརྟེན་ནས་གཟིགས་སྐྱོང་གི་རིན་གོང་ཁྱེད་ལ་མཐུད་གྲོན་དངུལ་ལ་གཟིགས་སྐྱོང་ཡང་སེམས་ཁྲལ་ཆུང་བ། "</string>
+    <string name="person_top_vip">VIP</string>
+    <string name="person_top_vip_not">ཚོགས་མི་མིན་VIP</string>
+    <string name="reader_chapter_error_tips1">ལེའུ་འདིའི་ནང་དོན་མི་འདང་བ་། འགྲོ་གྲོན་འཐེན་མི་སྲིད་། \n ནོར་འཁྲུལ་འཐེར་འདོན་བྱས་པར་ཐུགས་རྗེ་ཆེ་། དང་དངུལ་འཛིན་བྱང་བུས་ཁྱེད་རང་ལ་སྤྲོད་རྒྱུ་གཅིག་།</string>
+    <string name="reader_chapter_error_tips2">"དགོངས་པ་མ་ཚོམ \n གཙོ་སྒྲིག་པ་ཆུང་ཆུང་ལེའུ་དང་ས་བཅད་ཀྱི་རྟ་མགྱོགས་པའི་ཐོག་ཡར་བསྐུར་བཞིན་ཡོད་། \n ཅུང་ཙམ་སྒུག་དགོས་།"</string>
+    <string name="str_readpref_boy">ཕོ་འདར།</string>
+    <string name="str_readpref_girl">"བུད་མེད་འདར།</string>
+    <string name="string_system_message">"བསྡུ་ལེན་གསར་པ་བརྡ་ཐོ། "</string>
+    <string name="str_no_recharge_record">"ཐང་དངུལ་འཇོག་པ་ཟིན་ཐོ་མེད་།</string>
+    <string name="str_no_consumption_record">"འཛད་སྤྱོད་ཀྱི་ཟིན་ཐོ་མེད་།</string>
+    <string name="str_no_consumption_record_activity">འཛད་སྤྱོད་ཀྱི་ཟིན་ཐོ་མེད་། </string>
+    <string name="str_no_consumption_record_vip">འཛད་སྤྱོད་ཀྱི་ཟིན་ཐོ་མེད་། </string>
+    <string name="dialog_clean_cache">ཆ་འཕྲིན་ཡོད་ཚད་གཙང་སེལ་ལྷོད་གསོག་མིན་</string>
+    <string name="dialog_clean_btn_enter">"གཙང་སེལ། "</string>
+    <string name="hua_wei_no_comment">"དཔྱད་གཏམ་དཔེ་དེབ་མེད་ "</string>
+    <string name="hua_wei_no_auto_purchase_section_is_set">"རང་འགུལ་ལེའུ་དང་ས་བཅད་ཀྱི་དཔེ་དེབ་ཉོས་མེད་། "</string>
+    <string name="the_space_is_insufficient">"ཁམས་མི་འདང་བ། "</string>
+    <string name="string_empty_combination">"མེད་པའི་ནང་དོན་ཟིག་ཡེད་གཞན་དག་སྡེབ་སྒྲིག་བྱེད། "</string>
+    <string name="string_empty_lower">"དཔེ་དེབ་དེའི་ཚོང་རར་བཀྲམ་ཞིང་</string>
+    <string name="string_empty_expect">"མེད་པའི་བྱེད་སྒོ་འི་རང་ཉིད་ཀྱི་རེ་སྒུག། "</string>
+    <string name="string_empty_expect_end">"བྱེད་སྒོ་ཚང་མ་དེ་མཇུག་བསྒྲིལ་བའི་རང་ཉིད་ཀྱི་རེ་སྒུག་གསར་པའི་བྱེད་སྒོ། "</string>
+    <string name="string_empty_cash_coupon">"མ་རུང་བའི་བཀོལ་སྤྱོད་ཚབ་དངུལ་འཛིན་ཤོག། "</string>
+    <string name="string_empty_vip_record">"མེད་VIPཕོ་བྲང་པོ་ཏ་ལ་འི་ཟིན་ཐོ། "</string>
+    <string name="string_empty_gift">"ཐོབ་མེད་པའི་ལེགས་སྐྱེས། "</string>
+    <string name="string_empty_no_local_book">"ཁྱེད་ཀྱི་སྒྲིག་ཆས་ཐོག་མ་རྙེད་པའི་གློག་རྡུལ་དཔེ་དེབ། "</string>
+    <string name="str_clear">གཙང་སེལ་</string>
+    <string name="press_back_again">"སླར་ཡང་ལྟར་ཐེངས་གཅིག་ཕྱིར་འཐེན་ཧྭ་ཝུའེ་ཀློག་འདོན། "</string>
+    <string name="search_max_numb">བཙལ་ལོན་པ་ %1$s འདིའི་འབྲེལ་ཡོད་དཔེ་དེབ་</string>
+    <string name="file_smart_import">"རིག་ནུས་འདྲེན་དཔེ་ཆ། "</string>
+    <string name="file_local_import">"ཡུལ་དེ་འི་དཀར་ཆག། "</string>
+    <string name="str_open_to_continue_read">"འཕྲལ་མར་ལྟ་ཀློག། "</string>
+    <string name="shelf_free_zone">"རིན་མེད་ཀྲོན་ཆུས། "</string>
+    <string name="time_long_ago">"གནའ་སྔ་མོ། "</string>
+    <string name="time_day_ago">"ཉིན་གོང། "</string>
+    <string name="time_hours_ago">"ཆུ་ཚོད་གོང། "</string>
+    <string name="time_just_ago">"ད་གིན། "</string>
+    <string name="time_unknow_ago">"ཤེས་མེད་པ་འི། "</string>
+    <string name="string_empty_hint">ནང་དོན་མེད་པ་དང་རོགས་ནས་ཡར་མར་ལ་སོང་ནས་ལེ་ཚན་གཞན་དག་།</string>
+    <string name="str_please_install">"ཁྱེད་ཀྱི་སྒྲིག་སྦྱོར། "</string>
+    <string name="str_also_install">"དེ་སྒྲིག་སྦྱོར། "</string>
+    <string name="str_plugin_disable">"གནས་སྐབས་མི་བྱེད་པར་རྒྱབ་སྐྱོར། "</string>
+    <string name="str_score">"དཔྱད་བརྗོད། "</string>
+    <string name="str_single_order_cancel_back">"མཐུད་མཚམས་ཕྱིར་འབྲེལ་རྡང་མེད་པར། "</string>
+    <string name="str_single_order_recharge_pay">"སྐོང་ལས་རེས་མ་ཟད་ཉོ། "</string>
+    <string name="str_reader_menu_small_size">ཆུང།</string>
+    <string name="max_catalog">ཡོངས་རྫོགས་ %1$s ཀྲང་</string>
+    <string name="str_read_time">ནང་གཟའ་འཁོར་གཅིག་ཀློག་ %s སྐར་མ་"</string>
+    <string name="str_all">全部</string>
+    <string name="string_book_add">"འཛམ་གླིང་དཔེ་སྒྲོམ་（%s）། "</string>
+    <string name="str_limitfree_num">"དེ་ལེན་%1$s། ཙམ་གྱི་ཚད་བཀག་%2$dསྐལ། "</string>
+    <string name="str_percent">%s%%</string>
+    <string name="str_look_all_book">"གཟིགས་ཞིབ་ཡོངས་རྫོགས། %sའདིའི། "</string>
+    <string name="str_has_numb_book">"དཔེ་སྒྲོམ་སྟེང། %sའདིའི། "</string>
+    <string name="str_scanning">"བཞིན་ཕྱགས་འགོད་ཁྲོད། "</string>
+    <string name="string_local_upload_title">རང་སའི་དཔེ་ཆ་འདྲེན་འཇུག་</string>
+    <string name="my_gift">"ང་འི་ལེགས་སྐྱེས། "</string>
+    <string name="tms_country">CN</string>
+
+    <!--截止到  2018年05月17日18:53:33 以上内容 已经翻译  -->
+    <string name="hw_mark_null">དཔེ་འཛར་མེད་།</string>
+    <string name="hw_note_null">Nན་བྲིས་མེད་།/དབྱེ་མཚམས་གཅོད་པ་</string>
+
+    <!-- 2018年05月17日18:53:33 下面写新加的 -->
+    <string name="hw_network_connection_no">དྲ་རྒྱ་སྦྲེལ་མེད་པའི་</string>
+    <string name="hw_large_cancel">མེད་བཟོ།</string>
+    <string name="hw_large_sure">གཏན་ཁེལ།</string>
+
+    <string name="the_end_of_time">%s ཐིམ་པ་</string>
+    <string name="hua_wei_no_monthly_vip">ཟླ་རྩིས་བསྟུད་མར་ཤར་གཏོང་མ་ཐུབ་</string>
+    <string name="hw_show_no_net_public">དྲ་རྒྱ་སྦྲེལ་མཐུད་བརྟན་པོ་མེད་པ་དང་། དེ་གནོན་དང་བསྐྱར་བརྟག་རོགས་།</string>
+    <string name="all_rights_reserved_splash">པར་དབང་དབང་བ། © 2015–2018 མཉེན་ཆས་ལག་རྩལ་ཚད་ཡོད་ཀུང་སི་། ཧྭ་ཝུའེ་།</string>
+
+    <string name="hw_open_member">ཕོ་བྲང་པོ་ཏ་ལ་འི་ཚོགས་མི།</string>
+    <string name="str_vipstore">VIPདཔེ་མཛོད།</string>
+
+    <!--2018-05-23 17:20:00 需要重新翻译的-->
+    <!--//དཔེ་སྒྲོམ་བསམ་ཡུལ་ལས་འདས་པར་སྟོང་བ་ཡིན། མགྱོགས་པོར་སོང་ལ་དཔེ་གྲོང་ནས་འདེམས་ཤིག-->
+    <string name="string_self_empty">དཔེ་སྒྲོམ་སྤྲིན་མེད་ཟིན་ཐོ་</string>
+
+
+    <string name="a_voucher_has_been_collected">དངུལ་ལེན་ཚར། %s དངུལ་ཚབ་འཛིན་ཤོ</string>
+
+    <string name="server_error_tip">སྦྲེལ་མི་ཐུབ་པ་ནས་ཞབས་ཞུ་ཆས་, གནོན་རོགས་བསྐྱར་བརྟག་</string>
+    <string name="server_empty_tip">གཞི་གྲངས་ཐོབ་ཐབས་བྲལ་། ཡང་བསྐྱར་ཚོད་ལྟའི་གནོན་རོགས་</string>
+
+    <string name="app_inner_name">ཧྭ་ཝེ་དཔེ་ཀློག</string>
+
+    <string name="chapter_selected">བསལ་འདེམས་ཀྱི་ལེའུ།</string>
+
+    <!--2018-05-25 17:47:02   上面部分 除了vip相关的 其他已经翻译 -->
+    <string name="show_all_data">ཚང་མ་ལས་མངོན་པར་གཞིགས་ན་།</string>
+    <string name="str_shelf_selected_count">སྔར་ཡོད་ཀྱི་བསལ་འདེམས། %d རྣམ་གྲངས།</string>
+
+    <string name="str_upload_error">ལ་རྒྱབ་སྐྱོར་མི་བྱེད་པ་ནི་ %s ཡིག་ཆའི་རྣམ་གཞག་</string>
+
+    <string name="open_source">ཚབ་རྟགས་ཀྱི་ཁུངས་སྒོ་འབྱེད་ཆོག་འཐུས་</string>
+    <string name="dialog_notify_title">ཁ་ཕྱེ་བརྡ་ཐོ་ལེའུ་དང་གསར་སྒྱུར་སྔ་ཙམ་ཤེས་པ།</string>
+    <string name="dialog_notify_desc">བསལ་འདེམས་-བརྡ་ཐོ་-དེ་མཚུངས་ཆོག་པའི་བརྡ་ཐོ།</string>
+
+    <string name="str_look_assert_from_zhangyue">པར་གཞི་རྙིང་བའི་ གཟིགས་བག་རྒྱུ་ནོར་ལ་བལྟ་བ།</string>
+    <string name="str_look_assert_from_shuqi">པར་གཞི་རྙིང་བའི་དེབ་སྲན་རྒྱུ་ནོར་ལ་བལྟ་བ།</string>
+    <string name="str_user_old_assert_look_des">ཁྱེད་རང་དེ་སྔོན་སྤྱོད་མྱོང་། ཧྭ་ཝུའེ་། དཔེ་ཀློག་གྱི་APP ཚོགས་ཡོད་། རྒྱུ་ནོར་ལ་མནན་རོགས་། ཁྱེད་ཀྱིས་ཀྱང་“ ངའི་” ལྡེབ་ངོས་དང་། ག་དུས་ཡིན་ནའང་ལྟ་དགོས་།</string>
+
+    <string name="str_to_buy">ཉོ་སྒྲུབ་</string>
+</resources>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" android:opacity="opaque">
+
+    <item>
+        <shape>
+            <solid android:color="@color/white"/>
+        </shape>
+    </item>
+    <!--<item android:drawable="@drawable/img_launch_bg"/>-->
+    <!--<item>-->
+        <!--<bitmap android:gravity="bottom"-->
+            <!--android:src="@drawable/launch_bottom"/>-->
+    <!--</item>-->
+</layer-list>

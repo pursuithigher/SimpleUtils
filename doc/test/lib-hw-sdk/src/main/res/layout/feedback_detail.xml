@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.huawei.feedback.ui.ResizeRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/feedback_datail_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/popup_menu_anchor" -->
+    <!-- android:layout_width="0dp" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_alignParentEnd="true" -->
+    <!-- /> -->
+
+    <ListView
+        android:id="@+id/feedback_detail_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/feedback_bottom_layout"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent" />
+
+    <!-- 添加图片截图展示 -->
+    <!-- <RelativeLayout -->
+    <!-- android:id="@+id/feedback_image_layout" -->
+    <!-- android:layout_width="243dp" -->
+    <!-- android:layout_height="174dp" -->
+    <!-- android:paddingTop="9dp" -->
+    <!-- android:paddingBottom="23dp" -->
+    <!-- android:paddingStart="10dp" -->
+    <!-- android:paddingEnd="10dp" -->
+    <!-- android:layout_above="@+id/feedback_bottom_layout" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:background="@drawable/bubble_image" -->
+    <!-- android:visibility="gone" -->
+    <!-- android:contentDescription="@string/content_description_attached_picture" > -->
+    <!-- <ImageView -->
+    <!-- android:id="@+id/feedback_image_view" -->
+    <!-- android:layout_width="80dp" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:layout_centerHorizontal="true" -->
+    <!-- android:scaleType="centerInside" /> -->
+    <!-- <ImageView -->
+    <!-- android:id="@+id/feedback_delete_image" -->
+    <!-- android:layout_width="wrap_content" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:layout_alignParentEnd="true" -->
+    <!-- android:src="@drawable/ic_search_delete" -->
+    <!-- android:contentDescription="@string/cancel" /> -->
+    <!-- </RelativeLayout> -->
+
+
+    <!-- 底部栏 -->
+
+    <RelativeLayout
+        android:id="@+id/feedback_bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/feedback_continue_txtview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            
+            android:layout_marginEnd="@dimen/feedback_layout_start_end_padding"
+            android:layout_marginLeft="@dimen/feedback_layout_start_end_padding"
+            android:layout_marginRight="@dimen/feedback_layout_start_end_padding"
+            android:layout_marginStart="@dimen/feedback_layout_start_end_padding"
+            android:gravity="center"
+            android:text="@string/feedback_continue_ask"
+
+            android:textSize="@dimen/feedback_text_size_normal"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/feedback_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            
+            
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp" >
+
+            <ImageButton
+                android:id="@+id/add_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_marginBottom="6dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="@dimen/feedback_layout_start_end_padding"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="@dimen/feedback_layout_start_end_padding"
+                android:background="@drawable/feedback_add_image_selector"
+                android:contentDescription="@string/feedback_add_image"
+                android:scaleType="matrix" />
+
+            <LinearLayout
+                android:id="@+id/feedback_edittext_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+  				android:layout_weight="1"
+				android:background="@drawable/feedback_smarthelper_compose_edittext"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:id="@+id/feedback_edittext_imageview"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="6dp"
+                    
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <com.huawei.feedback.ui.CustomEdittext.CustomEditText
+                    android:id="@+id/feedback_input_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="32dp"
+                    android:background="@color/feedback_transparent"
+                    android:hint="@string/feedback_input_feedback_hint"
+                    android:maxLines="4"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:paddingEnd="12dp"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:paddingStart="12dp"
+                    android:textColor="@color/feedback_text_color1"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/feedback_send_btn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+				android:layout_marginBottom="3dp"
+                android:layout_marginEnd="@dimen/feedback_layout_start_end_padding"
+                android:layout_marginRight="@dimen/feedback_layout_start_end_padding"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/feedback_send_btn_selector"
+                android:contentDescription="@string/feedback_send"
+                android:enabled="false" />
+            
+        </LinearLayout>
+    </RelativeLayout>
+
+</com.huawei.feedback.ui.ResizeRelativeLayout>

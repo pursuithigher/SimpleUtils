@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    <string name="feedback_dialog_title">"提示"</string>
+
+    <!-- 问题反馈 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <!-- BEGIN 2013-11-12 Added by l00138406 增加资源字串 -->
+    
+    
+    
+    <string name="feedback_cloud_service">"华为应用"</string>
+    <!-- END 2013-11-12 Added by l00138406 增加资源字串 -->
+    <string name="feedback_msg_title">"您反馈的问题"</string>
+    <string name="feedback_continue_ask">"继续提问"</string>
+    <string name="formaterror_toast">"手机号或邮箱格式错误"</string>
+
+    <!-- ***BEGIN*** 2013-05-31 liuyuhao/kf74275 Modified for PhoneService DTS2013053001048 -->
+    <string name="feedback_add_image">"添加截图"</string>
+    <string name="feedback_add_image_new">"添加截图(最多 %d 张)"</string>
+<!--     <string name="add_image"> + 添加截图</string> -->
+    <!-- ****END**** 2013-05-31 liuyuhao/kf74275 Modified for PhoneService DTS2013053001048 -->
+
+    
+    <!-- ***BEGIN*** 2013-11-14 Modified by l00138406 增加日志上传版本的字串 -->
+    
+    <!-- ***END*** 2013-11-14 Modified by l00138406 增加日志上传版本的字串  -->
+    <string name="feedback_file_format_not_support">"不支持该文件格式，请重新选择"</string>
+    <string name="feedback_screenshot_not_exist_and_choose_again">"截图不存在，请重新选择。"</string>
+    
+<!--      -->
+<!--      -->
+<!--      -->
+
+    <!--  -->
+    
+
+    
+    
+    
+    
+    <string name="feedback_sending_your_feedback">"正在发送问题反馈…"</string>
+    
+    
+	
+	
+	<string name="feedback_send_successfully">"已发送，感谢您的反馈"</string>
+<!-- 	 -->
+	<string name="feedback_send__feedback_failed">"发送失败"</string>
+    
+    <string name="feedback_ok">"确定"</string>
+<!--      -->
+    <string name="feedback_cancel">"取消"</string>
+
+    <string name="feedback_content_description_attached_picture">添加图片</string>
+
+    
+    <!--BEGIN Added by l00138406 2013-11-14 增加日志上传版本的字串描述 -->
+    
+    <string name="feedback_app_log_detail_upload">"共享应用日志信息，以准确诊断问题"</string>
+    <!--END Added by l00138406 2013-11-14 增加日志上传版本的字串描述  -->
+    
+    
+    <string name="feedback_your_contact">"联系方式"</string>
+
+    <string name="feedback_input_feedback_hint">"反馈内容"</string>
+    <string name="feedback_input_feedback_content">"请填写您的反馈内容"</string>
+    <string name="feedback_type">"反馈类型"</string>
+    <string name="feedback_input_email_or_phone">"输入电话或邮箱 (必填)"</string>
+    <string name="feedback_input_email_or_phone_new">"电话或邮箱"</string>
+<!--     <string name="preview">预览</string> -->
+    <string name="feedback_send">"发送"</string>
+    <string name="feedback_records">"反馈记录"</string>
+    <string name="feedback_more_than_500_characters">"反馈内容最多支持 500 个字符。"</string>
+    <string name="feedback_contact_cannot_more_than_50_characters">"联系方式最多支持 50 个字符。"</string>
+
+    <!-- 反馈记录 -->
+    <string name="feedbackRecord_title">"反馈记录"</string>
+    
+<!--      -->
+    <string name="feedbackRecord_draft">"[草稿]"</string>
+    
+    <string name="feedbackRecord_type">"反馈类型"</string>
+    
+    
+    <string name="feedbackReply_title1">"客服"</string>
+    <string name="feedbackBitchDelete_new">"删除全部反馈记录"</string>
+    <string name="feedbackNoRecord">"没有反馈记录"</string>
+    <string name="feedbackDetail_title">"反馈详情"</string>
+    
+    <string name="feedback_push_content">"您有一条新的问题反馈回复信息"</string>
+    
+    
+    <string name="feedback_bitchdelete_dialog_title">"删除"</string>
+    
+    <string name="feedback_bitchdelete_dialog">"是否删除全部反馈记录？"</string>
+    
+    <!-- ActionBar -->
+    <string name="feedback_menu_more">菜单</string>
+    
+    <string name="feedback_notify_to_replace_pic">"将替换当前图片。"</string>
+    
+        <!-- 问题反馈评价 -->
+    <string name="feedback_score_usefull">"有用"</string>
+    <string name="feedback_score_useless">"没用"</string>
+    <string name="feedback_score_thankfulness">"感谢您的评价！"</string>
+    <string name="feedback_descrption">"问题描述："</string>
+    <string name="feedback_submit">"提交"</string>
+    
+    <string name="feedback_no_network_connection_prompt">"网络不可用，请检查网络连接"</string>
+
+    <!-- 问题反馈评价数目达极限值弹框字串  dongyinwei -->
+    <string name="feedback_maxtip">"反馈记录最多保存 500 条，请删除或清空才能继续保存"</string>
+
+	<string name="feedback_frequency_one">"很少出现"</string>
+	<string name="feedback_frequency_two">"一天一次"</string>
+	<string name="feedback_frequency_three">"一天多次"</string>
+	<string name="feedback_frequency_four">"始终出现"</string>
+
+	<string name="feedback_advanced_fail_confirm_one">"重试"</string>
+	<string name="feedback_advanced_logupload_tips_new">"诊断日志大约 %d MB，是否上传？"</string>
+	<string name="feedback_advanced_logupload_tips_new_two">"诊断日志大约 %d KB，是否上传？"</string>
+		
+	<string name="feedback_advanced_loguploading">"正在上传诊断日志… %s"</string>
+	<string name="feedback_advanced_loguploading_pause">"暂停"</string>
+	<string name="feedback_advanced_loguploading_continue">"续传"</string>
+	<string name="feedback_advanced_logupload_fail">"诊断日志上传失败"</string>
+	
+	
+	
+	
+	
+	
+	
+	
+	<string name="feedback_waiting">"请稍候..."</string>
+	<string name="feedback_beta">"BETA 俱乐部"</string>
+	
+	
+	
+	
+	<string name="feedback_advanced_logupload_task_title">"上传任务"</string>
+	<string name="feedback_advanced_logupload_feedbackrecord_delete">"是否删除所选记录？"</string>
+	<string name="feedback_send_nolog_successfully">"问题反馈已提交"</string>
+	<string name="feedback_send_withlog_successfully">"问题反馈已提交，正在上传日志"</string>
+	<string name="feedback_record_delete">"删除"</string>
+	<string name="feedback_log_zip_failed">"诊断日志打包失败，请重试。"</string>
+	<string name="feedback_space_not_enough">"内部存储空间不足，请清理 SD 卡空间或卸载一些应用以释放空间。"</string>
+	<!--END 高级问题反馈-->
+
+	
+
+	<string name="feedback_other_app">"问题与建议"</string>
+	
+	<string name="feedback_handle_progress">"处理进展：%s"</string>
+	<string name="feedback_submitted">"已提交"</string>
+	<string name="feedback_tobe_evaluated">"待评价"</string>
+	<string name="feedback_has_evaluated">"已评价"</string>
+	<string name="feedback_describhe_content">"请在此描述您遇到的问题或建议 (必填)"</string>
+	<string name="feedback_describhe_content_hint">"请您详细描述问题发生的场景和现象，并添加截图，这将有助于我们快速解决您的问题。"</string>
+	<string name="feedback_describhe_content_new">"您的问题及建议："</string>
+	<string name="feedback_descrption_suggestion">"问题描述或建议"</string>
+	<string name="feedback_question_frequency">"出现频率"</string>
+		
+	
+    <string name="feedback_no_authority_tips">"本软件的正常使用需要得到您的授权，请在“设置”&gt;“应用管理”找到对应软件并授予权限"</string>
+    <string name="feedback_advanced_success_confirm">"知道了"</string>
+    <string name="feedback_loading">"正在加载，请稍候..."</string>
+    <string name="feedback_advanced_logupload_cancel_tips">"是否取消诊断日志上传？"</string>
+    <string name="feedback_oversea_tip">"该功能仅限中国大陆地区使用。相关问题，请通过当地客服热线反馈。"</string>
+    <string name="feedback_qq_service_contact">"QQ 客服"</string>
+    
+    <string name="feedback_qq_install">"请安装 QQ"</string>
+    
+    <string name="feedback_nonet_touch_retry">"网络未连接，点击重试"</string>
+</resources>

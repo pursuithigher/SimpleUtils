@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="wallet_sdk_support_dialog_title">溫馨提示</string>
+    <string name="wallet_sdk_use_flow_cancel">取消</string>
+    <string name="wallet_sdk_use_flow_sure">同意</string>
+    <string name="wallet_sdk_use_flow_reminder">參加更多活動，贏取更多花幣，請下載華為錢包最新版本</string>
+    <string name="wallet_sdk_network_error">網絡異常，請檢查網絡設置</string>
+    <string name="wallet_sdk_app_signature_illegal">簽名不壹致，應用無法打開</string>
+
+        <!-- 花币卡拍卡增加 -->
+    <string name="wallet_sdk_camera_use_hcoincard_tips">"將掃描線對準卡的密碼，並對齊左右兩側"</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_info">"驗證密碼"</string>
+    <string name="wallet_sdk_camera_confirm_hcoincard_tips">"驗證華為貨幣卡的密碼"</string>
+    <string name="wallet_sdk_camera_add_hcoincard">"加入花幣卡"</string>
+    <string name="wallet_sdk_camera_input_by_user">"手動輸入"</string>
+    
+    <string name="wallet_sdk_camera_disable_tips">"無法打開相機，請檢查相機存取是否受限制。"</string>
+    <string name="wallet_sdk_camera_confirm">"確定"</string>
+    
+        <!-- 分屏下不支持扫描的提示 -->
+    <string name="wallet_sdk_toast_scan_split">"掃描在分割屏幕模式中不可用。"</string>
+</resources>

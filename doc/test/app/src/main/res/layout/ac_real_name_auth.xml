@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_100_FFFFFF"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/include_top_title_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:showright="0" />
+
+    <com.dzbook.view.ElasticScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:scrollbars="none"
+        android:fillViewport="true"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linearlayout_loading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <huawei.widget.HwProgressBar
+                    android:id="@+id/loadingview"
+                    style="@style/Widget.Emui.ProgressBar.Large"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+            </LinearLayout>
+
+            <com.dzbook.view.realname.RealNameBindPhoneView
+                android:id="@+id/view_phone_num_verify"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.dzbook.view.realname.RealAuthDetailView
+                android:id="@+id/realAuthDetailView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.dzbook.view.realname.RealAuthSuccessView
+                android:id="@+id/realAuthSuccessView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="21dp"
+                android:visibility="gone" />
+
+            <com.dzbook.view.realname.CheckSmsCodeView
+                android:id="@+id/checkCodeView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+            <com.dzbook.view.common.StatusView
+                android:id="@+id/statusView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/include_top_title_item"
+                android:visibility="gone"
+                app:status_view_drawable="@drawable/hw_no_network"
+                app:status_view_set="@string/string_reference"
+                app:status_view_no_loading="false"
+                app:status_view_hint="@string/hw_show_no_net_public" />
+        </LinearLayout>
+    </com.dzbook.view.ElasticScrollView>
+</LinearLayout>

@@ -1,0 +1,140 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/day_main_bg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.dzbook.view.DianZhongCommonTitle
+        android:id="@+id/commontitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:hasBack="true"
+        app:common_title="@string/string_local_upload_title" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2">
+
+        <huawei.widget.HwSubTabWidget
+            android:id="@+id/layout_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hwSubTabItemTextColor="@color/hw_sub_tab"
+            app:hwSubTabIndicatorColor="@color/color_100_CD2325"
+            />
+
+    </FrameLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_search"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_dp_48"
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:visibility="visible">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:id="@+id/layout_add"
+            android:layout_width="@dimen/hw_dp_82"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/hw_dp_27"
+                android:layout_height="@dimen/hw_dp_27"
+                android:paddingTop="3dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/bookdetail_add_shelf_gray" />
+
+            <TextView
+                android:id="@+id/textView_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/add_bookshelf"
+                android:textColor="@color/color_100_1A1A1A"
+                android:textSize="@dimen/hw_dp_10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_delete"
+            android:layout_width="@dimen/hw_dp_82"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/iv_manage_delete"
+                android:layout_width="@dimen/hw_dp_27"
+                android:layout_height="@dimen/hw_dp_27"
+                android:paddingTop="3dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/ic_shelf_manage_delete" />
+
+            <TextView
+                android:id="@+id/tv_manage_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:duplicateParentState="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/comment_delete"
+                android:textColor="@color/color_100_1A1A1A"
+                android:textSize="@dimen/hw_dp_10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_select"
+            android:layout_width="@dimen/hw_dp_82"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imageView_select"
+                android:layout_width="@dimen/hw_dp_27"
+                android:layout_height="@dimen/hw_dp_27"
+                android:paddingTop="3dp"
+                android:scaleType="fitCenter"
+                android:layout_marginBottom="3dp"
+                android:src="@drawable/ic_shelf_manage_all_select" />
+
+            <CheckedTextView
+                android:id="@+id/textView_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:includeFontPadding="false"
+                android:duplicateParentState="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:text="@string/all_select"
+                android:textColor="@color/color_100_1A1A1A"
+                android:textSize="@dimen/hw_dp_10" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

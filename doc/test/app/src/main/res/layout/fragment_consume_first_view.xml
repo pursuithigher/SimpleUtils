@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/net_error_layout_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.dzbook.view.PullLoadMoreRecycleLayout
+            android:id="@+id/pullLoadMoreRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_100_FFFFFF" />
+    </LinearLayout>
+
+    <com.dzbook.view.common.StatusView
+        android:id="@+id/defaultview_nonet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_100_FFFFFF"
+        android:visibility="gone"
+        app:status_view_drawable="@drawable/hw_no_network"
+        app:status_view_hint="@string/hw_show_no_net_public"
+        app:status_view_set="@string/string_reference" />
+</FrameLayout>

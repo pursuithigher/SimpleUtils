@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layout_bookview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" />
+
+    <!--<com.dzbook.view.reader.ReaderMenuPanel-->
+    <!--android:id="@+id/readerMenuPanel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="invisible" />-->
+
+    <!--<com.dzbook.view.reader.ReaderVoicePanel-->
+    <!--android:id="@+id/readerVoicePanel"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="invisible" />-->
+
+    <com.dzbook.view.reader.ReaderNewPanel
+        android:id="@+id/readerNewPanel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible" />
+
+
+</FrameLayout>

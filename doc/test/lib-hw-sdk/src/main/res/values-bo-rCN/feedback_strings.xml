@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_cloud_service">"ཧྭ་ཝེ་ཉེར་སྤྱོད།"</string>
+    <string name="feedback_msg_title">"ཁྱེད་ཀྱི་གནད་དོན།"</string>
+    <string name="feedback_continue_ask">"མུ་མཐུད་དུ་དྲིབ་འདྲི་བ།"</string>
+    <string name="formaterror_toast">"ཁ་པར་ཨང་གྲངས་སམ་གློག་འཕྲིན་ཁ་བྱང་ནུས་མེད་རེད་འདུག"</string>
+    <string name="feedback_type">"ལྡོག་འདྲེན་རྣམ་པ།"</string>
+    <string name="feedback_records">"བསར་འཆར་ཟིན་ཐོ།"</string>
+    <string name="feedback_push_content">"ཉིད་ལ་བསམ་འཆར་གྱི་དྲིས་ལན་ཞིག་འདུག"</string>
+    
+    
+    <string name="feedback_bitchdelete_dialog_title">"སུབ་པ།"</string>
+    <string name="feedback_bitchdelete_dialog">"བསམ་འཆར་གྱི་དྲིས་ལན་ཚང་མ་སུབ་བམ།"</string>
+    <string name="feedback_score_usefull">"གོ་ཆོད།"</string>
+    <string name="feedback_score_useless">"མཁོ་མེད།"</string>
+    <string name="feedback_score_thankfulness">"ཉིད་ཀྱིས་གདེང་འཇོག་བྱས་པར་བཀའ་དྲིན་ཆེ།"</string>
+    <string name="feedback_descrption">"གནད་དོན་གསལ་བཤད།："</string>
+    <string name="feedback_maxtip">"ཆེས་མང་ན་བསམ་འཆར་གྱི་དྲིས་ལན500ཉར་ཐུབ། བསལ་རྗེས་ད་གཟོད་ཉར་ཐུབ།"</string>
+    <string name="feedback_handle_progress">"གནས་བབ། %s"</string>
+    <string name="feedback_submitted">"འབུལ་ཟིན་པ། "</string>
+    <string name="feedback_tobe_evaluated">"རིན་ཐང་ཚོད་དཔག་སྒུག་བཞིན་པ། "</string>
+    <string name="feedback_has_evaluated">"ཚོད་དཔག་ཟིན། "</string>
+    <string name="feedback_describhe_content">"ཁྱེད་ཀྱི་དྲི་བ་དང་བསམ་འཆར་འདིར་འགྲེལ་བཤད་རྒྱག་རོགས། (ངེས་པར་ལྡན་དགོས།)"</string>
+    <string name="feedback_descrption_suggestion">"འགྲེལ་བཤད་དམ་བསམ་འཆར།"</string>
+    <string name="feedback_question_frequency">"འཕེལ་འགྲིབ།"</string>
+    
+    
+    
+    
+    
+    
+    
+    
+    <string name="feedback_waiting">"ཅུང་ཙམ་སྒུག་རོགས..."</string>
+    <string name="feedback_beta">"BETA སྐྱིད་སྡུག"</string>
+    
+    <string name="feedback_send_nolog_successfully">"བསམ་འཆར་སྤྲད་ཟིན།"</string>
+    <string name="feedback_send_withlog_successfully">"བསམ་འཆར་སྤྲད་ཟིན། ཉིན་ཐོ་སྐྱེལ་འཇོག་བྱེད་སྒང་ཡིན།"</string>
+    <string name="feedback_record_delete">"སུབ་པ།"</string>
+    <string name="feedback_log_zip_failed">"ནད་དཔྱད་ཟིན་ཐོ་ཐུམ་སྒྲིལ་བྱེད་མ་ཐུབ། ཡང་བསྐྱར་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+    <string name="feedback_other_app">"གནད་དོན་དང་བསམ་འཆར། "</string>
+    <string name="feedbackRecord_title">"བསམ་འཆར་ཟིན་ཐོ།"</string>
+    <string name="feedbackRecord_draft">"[ཟིན་ཁུག]"</string>
+    <string name="feedbackRecord_type">"ལྡོག་འདྲེན་རྣམ་པ།"</string>
+    <string name="feedbackReply_title1">"མཁོ་མཁན་ཞབས་ཞུ།"</string>
+    <string name="feedbackBitchDelete_new">"བསམ་འཆར་གྱི་ཟིན་ཐོ་ཚང་མ་སུབ་པ།"</string>
+    <string name="feedbackNoRecord">"བསམ་འཆར་གྱི་ཟིན་ཐོ་མི་འདུག"</string>
+    <string name="feedbackDetail_title">"བསམ་འཆར་གྱི་གནས་ཚུལ་ཞིབ་ཕྲ།"</string>
+    <string name="feedback_add_image">"འདྲ་པར་མཐུད་སྦྱར་བྱ། "</string>
+    
+    
+    
+    
+    <string name="feedback_sending_your_feedback">"གནད་དོན་གྱི་བསམ་འཆར་གཏོང་སྒང་ཡིན…"</string>
+    
+    
+    <string name="feedback_send_successfully">"བཏང་ཟིན། ལན་གདོན་པར་བཀའ་དྲིན་ཆེ།"</string>
+    <string name="feedback_send__feedback_failed">"གཏོང་མ་ཐུབ།"</string>
+    
+    
+    
+    <string name="feedback_your_contact">"འབྲེལ་གཏུག་ཐབས་ཤས།"</string>
+    <string name="feedback_input_feedback_hint">"ཁྱེད་ཀྱི་ལྡོག་འདྲེན་ནང་འཇུག་བྱོས།"</string>
+    <string name="feedback_input_feedback_content">"ཉིད་ཀྱི་བསམ་འཆར་གྱི་ནང་དོན་འགོད་རོགས།"</string>
+    <string name="feedback_input_email_or_phone">"གློག་འཕྲིན་ཁ་བྱང་ངམ་ཁ་པར་ཨང་གྲངས་འཇུག (ངེས་པར་དུ་འཇུག་དགོས།)"</string>
+    <string name="feedback_send">"བསྐུར་བ།"</string>
+    <string name="feedback_more_than_500_characters">"བསམ་འཆར་གྱི་ནང་དོན་ཆེས་མང་ན་ཡིག་རྟགས500 ལས་བརྒལ་མི་རུང་།"</string>
+    <string name="feedback_contact_cannot_more_than_50_characters">"འབྲེལ་གཏུག་བྱེད་ཡུལ་དུ་ཆེས་མང་ན་ཡིག་རྟགས50 ལས་མི་ཤོང་།"</string>
+    <string name="feedback_file_format_not_support">"ཡིག་ཆའི་རྣམ་པ་འདིར་རྒྱབ་སྐྱོར་མི་བྱེད། ཡང་བསྐྱར་འདེམས་རོགས།"</string>
+    <string name="feedback_screenshot_not_exist_and_choose_again">"དྲས་པར་མི་འདུག ཡང་བསྐྱར་འདེམས་རོགས།"</string>
+    <string name="feedback_notify_to_replace_pic">"མིག་སྔའི་པར་རིས་ཚབ་བརྗེ་བྱེད་ངེས།"</string>
+    <string name="feedback_ok">"འཐད།"</string>
+    <string name="feedback_cancel">"འདོར་བ།"</string>
+    <string name="feedback_dialog_title">"གསལ་འདེབས།"</string>
+    <string name="feedback_submit">"སྤྲོད་པ།"</string>
+    <string name="feedback_no_network_connection_prompt">"དྲ་བ་སྤྱོད་མི་ཐུབ། དྲ་ལམ་ལ་ཞིབ་བཤེར་བྱེད་རོགས།"</string>
+    <string name="feedback_frequency_one">"འཆར་ཧ་ཅང་ཉུང་།"</string>
+    <string name="feedback_frequency_two">"ཉིན་རེར་ཉན་རེ།"</string>
+    <string name="feedback_frequency_three">"ཉིན་རེར་ལན་མང་།"</string>
+    <string name="feedback_frequency_four">"རྟག་ཏུ་འཆར་བ།"</string>
+    <string name="feedback_advanced_fail_confirm_one">"ཡང་བསྐྱར།"</string>
+    <string name="feedback_advanced_loguploading">"མཐོ་རིམ་ཉིན་ཐོ་སྐྱེལ་འཇོག་བྱེད་སྒང་ཡིན… %s"</string>
+    <string name="feedback_advanced_loguploading_pause">"དུས་ཐུང་མཚམས་འཇོག"</string>
+    <string name="feedback_advanced_loguploading_continue">"མུ་མཐུད།"</string>
+    <string name="feedback_advanced_logupload_fail">"མཐོ་རིམ་ཉིན་ཐོ་སྐྱེལ་འཇོག་བྱེད་མ་ཐུབ།"</string>
+    <string name="feedback_advanced_logupload_tips_new">"ཉིན་ཐོ་དྲྭ་ཐོག་ལ་བསྐུར་ན་%d MBགི་བཞུར་ཚད་ཐོན་ཀྱི་ཡོད་པས་མུ་མཐུད་བྱེད་དམ།"</string>
+    <string name="feedback_advanced_success_confirm">"ཤེས་སོང་།"</string>
+    
+    
+    
+    <string name="feedback_advanced_logupload_task_title">"སྐྱེལ་འཇོག་མ་འགྲུབ།"</string>
+    <string name="feedback_advanced_logupload_feedbackrecord_delete">"བདམས་ཟིན་པའི་གསལ་ཐོ་སུབ་བམ།"</string>
+    <string name="feedback_space_not_enough">"བར་སྟོང་གང་འདུག ཁྱེད་ཀྱིསSDབྱང་བུ་གཙང་སེལ་བྱེད་པའམ་རྒྱུན་དུ་མི་སྤྱོད་པའི་མཉེན་ཆས་འགའ་ཤས་བཤིག་འདོན་བྱས་རྗེས་ཚོད་ལྟ་བྱེད་རོགས།"</string>
+    <string name="feedback_no_authority_tips">"ཉེར་སྤྱོད་འདི་ལ་འབྲེལ་ཡོད་ཆོག་མཆན་ཆ་ཚང་ནུས་ལྡན་ཟིན་པ་ལྡན་དགོས་འདུག སྒྲིག་བཀོད་དག་གི་སྟེང་བསྐྱོད། &gt; ཉེར་སྤྱོད་དང་། HiCareའཚོལ་བ་དང་ཆོག་མཆན་འདི་དག་ནུས་ལྡན་བཟོ།"</string>
+    <string name="feedback_loading">"སྣོན་འཇུག་བྱེད་སྒང་ཡིན། ཅུང་ཙམ་སྒུག་རོགས..."</string>
+    <string name="feedback_advanced_logupload_cancel_tips">"མཐོ་རིམ་ཉིན་ཐོ་སྐྱེལ་འཇོག་འདོར་རམ།"</string>
+    <string name="feedback_advanced_logupload_tips_new_two">"བརྟག་དཔྱད་ཐོ་གཞུང་ཡར་འཇུག་བྱེད་པ་ཡིས་འཕྲིན་གཏོང་རྒྱུག་ཚད་ཀེ་བི་ %d ཙམ་འདོན་སྤེལ་བྱེད་པ་ཡིན། མུ་མཐུད་འདོད་དམ།"</string>
+    <string name="feedback_describhe_content_new">"ཁྱེད་ཀྱི་དྲི་བའམ་བསམ་འཆར་འདིར་འགྲེལ་བརྗོད་བྱ།"</string>
+    <string name="feedback_app_log_detail_upload">"གནད་དོན་ངོས་འཛིན་ལས་སླ་པོ་ཡོང་ཆེད་ཉེར་སྤྱོད་ཐོ་གཞུང་མཉམ་སྤྱོད་བྱ།"</string>
+    <string name="feedback_input_email_or_phone_new">"སྦྲག་ཡིག་གམ་ཁ་པར་ཨང་གྲངས།"</string>
+    <string name="feedback_oversea_tip">"ཁྱད་ཆོས་འདི་ད་ལྟའི་ཆར་རྒྱ་ནག་ཁོ་ནའི་ནང་རམ་འདེགས་བྱས་པ་ཡིན། ཚོང་ཤག་ཞབས་ཞུ་ལ་འབྲེལ་གཏུག་གནང་རོགས།"</string>
+    <string name="feedback_menu_more">"གདམ་བྱང་།"</string>
+    <string name="feedback_qq_install">"QQ སྒྲིག་འཇུག་གནང་རོགས།"</string>
+    <string name="feedback_qq_service_contact">"QQ ཚོང་ཤག་ཞབས་ཞུ།"</string>
+    <string name="feedback_nonet_touch_retry">"དྲ་རྒྱའི་སྦྲེལ་མཐུད་མི་འདུག ཡང་བསྐྱར་འབད་པར་རེག"</string>
+    <string name="feedback_describhe_content_hint">"ཁྱེད་ཀྱིས་གནད་དོན་བུད་པའི་ཡུལ་དངོས་དང་སྣང་ཚུལ་ཞིབ་བརྗོད་བྱེད་པ་མ་ཟད་པར་རིས་བྱས་ན། ང་ཚོས་མྱུར་དུ་ཁྱེད་ཀྱི་གནད་དོན་ཐག་གཅོད་བྱེད་པར་ཕན་ཐོགས་ཡོད།"</string>
+    <string name="feedback_add_image_new">"པར་རིས་བསྣན་པ། (ཆེས་དང་ནའང་%d)"</string>
+</resources>

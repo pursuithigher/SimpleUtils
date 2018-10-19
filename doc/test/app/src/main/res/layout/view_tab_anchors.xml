@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="@dimen/hw_dp_240"-->
+    <!--android:layout_height="@dimen/hw_dp_32"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--android:layout_marginTop="@dimen/hw_dp_17"-->
+    <!--android:orientation="horizontal">-->
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_brief"
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/hw_dp_48"
+        android:layout_height="@dimen/hw_dp_32"
+        android:background="@drawable/hw_tab_layer"
+        android:gravity="center"
+        android:text="@string/brief"
+        android:textColor="@color/color_100_CD2325"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_comment"
+        android:layout_width="wrap_content"
+        android:minWidth="@dimen/hw_dp_48"
+        android:layout_height="@dimen/hw_dp_32"
+        android:layout_marginLeft="@dimen/hw_dp_24"
+        android:layout_marginRight="@dimen/hw_dp_24"
+        android:gravity="center"
+        android:text="@string/book_comment_only_simplified_chinese"
+        android:textColor="@color/color_50_1A1A1A"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:layout_gravity="center_vertical"
+        android:id="@+id/tv_recommend"
+        android:minWidth="@dimen/hw_dp_48"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/hw_dp_32"
+        android:gravity="center"
+        android:text="@string/recommend"
+        android:textColor="@color/color_50_1A1A1A"
+        android:textSize="@dimen/hw_text_15" />
+    <!--</LinearLayout>-->
+
+</merge>

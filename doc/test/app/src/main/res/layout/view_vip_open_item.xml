@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/ll_vip_recommend"
+        android:layout_width="@dimen/dp_26"
+        android:layout_height="@dimen/dp_26"
+        android:background="@drawable/vip_tips_recommend"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:gravity="bottom|center_horizontal"
+            android:rotation="-45"
+            android:text="@string/vip_recommend"
+            android:textColor="@color/white"
+            android:textSize="8sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:paddingLeft="@dimen/hw_dp_16"
+        android:paddingRight="@dimen/hw_dp_16">
+
+        <TextView
+            android:id="@+id/vip_open_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/hw_dp_13"
+            android:text="3个月"
+            android:textColor="@color/color_100_1A1A1A" />
+
+        <TextView
+            android:id="@+id/tv_vip_give_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vip_open_title"
+            android:layout_toRightOf="@id/vip_open_title"
+            android:background="@drawable/shap_vip_btn_bg"
+            android:padding="@dimen/dp_2"
+            android:text="@string/hw_vip_give"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_vip_give"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vip_open_title"
+            android:layout_marginLeft="@dimen/hw_dp_6"
+            android:layout_toRightOf="@id/tv_vip_give_logo"
+            android:text="@string/hw_vip_money"
+            android:textColor="#FF742E" />
+
+        <TextView
+            android:id="@+id/vip_open_price_month"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vip_open_title"
+            android:layout_marginTop="@dimen/hw_dp_3"
+            android:text="每月10元"
+            android:textColor="@color/color_50_1A1A1A" />
+
+        <ImageView
+            android:id="@+id/open_vip_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignBottom="@id/vip_open_price_month"
+            android:layout_alignTop="@id/vip_open_price_month"
+            android:layout_below="@id/vip_open_title"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/hw_dp_4"
+            android:layout_toRightOf="@id/vip_open_price_month"
+            android:src="@drawable/vip_tips"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_vip_open"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/shap_vip_btn_bg"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:paddingBottom="@dimen/hw_dp_6"
+            android:paddingTop="@dimen/hw_dp_6"
+            android:text="开通"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_vip_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/hw_dp_8"
+            android:layout_toLeftOf="@id/tv_vip_open"
+            android:text="¥10"
+            android:textColor="#FB6522"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_vip_origin_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_11"
+            android:layout_toLeftOf="@id/tv_vip_money"
+            android:alpha="0.3"
+            android:text="¥10"
+            android:textColor="@color/black_full"
+            android:textSize="13sp" />
+
+        <View
+            android:id="@+id/line_end"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_line"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+    </RelativeLayout>
+</merge>

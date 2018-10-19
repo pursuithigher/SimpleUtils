@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_type"
+    android:layout_width="wrap_content"
+    android:layout_marginRight="@dimen/hw_dp_16"
+    android:layout_height="@dimen/hw_dp_57"
+    android:layout_marginTop="@dimen/hw_dp_23">
+
+
+    <com.dzbook.view.common.BookImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/hw_dp_43"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" />
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/hw_dp_13"
+        android:layout_toRightOf="@+id/imageView"
+        android:ellipsize="end"
+        android:maxEms="4"
+        android:singleLine="true"
+        android:text="现代都市"
+        android:textColor="@color/color_ff000000"
+        android:textSize="@dimen/hw_text_14" />
+
+</RelativeLayout>

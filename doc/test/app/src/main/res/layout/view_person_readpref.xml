@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/hw_dp_64"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="@dimen/hw_dp_69"
+            android:layout_toLeftOf="@+id/linearlayout_select"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hw_dp_13"
+                android:ellipsize="none"
+                android:inputType="textMultiLine"
+                android:maxLines="5"
+                android:singleLine="false"
+                android:text="@string/str_readpref_boy"
+                android:textColor="#000000"
+                android:textSize="@dimen/hw_dp_15"
+                tools:ignore="TextViewEdits" />
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/hw_dp_3"
+                android:ellipsize="end"
+                android:inputType="textMultiLine"
+                android:maxLines="2"
+                android:singleLine="false"
+                android:text="@string/read_preference_books_boy"
+                android:textColor="@color/color_50_1A1A1A"
+                android:textSize="@dimen/hw_dp_13"
+                tools:ignore="TextViewEdits" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout_select"
+            android:layout_width="@dimen/hw_dp_24"
+            android:layout_height="@dimen/hw_dp_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageview_select"
+                android:layout_width="@dimen/hw_dp_24"
+                android:layout_height="@dimen/hw_dp_24"
+                android:scaleType="centerInside"
+                android:src="@drawable/selector_person_readpref" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/hw_line"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/hwdivider_horizontal_gray_emui" />
+    </RelativeLayout>
+</RelativeLayout>

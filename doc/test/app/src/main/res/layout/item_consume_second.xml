@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--<RelativeLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="88dp"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:gravity="center_vertical"-->
+    <!--android:paddingLeft="@dimen/padding_left"-->
+    <!--android:paddingRight="@dimen/padding_right">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/color_100_000000"
+            android:textSize="@dimen/hw_text_15"
+            tools:text="签到送礼" />
+
+        <TextView
+            android:id="@+id/tv_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_title"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_13"
+            android:visibility="gone"
+            tools:text="15 看点" />
+
+        <TextView
+            android:id="@+id/tv_consume_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_amount"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:singleLine="true"
+            android:textColor="@color/color_50_000000"
+            android:textSize="@dimen/hw_text_13"
+            tools:text="2017-03-16至2017-04-01" />
+
+
+        <ImageView
+            android:id="@+id/iv_consume_arrow"
+            android:layout_width="6dp"
+            android:layout_height="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_right_arrow"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+
+    <!--</RelativeLayout>-->
+
+</merge>

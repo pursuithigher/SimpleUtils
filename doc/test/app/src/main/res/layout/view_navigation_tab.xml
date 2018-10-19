@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+    <merge  xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:id="@+id/layout_container"
+        android:layout_width="@dimen/hw_dp_24"
+        android:layout_height="@dimen/hw_dp_24"
+        android:duplicateParentState="true">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:duplicateParentState="true"
+            android:scaleType="centerInside" />
+
+        <ImageView
+            android:id="@+id/imageView_dot"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/shape_dot"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/hw_dp_2"
+        android:paddingLeft="@dimen/hw_dp_4"
+        android:paddingRight="@dimen/hw_dp_4"
+        android:duplicateParentState="true"
+        android:lines="1"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textColor="@color/color_50_000000"
+        android:textSize="@dimen/hw_text_10" />
+
+    </merge>
+<!--</LinearLayout>-->

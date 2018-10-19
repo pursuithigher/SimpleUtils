@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dip">
+
+    <ImageView
+        android:id="@+id/chapter_iv"
+        android:layout_width="@dimen/dp_20"
+        android:layout_height="@dimen/dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="2dp"
+        android:src="@drawable/circle_bg" />
+
+    <TextView
+        android:id="@+id/tv_chapter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="47.5dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/chapter_iv"
+        android:gravity="center_vertical"
+        android:textColor="@color/black_full"
+        android:textSize="@dimen/hw_text_15" />
+
+    <TextView
+        android:id="@+id/tv_chapter_end"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+</RelativeLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.dzbook.view.common.ShelfListBookImageView
+        android:id="@+id/imageview"
+        android:layout_width="@dimen/dp_56"
+        android:layout_height="75dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_8"
+        tools:background="@color/color_100_1A1A1A" />
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="@dimen/hw_dp_176"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/hw_dp_19"
+        android:layout_marginTop="@dimen/hw_dp_24"
+        android:layout_toRightOf="@id/imageview"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/color_100_1A1A1A"
+        android:textSize="@dimen/hw_text_15"
+        tools:text="设计中的设计" />
+
+    <TextView
+        android:id="@+id/textview_author"
+        android:layout_width="@dimen/hw_dp_176"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_title"
+        android:layout_marginLeft="@dimen/hw_dp_19"
+        android:layout_marginTop="@dimen/hw_dp_2"
+        android:layout_toRightOf="@id/imageview"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        android:textColor="@color/color_50_1A1A1A"
+        android:textSize="@dimen/hw_text_13"
+        tools:text="原研哉[著]" />
+
+    <TextView
+        android:id="@+id/textview_time"
+        android:layout_width="@dimen/hw_dp_79"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_41"
+        android:ellipsize="end"
+        android:gravity="right|center_vertical"
+        android:maxLines="1"
+        android:textColor="@color/color_50_1A1A1A"
+        android:textSize="@dimen/hw_text_10"
+        tools:text="@string/str_read_just" />
+
+    <ImageView
+        android:id="@+id/imageview_checkbox"
+        android:layout_width="@dimen/hw_dp_20"
+        android:layout_height="@dimen/hw_dp_20"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_34"
+        android:background="@drawable/selector_hw_shelflist_check"
+        android:scaleType="centerInside"
+        android:visibility="gone" />
+
+    <huawei.widget.HwProgressBar
+        android:id="@+id/shelf_loadding"
+        android:layout_width="@dimen/hw_dp_27"
+        android:layout_height="@dimen/hw_dp_27"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:layout_marginTop="@dimen/hw_dp_34"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/hw_line"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="@dimen/hw_dp_89"
+        android:layout_marginRight="@dimen/hw_dp_16"
+        android:background="@drawable/hwdivider_horizontal_gray_emui" />
+
+</RelativeLayout>

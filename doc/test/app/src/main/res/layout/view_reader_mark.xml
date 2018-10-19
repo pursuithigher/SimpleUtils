@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListView
+        android:id="@+id/listView_mark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_100_FFFFFF"
+        android:cacheColorHint="@null"
+        android:divider="@drawable/hwdivider_horizontal_gray_emui"
+        android:dividerHeight="@dimen/hw_line"
+        android:fadingEdge="none"
+        android:overScrollMode="never" />
+
+    <LinearLayout
+        android:id="@+id/rl_mark_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:id="@+id/empty_background"
+                android:layout_width="@dimen/hw_dp_72"
+                android:layout_height="@dimen/hw_dp_72"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/hw_empty_default" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/empty_background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8.5dp"
+                android:text="@string/hw_mark_null"
+                android:textColor="@color/color_100_7f7f7f"
+                android:textSize="@dimen/hw_text_16" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</merge>
