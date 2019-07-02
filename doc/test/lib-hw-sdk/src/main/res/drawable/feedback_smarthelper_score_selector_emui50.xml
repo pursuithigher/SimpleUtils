@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-
-    <item android:drawable="@drawable/feedback_smarthelper_btn_default_pressed_emui50" android:state_selected="true"/>
-    <item android:drawable="@drawable/feedback_smarthelper_btn_default_pressed_emui50" android:state_focused="true"/>
-    <item android:drawable="@drawable/feedback_smarthelper_btn_default_pressed_emui50" android:state_pressed="true"/>
-    <item android:drawable="@drawable/feedback_smarthelper_btn_default_normal_emui50"/>
-
-</selector>

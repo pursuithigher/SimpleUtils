@@ -1,7 +1,0 @@
-<resources>
-
-    <style name="dz_charge_auto_order_checkbox" parent="@android:style/Widget.CompoundButton.CheckBox">
-        <item name="android:button">@drawable/dz_charge_auto_order_cb_selector</item>
-    </style>
-
-</resources>

@@ -1,8 +1,0 @@
-include ':app', ':libnew', ':lib-hw-sdk', ':lib-recharge','lib-downloader'
-
-include ':plugin-apk-builder'
-//includeFlat 'cmpay'
-
-//includeFlat 'dzrecharge'
-
-//includeFlat 'lib-reader'

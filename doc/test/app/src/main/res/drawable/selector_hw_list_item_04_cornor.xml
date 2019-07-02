@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/shape_color_05_black_04_cornor" android:state_pressed="true" />
-    <item android:drawable="@color/transparent"/>
-</selector>

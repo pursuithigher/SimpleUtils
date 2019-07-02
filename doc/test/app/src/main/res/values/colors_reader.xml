@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <color name="reader_menu_panel_background">#FF262626</color>
-    <color name="reader_menu_text_color_1">#80FFFFFF</color>
-    <color name="reader_menu_text_color_2">#4cffffff</color>
-    <color name="reader_menu_text_color_disable">#FFCD2325</color>
-
-    <color name="reader_menu_style_checked">#F2B61F21</color>
-</resources>
