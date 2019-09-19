@@ -14,9 +14,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
-import android.view.VelocityTracker;
 import android.view.View;
-import android.view.ViewConfiguration;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 
@@ -35,20 +33,10 @@ public class OverScrollRecyclerView extends NestedScrollView {
 
     private ValueAnimator animator;
 
-    private VelocityTracker mVelocityTracker;
-
     /**
      * 子View所在的矩形区域
      */
     private Rect rect = new Rect();
-
-    private int mActivePointerId = -1;
-
-    private int mMinFlingVelocity;
-
-    private int mMaxFlingVelocity;
-
-    float yvel;
 
     public OverScrollRecyclerView(@NonNull Context context) {
         super(context);
@@ -66,11 +54,7 @@ public class OverScrollRecyclerView extends NestedScrollView {
     }
 
     private void addChild() {
-        ViewConfiguration vc = ViewConfiguration.get(getContext());
-        this.mMinFlingVelocity = vc.getScaledMinimumFlingVelocity();
-        this.mMaxFlingVelocity = vc.getScaledMaximumFlingVelocity();
         mRecyclerView = new RecyclerView(getContext());
-        mVelocityTracker = VelocityTracker.obtain();
         this.addView(mRecyclerView,
             new NestedScrollView.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
                 ViewGroup.LayoutParams.MATCH_PARENT));
@@ -81,17 +65,11 @@ public class OverScrollRecyclerView extends NestedScrollView {
     }
 
     @Override
-    public void onNestedScroll(View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed,
-        int type) {
-        super.onNestedScroll(target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type);
-    }
-
-    @Override
     public boolean dispatchNestedScroll(int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed,
         int[] offsetInWindow, int type) {
         if (dyUnconsumed == 0) {
             return super.dispatchNestedScroll(dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, offsetInWindow, type);
-        } else {
+        } else if (type == 0) {
             int v = (int) (dyUnconsumed * 0.25);
             int consumed;
             if (offSet + v > MAX_OFFSET) {
@@ -108,8 +86,8 @@ public class OverScrollRecyclerView extends NestedScrollView {
                 // 需要取反操作
                 ViewCompat.offsetTopAndBottom(mRecyclerView, consumed);
             }
-            return true;
         }
+        return true;
     }
 
     @Override
@@ -117,12 +95,12 @@ public class OverScrollRecyclerView extends NestedScrollView {
         if (offSet == 0) {
             super.onNestedPreScroll(target, dx, dy, consumed, type);
         } else {
-            if (dy < 0 && offSet > 0) {// 向下滑动
+            if (dy < 0 && offSet > 0) {// 手指向下滑动
                 int max = Math.max(dy, -offSet);
                 consumed[1] = max;
                 offSet += max;
                 ViewCompat.offsetTopAndBottom(mRecyclerView, -max);
-            } else if (dy > 0 && offSet < 0) {// 向上滑动
+            } else if (dy > 0 && offSet < 0) {// 手指向上滑动
                 int max = Math.min(dy, -offSet);
                 consumed[1] = max;
                 offSet += max;
@@ -146,12 +124,8 @@ public class OverScrollRecyclerView extends NestedScrollView {
         final int childTop = getPaddingTop() - offSet;
         final int childWidth = width - getPaddingLeft() - getPaddingRight();
         final int childHeight = height - getPaddingTop() - getPaddingBottom();
-        child.layout(childLeft, childTop, childLeft + childWidth, childTop + childHeight);
-    }
-
-    @Override
-    public void onStopNestedScroll(@NonNull View target, int type) {
-        super.onStopNestedScroll(target, type);
+        rect.set(childLeft, childTop, childLeft + childWidth, childTop + childHeight);
+        child.layout(rect.left, rect.top, rect.right, rect.bottom);
     }
 
     @Override
@@ -161,23 +135,11 @@ public class OverScrollRecyclerView extends NestedScrollView {
             return true;
         }
         switch (action) {
-            case MotionEvent.ACTION_DOWN:
-                this.mActivePointerId = ev.getPointerId(0);
-                break;
             case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
-                this.mVelocityTracker.clear();
-                this.mActivePointerId = -1;
+                stopScroll();
                 break;
-            case MotionEvent.ACTION_MOVE:
-                if (mActivePointerId != -1) {
-                    mVelocityTracker.addMovement(ev);
-                    this.mVelocityTracker.computeCurrentVelocity(1000, (float) this.mMaxFlingVelocity);
-                    yvel = -this.mVelocityTracker.getYVelocity(this.mActivePointerId);
-                    if (Math.abs(yvel) < this.mMinFlingVelocity) {
-                        yvel = 0;
-                    }
-                }
+            default:
                 break;
         }
         return super.dispatchTouchEvent(ev);
@@ -188,7 +150,8 @@ public class OverScrollRecyclerView extends NestedScrollView {
         public void onAnimationUpdate(ValueAnimator animation) {
             if (null != mRecyclerView) {
                 int animatedValue = (int) animation.getAnimatedValue();
-
+                offSet = animatedValue;
+                mRecyclerView.layout(rect.left, rect.top - animatedValue, rect.right, rect.bottom - animatedValue);
             }
         }
     };
@@ -198,33 +161,40 @@ public class OverScrollRecyclerView extends NestedScrollView {
             return;
         }
         if (animator == null) {
-            animator = ValueAnimator.ofInt(offSet, 0).setDuration(1500);
-            animator.setInterpolator(new LinearInterpolator());
-            animator.setTarget(mRecyclerView);
-            animator.addUpdateListener(listener);
-            animator.addListener(new AnimatorListenerAdapter() {
-                @Override
-                public void onAnimationCancel(Animator animation) {
-                    super.onAnimationCancel(animation);
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation) {
-                    super.onAnimationEnd(animation);
-                }
-
-                @Override
-                public void onAnimationEnd(Animator animation, boolean isReverse) {
-                }
-            });
-            animator.setEvaluator(new IntEvaluator());
+            animator = initAnimator();
             animator.start();
         } else {
             if (animator.isStarted()) {
                 animator.cancel();
             } else {
+                animator = initAnimator();
                 animator.start();
             }
         }
+    }
+
+    private ValueAnimator initAnimator() {
+        ValueAnimator animator =
+            ValueAnimator.ofInt(offSet, 0).setDuration(Math.abs((int) (offSet * 1f / MAX_OFFSET * 500)));
+        animator.setInterpolator(new LinearInterpolator());
+        animator.setTarget(mRecyclerView);
+        animator.addUpdateListener(listener);
+        animator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationCancel(Animator animation) {
+                super.onAnimationCancel(animation);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
+            }
+
+            @Override
+            public void onAnimationEnd(Animator animation, boolean isReverse) {
+            }
+        });
+        animator.setEvaluator(new IntEvaluator());
+        return animator;
     }
 }
