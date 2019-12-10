@@ -2,8 +2,6 @@ package com.network;
 
 import android.text.TextUtils;
 
-import com.google.repacked.treelayout.internal.util.java.lang.string.StringUtil;
-
 import org.json.JSONException;
 import org.json.JSONObject;
 

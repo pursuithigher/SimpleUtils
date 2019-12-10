@@ -16,7 +16,7 @@ android {
     defaultConfig {
         applicationId "com.qzzhu.simpleutils"
         minSdkVersion 21
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -44,9 +44,9 @@ android {
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
-    compile 'com.android.support:design:24.1.1'
-    compile 'com.android.support:appcompat-v7:24.1.1'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-alpha5'
+    compile 'com.android.support:design:28+'
+    compile 'com.android.support:appcompat-v7:28+'
+    compile 'com.android.support.constraint:constraint-layout:+'
 
     /*this dependencies for async and network op*/
     compile 'com.squareup.okhttp3:okhttp:3.4.1'

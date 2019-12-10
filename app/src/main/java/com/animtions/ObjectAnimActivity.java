@@ -22,6 +22,7 @@ import android.widget.Toast;
 
 import com.MyApplication;
 import com.squareup.leakcanary.LeakCanary;
+import com.test.ScrollerActivity;
 import com.views.simpleutils.R;
 
 /**
@@ -54,6 +55,7 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
         findViewById(R.id.animatorset2).setOnClickListener(this);
         findViewById(R.id.animatorset4).setOnClickListener(this);
         findViewById(R.id.animatorset5).setOnClickListener(this);
+        findViewById(R.id.animatorset6).setOnClickListener(this);
         sharedButton = findViewById(R.id.animatorset3);
         sharedButton.setOnClickListener(this);
         image = (ImageView) findViewById(R.id.images);
@@ -87,6 +89,9 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
                 break;
             case R.id.animatorset5:
                 showScene();
+                break;
+            case R.id.animatorset6:
+                showScroller();
                 break;
         }
     }
@@ -196,5 +201,9 @@ public class ObjectAnimActivity extends AppCompatActivity implements View.OnClic
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     private void showScene(){
         TransitionManager.go(Scene.getSceneForLayout((ViewGroup) findViewById(R.id.image_container),R.layout.textview,this));
+    }
+
+    private void showScroller(){
+        startActivity(new Intent(this, ScrollerActivity.class));
     }
 }

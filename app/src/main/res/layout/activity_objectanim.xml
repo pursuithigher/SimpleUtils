@@ -48,6 +48,12 @@
         android:layout_height="wrap_content"
         android:text="Scene动画"
         />
+    <Button
+        android:id="@+id/animatorset6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Scroller动画"
+        />
     <RelativeLayout
         android:id="@+id/image_container"
         android:layout_width="match_parent"

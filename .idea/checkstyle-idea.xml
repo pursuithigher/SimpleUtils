@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CheckStyle-IDEA">
+    <option name="configuration">
+      <map>
+        <entry key="checkstyle-version" value="8.11" />
+        <entry key="copy-libs" value="true" />
+        <entry key="location-0" value="BUNDLED:(bundled):Sun Checks" />
+        <entry key="location-1" value="BUNDLED:(bundled):Google Checks" />
+        <entry key="location-2" value="PROJECT_RELATIVE:C:/Users/zwx617080/.AndroidStudio3.1/ContentOperation_Checkstyle_V2.2.xml:checkStyle" />
+        <entry key="location-3" value="PROJECT_RELATIVE:C:/Users/zwx617080/.AndroidStudio3.1/ContentOperation_CodeFormat_V2.0.xml:codeFormat" />
+        <entry key="scan-before-checkin" value="false" />
+        <entry key="scanscope" value="JavaOnly" />
+        <entry key="suppress-errors" value="true" />
+      </map>
+    </option>
+  </component>
+</project>
