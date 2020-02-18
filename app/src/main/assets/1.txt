@@ -1,0 +1,1 @@
+E:\Files\Github\SimpleUtils\app\src\main\assets\rxandroid-0.23.0.jar!\META-INF\rxandroid.properties
